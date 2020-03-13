@@ -1,0 +1,44 @@
+!Este archivo .dss es generado automáticamente por el script calculoDeMatricesTPXOpenDSS.py
+
+New Linecode.TRPX6AAC nphases=3 units=mile
+~ rmatrix=[ 4.3457 0.0953 0.0953 | 0.0953 4.3457 0.0953 | 0.0953 0.0953 4.3457 ]
+~ xmatrix=[ 1.5919 1.4213 1.4431 | 1.4213 1.5919 1.4431 | 1.4431 1.4431 1.5919 ]
+~ Normamps=85.0
+~ kron=y
+
+New Linecode.TRPX4AAC nphases=3 units=mile
+~ rmatrix=[ 2.767 0.0953 0.0953 | 0.0953 2.767 0.0953 | 0.0953 0.0953 2.767 ]
+~ xmatrix=[ 1.5648 1.4017 1.42 | 1.4017 1.5648 1.42 | 1.42 1.42 1.5648 ]
+~ Normamps=115.0
+~ kron=y
+
+New Linecode.TRPX2AAC nphases=3 units=mile
+~ rmatrix=[ 1.7743 0.0953 0.0953 | 0.0953 1.7743 0.0953 | 0.0953 0.0953 1.7743 ]
+~ xmatrix=[ 1.537 1.381 1.3962 | 1.381 1.537 1.3962 | 1.3962 1.3962 1.537 ]
+~ Normamps=150.0
+~ kron=y
+
+New Linecode.TRPX1/0AAC nphases=3 units=mile
+~ rmatrix=[ 1.146 0.0953 0.0953 | 0.0953 1.146 0.0953 | 0.0953 0.0953 1.146 ]
+~ xmatrix=[ 1.5014 1.3505 1.3664 | 1.3505 1.5014 1.3664 | 1.3664 1.3664 1.5014 ]
+~ Normamps=205.0
+~ kron=y
+
+New Linecode.TRPX2/0AAC nphases=3 units=mile
+~ rmatrix=[ 0.9348 0.0953 0.0953 | 0.0953 0.9348 0.0953 | 0.0953 0.0953 0.9348 ]
+~ xmatrix=[ 1.4944 1.3404 1.3548 | 1.3404 1.4944 1.3548 | 1.3548 1.3548 1.4944 ]
+~ Normamps=235.0
+~ kron=y
+
+New Linecode.TRPX3/0AAC nphases=3 units=mile
+~ rmatrix=[ 0.7606 0.0953 0.0953 | 0.0953 0.7606 0.0953 | 0.0953 0.0953 0.7606 ]
+~ xmatrix=[ 1.4807 1.3295 1.3427 | 1.3295 1.4807 1.3427 | 1.3427 1.3427 1.4807 ]
+~ Normamps=275.0
+~ kron=y
+
+New Linecode.TRPX4/0AAC nphases=3 units=mile
+~ rmatrix=[ 0.6228 0.0953 0.0953 | 0.0953 0.6228 0.0953 | 0.0953 0.0953 0.6228 ]
+~ xmatrix=[ 1.466 1.318 1.3299 | 1.318 1.466 1.3299 | 1.3299 1.3299 1.466 ]
+~ Normamps=315.0
+~ kron=y
+

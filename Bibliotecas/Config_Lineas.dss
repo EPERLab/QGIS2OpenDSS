@@ -1,0 +1,332 @@
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Espaciamiento de conductores  
+
+ new LineSpacing.1F_3WIRE nconds=3 nphases=2 units=m x=[0.20 0.20 0.20]   h=[6.7 6.90 7.1]
+ new LineSpacing.3F_4WIRE nconds=4 nphases=3 units=m x=[0.20 0.20 0.20 0.20] h=[6.7 6.90 7.1 7.3]
+ 
+
+ new LineSpacing.1F_MTM nconds=2 nphases=1 units=m x=[0 0.20]   h=[11.7 7.1]
+ new LineSpacing.2F_MTB nconds=3 nphases=2 units=m x=[-0.95 0.95 0.20] h=[11.1 11.1 7.1]  
+ new LineSpacing.3F_MTH nconds=4 nphases=3 units=m x=[1.45 0.50 -0.45 0.20] h=[11.1 11.1 11.1 7.1]
+ new LineSpacing.3F_MTT nconds=4 nphases=3 units=m x=[-1.1 0 1.1 0] h=[10.55 11 10.55 9.4]
+ new LineSpacing.3F_MTV nconds=4 nphases=3 units=m x=[0 0 0 0] h=[10.85 9.65 8.45 7.25]
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Geometría de conductores aéreos en Baja Tensión
+ 
+!  Líneas Baja tensión correctas 
+ 
+ New Linegeometry.1FLV14CU14CU         nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_14_SLD CU_14_SLD CU_14_SLD]  Reduce=Y
+ New Linegeometry.1FLV6AAC6AAC         nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAC_6_7STR AAC_6_7STR AAC_6_7STR]  Reduce=Y
+ New Linegeometry.1FLV4CU4CU           nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_4_SLD CU_4_SLD CU_4_SLD]  Reduce=Y
+ New Linegeometry.1FLV1/0CU1/0CU       nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_1/0_7STR CU_1/0_7STR CU_1/0_7STR]  Reduce=Y
+ New Linegeometry.1FLV4AAC4AAC         nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAC_4_7STR AAC_4_7STR AAC_4_7STR]  Reduce=Y
+ New Linegeometry.1FLV2AAC2AAC         nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAC_2_7STR AAC_2_7STR AAC_2_7STR]  Reduce=Y
+ New Linegeometry.1FLV2AAAC3/0AAC      nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAAC_2_7STR AAAC_2_7STR AAC_3/0_7STR]  Reduce=Y
+ New Linegeometry.1FLV2AAC3/0AAC       nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAC_2_7STR AAC_2_7STR AAC_3/0_7STR]  Reduce=Y
+ New Linegeometry.1FLV3/0AAC2AAC       nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAC_3/0_7STR AAC_3/0_7STR AAC_2_7STR]  Reduce=Y
+ New Linegeometry.1FLV3/0AAC3/0AAC     nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAC_3/0_7STR AAC_3/0_7STR AAC_3/0_7STR]  Reduce=Y
+ New Linegeometry.1FLV3/0AAC4CU        nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAC_3/0_7STR AAC_3/0_7STR CU_4_SLD]  Reduce=Y
+ New Linegeometry.1FLV3/0CU3/0CU       nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_3/0_7STR CU_3/0_7STR CU_3/0_7STR]  Reduce=Y
+ New Linegeometry.1FLV4/0AAC4/0AAC     nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAC_4/0_7STR AAC_4/0_7STR AAC_4/0_7STR]  Reduce=Y
+ New Linegeometry.1FLV4/0ACSR4/0CU     nconds=3 nphases=2 spacing=1F_3WIRE wires= [ACSR_4/0_6STR ACSR_4/0_6STR CU_4/0_19STR]  Reduce=Y
+ New Linegeometry.1FLV4/0CU4/0CU       nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_4/0_19STR CU_4/0_19STR CU_4/0_19STR]  Reduce=Y
+
+ 
+!  Líneas Baja tensión incluidas por AAG
+ New Linegeometry.1FLV1/0CU14CU         nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_1/0_7STR  CU_1/0_7STR  CU_14_SLD]     Reduce=Y
+ New Linegeometry.1FLV1/0CU4CU          nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_1/0_7STR  CU_1/0_7STR  CU_4_SLD]      Reduce=Y
+ New Linegeometry.1FLV2/0AAC3/0AAC      nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAC_2/0_7STR AAC_2/0_7STR AAC_3/0_7STR]  Reduce=Y
+ New Linegeometry.1FLV3/0AAC4AAC        nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAC_3/0_7STR AAC_3/0_7STR AAC_4_7STR]    Reduce=Y
+ New Linegeometry.1FLV4/0CU3/0CU        nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_4/0_19STR CU_4/0_19STR CU_3/0_7STR]   Reduce=Y
+ New Linegeometry.1FLV4ACSR4CU          nconds=3 nphases=2 spacing=1F_3WIRE wires= [ACSR_4_6STR  ACSR_4_6STR  CU_4_SLD]      Reduce=Y
+ New Linegeometry.1FLV4CU2AAC           nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_4_SLD     CU_4_SLD     AAC_2_7STR]    Reduce=Y
+ New Linegeometry.1FLV6CU6CU            nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_6_SLD     CU_6_SLD     CU_6_SLD]      Reduce=Y
+ New Linegeometry.1FLV4/0AAAC4/0AAC     nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAAC_4/0_7STR     AAAC_4/0_7STR     AAC_4/0_7STR]  Reduce=Y
+ New Linegeometry.1FLV4/0AAC4/0CU       nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAC_4/0_7STR AAC_4/0_7STR CU_4/0_19STR]  Reduce=Y
+ New Linegeometry.1FLV4/0CU4/0AAC       nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_4/0_19STR CU_4/0_19STR AAC_4/0_7STR]  Reduce=Y
+ New Linegeometry.1FLV500CU500CU        nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_500_37STR CU_500_37STR CU_500_37STR]  Reduce=Y
+ New Linegeometry.1FLV500CU4/0CU        nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_500_37STR CU_500_37STR CU_4/0_19STR]  Reduce=Y
+ New Linegeometry.3FLV2AAC2AAC          nconds=4 nphases=3 spacing=3F_4WIRE wires= [AAC_2_7STR AAC_2_7STR AAC_2_7STR AAC_2_7STR] Reduce=Y
+ New Linegeometry.3FLV6AAC6AAC          nconds=4 nphases=3 spacing=3F_4WIRE wires= [AAC_6_7STR AAC_6_7STR AAC_6_7STR AAC_6_7STR] Reduce=Y
+ New Linegeometry.3FLV4/0CU4/0CU        nconds=4 nphases=3 spacing=3F_4WIRE wires= [CU_4/0_19STR CU_4/0_19STR CU_4/0_19STR CU_4/0_19STR] Reduce=Y
+ 
+
+! Lineas Baja tension MAJJ Venecia
+New Linegeometry.1FLV1/0AAAC2AAAC    nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAAC_1/0_7STR AAAC_1/0_7STR AAAC_2_7STR ] Reduce=Y
+New Linegeometry.1FLV4/0AAAC1/0AAAC    nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAAC_4/0_7STR AAAC_4/0_7STR AAAC_1/0_7STR ] Reduce=Y
+New Linegeometry.3FLV1/0AAAC2AAAC        nconds=4 nphases=3 spacing=3F_4WIRE wires= [AAAC_1/0_7STR AAAC_1/0_7STR AAAC_1/0_7STR AAAC_2_7STR ] Reduce=Y
+ 
+ 
+!!Líneas de Baja tensión subterráneas faltantes.
+
+!New Linegeometry.1FLV1/0CU1/0CU_PVC     nconds=3 nphases=2 spacing=1F_3WIRE_SUB wires= [CU_1/0_7STR  CU_1/0_7STR  CU_1/0_7STR]   Reduce=Y 
+!New Linegeometry.1FLV250CU250CU_PVC     nconds=3 nphases=2 spacing=1F_3WIRE_SUB wires= [CU_250_19STR CU_250_19STR CU_250_19STR]  Reduce=Y
+!New Linegeometry.1FLV14CU14CU_PVC       nconds=3 nphases=2 spacing=1F_3WIRE_SUB wires= [CU_14_SLD    CU_14_SLD    CU_14_SLD]     Reduce=Y 
+!New Linegeometry.1FLV2CU2CU_PVC         nconds=3 nphases=2 spacing=1F_3WIRE_SUB wires= [CU_2_7STR    CU_2_7STR    CU_2_7STR]     Reduce=Y
+!New Linegeometry.1FLV3/0CU1/0CU_PVC     nconds=3 nphases=2 spacing=1F_3WIRE_SUB wires= [CU_3/0_7STR  CU_3/0_7STR  CU_1/0_7STR]   Reduce=Y
+!New Linegeometry.3FLV4/0AAC4/0AAC       nconds=4 nphases=3 spacing=3F_4WIRE wires= [AAC_4/0_7STR AAC_4/0_7STR AAC_4/0_7STR AAC_4/0_7STR] Reduce=Y
+!New Linegeometry.3FLV2CU2CU_PVC         nconds=4 nphases=3 spacing=3F_4WIRE_SUB wires= [CU_2_7STR    CU_2_7STR    CU_2_7STR    CU_2_7STR]     Reduce=Y
+New Linegeometry.3FLV3/0AAC3/0AAC       nconds=4 nphases=3 spacing=3F_4WIRE wires= [AAC_3/0_7STR AAC_3/0_7STR AAC_3/0_7STR  AAC_3/0_7STR]  Reduce=Y
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Geometría de conductores aéreos en Media Tensión
+
+! Líneas monofásicas MT correcto
+ New Linegeometry.1FMV4CU3/0AAC_M     nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_4_SLD     AAC_3/0_7STR]  Reduce=Y
+ New Linegeometry.1FMV3/0CU3/0AAC_M   nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_3/0_7STR AAC_3/0_7STR]  Reduce=Y
+ New Linegeometry.1FMV4CU4CU_M        nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_4_SLD     CU_4_SLD]      Reduce=Y
+ New Linegeometry.1FMV4CU2AAC_M       nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_4_SLD      AAC_2_7STR]   Reduce=Y
+ New Linegeometry.1FMV2AAC2AAC_M      nconds=2 nphases=1 spacing=1F_MTM  wires= [AAC_2_7STR      AAC_2_7STR] Reduce=Y
+ New Linegeometry.1FMV2AAC3/0AAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAC_2_7STR      AAC_3/0_7STR] Reduce=Y
+
+! Geometría de conductores faltantes para circuito JASEC 
+New Linegeometry.3FMV336AAAC1/0AAAC_T    nconds=4 nphases=3 spacing=3F_MTT  wires= [AAAC_336_19STR     AAAC_336_19STR     AAAC_336_19STR     AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.3FMV2/0AAAC1/0AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_2/0_7STR     AAAC_2/0_7STR     AAAC_2/0_7STR     AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.3FMV336AAAC1/0AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_336_19STR     AAAC_336_19STR     AAAC_336_19STR     AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.3FMV394AAAC1/0AAAC_T    nconds=4 nphases=3 spacing=3F_MTT  wires= [AAAC_394_19STR     AAAC_394_19STR     AAAC_394_19STR     AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.3FMV394AAAC1/0AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_394_19STR     AAAC_394_19STR     AAAC_394_19STR     AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.3FMV1/0AAAC1/0AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_1/0_7STR     AAAC_1/0_7STR     AAAC_1/0_7STR     AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.1FMV1/0CU1/0CU_M       nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_1/0_7STR     CU_1/0_7STR]  Reduce=Y
+New Linegeometry.2FMV1/0AAAC2AAAC_B    nconds=3 nphases=2 spacing=2F_MTB  wires= [AAAC_1/0_7STR     AAAC_1/0_7STR      AAAC_2_7STR]  Reduce=Y
+New Linegeometry.3FMV1/0AAAC2AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_1/0_7STR     AAAC_1/0_7STR     AAAC_1/0_7STR     AAAC_2_7STR]  Reduce=Y
+New Linegeometry.3FMV1/0AAAC2AAAC_T    nconds=4 nphases=3 spacing=3F_MTT  wires= [AAAC_1/0_7STR     AAAC_1/0_7STR     AAAC_1/0_7STR     AAAC_2_7STR]  Reduce=Y
+New Linegeometry.3FMV4/0AAAC1/0AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_4/0_7STR     AAAC_4/0_7STR     AAAC_4/0_7STR     AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.3FMV2/0AAAC1/0AAAC_T    nconds=4 nphases=3 spacing=3F_MTT  wires= [AAAC_2/0_7STR     AAAC_2/0_7STR     AAAC_2/0_7STR     AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.1FMV1/0AAAC1/0CU_M       nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_1/0_7STR     CU_1/0_7STR]  Reduce=Y
+New Linegeometry.3FMV2AAAC2AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_2_7STR     AAAC_2_7STR     AAAC_2_7STR     AAAC_2_7STR]  Reduce=Y
+New Linegeometry.3FMV336AAAC2AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_336_19STR     AAAC_336_19STR     AAAC_336_19STR     AAAC_2_7STR]  Reduce=Y
+New Linegeometry.3FMV336AAAC2/0AAAC_T    nconds=4 nphases=3 spacing=3F_MTT  wires= [AAAC_336_19STR     AAAC_336_19STR     AAAC_336_19STR     AAAC_2/0_7STR]  Reduce=Y
+New Linegeometry.3FMV3/0AAAC1/0AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_3/0_7STR     AAAC_3/0_7STR     AAAC_3/0_7STR     AAAC_1/0_7STR]  Reduce=Y
+
+
+ 
+! Líneas monofásicas MT incluidas por AAG
+ New Linegeometry.1FMV3/0AAC3/0AAC_M  nconds=2 nphases=1 spacing=1F_MTM  wires= [AAC_3/0_7STR AAC_3/0_7STR]  Reduce=Y
+ New Linegeometry.1FMV4AAC3/0AAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAC_4_7STR     AAC_3/0_7STR]  Reduce=Y
+ New Linegeometry.1FMV4CU4AAC_M       nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_4_SLD     AAC_4_7STR]  Reduce=Y
+ New Linegeometry.1FMV4CU6CU_M        nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_4_SLD     CU_6_SLD]  Reduce=Y
+ New Linegeometry.1FMV6CU3/0AAC_M     nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_6_SLD     AAC_3/0_7STR]  Reduce=Y 
+ New Linegeometry.1FMV4/0AAC4/0AAC_M  nconds=2 nphases=1 spacing=1F_MTM  wires= [AAC_4/0_7STR     AAC_4/0_7STR]  Reduce=Y
+ 
+ 
+! Líneas MT incluidas por AGL
+New Linegeometry.1FMV1/0AAAC1/0AAAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_1/0_7STR     AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.3FMV559AAAC4/0AAAC_T    nconds=4 nphases=3 spacing=3F_MTT  wires= [AAAC_559_19STR  AAAC_559_19STR AAAC_559_19STR AAAC_4/0_7STR] Reduce=Y
+New Linegeometry.3FMV4/0AAAC1/0AAAC_T    nconds=4 nphases=3 spacing=3F_MTT  wires= [AAAC_4/0_7STR AAAC_4/0_7STR AAAC_4/0_7STR AAAC_1/0_7STR] Reduce=Y
+New Linegeometry.1FMV4AAAC4AAAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_4_7STR     AAAC_4_7STR]  Reduce=Y
+New Linegeometry.3FMV1/0AAAC1/0AAAC_T    nconds=4 nphases=3 spacing=3F_MTT  wires= [AAAC_1/0_7STR  AAAC_1/0_7STR AAAC_1/0_7STR AAAC_1/0_7STR] Reduce=Y
+New Linegeometry.1FMV4CU2CU_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_4_SLD     CU_2_7STR]  Reduce=Y
+New Linegeometry.1FMV1/0AAAC3/0AAAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_1/0_7STR     AAAC_3/0_7STR]  Reduce=Y
+New Linegeometry.1FMV3/0AAAC1/0AAAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_3/0_7STR     AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.1FMV3/0AAAC3/0AAAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_3/0_7STR     AAAC_3/0_7STR]  Reduce=Y
+New Linegeometry.1FMV3/0AAAC1/0CU_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_3/0_7STR     CU_1/0_7STR]  Reduce=Y
+New Linegeometry.1FMV1/0AAAC4CU_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_1/0_7STR     CU_4_SLD]  Reduce=Y
+New Linegeometry.1FMV394AAAC1/0AAAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_394_19STR  AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.1FMV1/0CU3/0AAAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_1/0_7STR     AAAC_3/0_7STR]  Reduce=Y
+New Linegeometry.1FMV1/0CU1/0AAAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_1/0_7STR     AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.1FMV3/0AAAC2CU_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_3/0_7STR     CU_2_7STR]  Reduce=Y
+New Linegeometry.1FMV3/0ACSR3/0ACSR_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [ACSR_3/0_6STR  ACSR_3/0_6STR]  Reduce=Y
+New Linegeometry.1FMV1/0CU4CU_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_1/0_7STR  CU_4_SLD]  Reduce=Y
+New Linegeometry.1FMV6CU6CU_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_6_SLD     CU_6_SLD]  Reduce=Y
+New Linegeometry.1FMV4CU1/0AAAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_4_SLD     AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.1FMV300CU300CU_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_300_19STR  CU_300_19STR]  Reduce=Y
+New Linegeometry.1FMV1/0AAAC1/0AAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_1/0_7STR     AAC_1/0_7STR]  Reduce=Y
+New Linegeometry.1FMV4/0CU4/0CU_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_4/0_19STR  CU_4/0_19STR]  Reduce=Y
+New Linegeometry.1FMV4AAAC4CU_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_4_7STR  CU_4_SLD]  Reduce=Y
+New Linegeometry.1FMV4CU1/0CU_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_4_SLD  CU_1/0_19STR]  Reduce=Y
+New Linegeometry.1FMV1/0AAAC4AAAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_1/0_7STR  AAAC_4_7STR]  Reduce=Y
+New Linegeometry.1FMV4CU3/0AAAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_4_SLD  AAAC_3/0_7STR]  Reduce=Y
+New Linegeometry.2FMV1/0AAAC1/0ACSR_B    nconds=3 nphases=2 spacing=2F_MTB  wires= [AAAC_1/0_7STR     AAAC_1/0_7STR      ACSR_1/0_6STR]  Reduce=Y
+New Linegeometry.2FMV394AAAC394AAAC_B    nconds=3 nphases=2 spacing=2F_MTB  wires= [AAAC_394_19STR     AAAC_394_19STR      AAAC_394_19STR]  Reduce=Y
+New Linegeometry.2FMV3/0AAAC1/0AAAC_B    nconds=3 nphases=2 spacing=2F_MTB  wires= [AAAC_3/0_7STR     AAAC_3/0_7STR      AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.2FMV4CU4CU_B    nconds=3 nphases=2 spacing=2F_MTB  wires= [CU_4_SLD  CU_4_SLD  CU_4_SLD]  Reduce=Y
+New Linegeometry.2FMV3/0AAAC3/0AAAC_B    nconds=3 nphases=2 spacing=2F_MTB  wires= [AAAC_3/0_7STR     AAAC_3/0_7STR      AAAC_3/0_7STR]  Reduce=Y
+New Linegeometry.2FMV4CU3/0AAAC_B    nconds=3 nphases=2 spacing=2F_MTB  wires= [CU_4_SLD  CU_4_SLD  AAAC_3/0_7STR]  Reduce=Y
+New Linegeometry.2FMV3/0AAAC1/0CU_B    nconds=3 nphases=2 spacing=2F_MTB  wires= [AAAC_3/0_7STR     AAAC_3/0_7STR      CU_1/0_7STR]  Reduce=Y
+New Linegeometry.2FMV1/0CU1/0CU_B    nconds=3 nphases=2 spacing=2F_MTB  wires= [CU_1/0_7STR     CU_1/0_7STR      CU_1/0_7STR]  Reduce=Y
+New Linegeometry.2FMV1/0ACSR3/0ACSR_B    nconds=3 nphases=2 spacing=2F_MTB  wires= [ACSR_1/0_6STR     ACSR_1/0_6STR      ACSR_3/0_6STR]  Reduce=Y
+New Linegeometry.3FMV1/0CU1/0CU_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [CU_1/0_7STR  CU_1/0_7STR  CU_1/0_7STR  CU_1/0_7STR] Reduce=Y
+New Linegeometry.3FMV3/0AAAC3/0AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_3/0_7STR     AAAC_3/0_7STR  AAAC_3/0_7STR     AAAC_3/0_7STR] Reduce=Y
+New Linegeometry.3FMV1/0CU3/0CU_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [CU_1/0_7STR  CU_1/0_7STR  CU_1/0_7STR  CU_3/0_7STR] Reduce=Y
+New Linegeometry.3FMV394AAAC3/0AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_394_19STR     AAAC_394_19STR  AAAC_394_19STR     AAAC_3/0_7STR] Reduce=Y
+New Linegeometry.3FMV1/0CU1/0AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [CU_1/0_7STR  CU_1/0_7STR  CU_1/0_7STR  AAAC_1/0_7STR] Reduce=Y
+New Linegeometry.3FMV1/0CU2AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [CU_1/0_7STR  CU_1/0_7STR  CU_1/0_7STR  AAAC_2_7STR] Reduce=Y
+New Linegeometry.3FMV394AAAC4CU_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_394_19STR  AAAC_394_19STR  AAAC_394_19STR CU_4_SLD] Reduce=Y
+New Linegeometry.3FMV394AAAC394AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_394_19STR  AAAC_394_19STR  AAAC_394_19STR AAAC_394_19STR] Reduce=Y
+New Linegeometry.3FMV3/0AAAC1/0CU_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_3/0_7STR     AAAC_3/0_7STR  AAAC_3/0_7STR     CU_1/0_7STR] Reduce=Y
+New Linegeometry.3FMV394AAAC2AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_394_19STR  AAAC_394_19STR  AAAC_394_19STR AAAC_2_7STR] Reduce=Y
+New Linegeometry.3FMV3/0ACSR3/0ACSR_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [ACSR_3/0_6STR  ACSR_3/0_6STR  ACSR_3/0_6STR  ACSR_3/0_6STR] Reduce=Y
+New Linegeometry.3FMV1/0AAAC4CU_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_1/0_7STR  AAAC_1/0_7STR  AAAC_1/0_7STR  CU_4_SLD] Reduce=Y
+New Linegeometry.3FMV1/0AAAC3/0AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_1/0_7STR  AAAC_1/0_7STR  AAAC_1/0_7STR  AAAC_3/0_7STR] Reduce=Y
+New Linegeometry.3FMV1/0AAAC4AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_1/0_7STR  AAAC_1/0_7STR  AAAC_1/0_7STR  AAAC_4_7STR] Reduce=Y
+New Linegeometry.3FMV394AAAC1/0CU_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_394_19STR  AAAC_394_19STR  AAAC_394_19STR  CU_1/0_7STR] Reduce=Y
+New Linegeometry.3FMV3/0AAAC394AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_3/0_7STR  AAAC_3/0_7STR  AAAC_3/0_7STR AAAC_394_19STR] Reduce=Y
+New Linegeometry.3FMV1/0AAAC2CU_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_1/0_7STR  AAAC_1/0_7STR  AAAC_1/0_7STR  CU_2_7STR] Reduce=Y
+New Linegeometry.3FMV1/0CU4CU_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [CU_1/0_7STR  CU_1/0_7STR  CU_1/0_7STR  CU_4_SLD] Reduce=Y
+New Linegeometry.3FMV4AAAC4AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_4_7STR  AAAC_4_7STR  AAAC_4_7STR AAAC_4_7STR] Reduce=Y
+New Linegeometry.3FMV1/0AAAC394AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_1/0_7STR  AAAC_1/0_7STR  AAAC_1/0_7STR AAAC_394_19STR] Reduce=Y
+New Linegeometry.3FMV3/0AAAC4AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_3/0_7STR  AAAC_3/0_7STR  AAAC_3/0_7STR AAAC_4_7STR] Reduce=Y
+New Linegeometry.3FMV3/0AAAC3/0CU_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_3/0_7STR     AAAC_3/0_7STR  AAAC_3/0_7STR     CU_3/0_7STR] Reduce=Y
+New Linegeometry.3FMV4CU3/0AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [CU_4_SLD  CU_4_SLD  CU_4_SLD  AAAC_3/0_7STR] Reduce=Y
+New Linegeometry.3FMV1/0CU4AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [CU_1/0_7STR  CU_1/0_7STR  CU_1/0_7STR  AAAC_4_7STR] Reduce=Y
+New Linegeometry.3FMV394AAAC3/0CU_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_394_19STR  AAAC_394_19STR  AAAC_394_19STR  CU_3/0_7STR] Reduce=Y
+New Linegeometry.3FMV1/0AAAC3/0CU_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_1/0_7STR  AAAC_1/0_7STR  AAAC_1/0_7STR  CU_3/0_7STR] Reduce=Y
+New Linegeometry.3FMV4AAAC1/0AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_4_7STR  AAAC_4_7STR  AAAC_4_7STR AAAC_1/0_7STR] Reduce=Y
+New Linegeometry.3FMV4CU394AAAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [CU_4_SLD  CU_4_SLD  CU_4_SLD  AAAC_394_19STR] Reduce=Y
+New Linegeometry.3FMV1/0AAAC1/0CU_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAAC_1/0_7STR  AAAC_1/0_7STR  AAAC_1/0_7STR  CU_1/0_19STR] Reduce=Y
+New Linegeometry.1FLV2AAAC2AAAC    nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAAC_2_7STR AAAC_2_7STR AAAC_2_7STR]  Reduce=Y
+New Linegeometry.1FLV2/0AAAC2/0AAAC    nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAAC_2/0_7STR AAAC_2/0_7STR AAAC_2/0_7STR]  Reduce=Y
+New Linegeometry.1FLV3/0AAAC3/0AAAC    nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAAC_3/0_7STR AAAC_3/0_7STR AAAC_3/0_7STR]  Reduce=Y
+New Linegeometry.1FLV1/0AAAC1/0AAAC    nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAAC_1/0_7STR AAAC_1/0_7STR AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.1FLV4/0AAAC4/0AAAC    nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAAC_4/0_7STR AAAC_4/0_7STR AAAC_4/0_7STR]  Reduce=Y
+New Linegeometry.1FLV394AAAC394AAAC    nconds=3 nphases=2 spacing=1F_3WIRE wires= [AAAC_394_19STR AAAC_394_19STR AAAC_394_19STR]  Reduce=Y
+New Linegeometry.1FLV2CU2CU            nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_2_7STR  CU_2_7STR  CU_2_7STR]  Reduce=Y
+New Linegeometry.1FLV3/0CU2CU            nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_3/0_7STR  CU_3/0_7STR  CU_2_7STR]  Reduce=Y
+New Linegeometry.1FLV1/0ACSR1/0ACSR    nconds=3 nphases=2 spacing=1F_3WIRE wires= [ACSR_1/0_6STR ACSR_1/0_6STR ACSR_1/0_6STR]  Reduce=Y
+New Linegeometry.1FLV2/0CU2/0CU            nconds=3 nphases=2 spacing=1F_3WIRE wires= [CU_2/0_7STR  CU_2/0_7STR  CU_2/0_7STR]  Reduce=Y
+New Linegeometry.1FLV3/0ACSR3/0ACSR            nconds=3 nphases=2 spacing=1F_3WIRE wires= [ACSR_3/0_6STR  ACSR_3/0_6STR  ACSR_3/0_6STR]  Reduce=Y
+New Linegeometry.3FLV3/0AAAC3/0AAAC    nconds=4 nphases=3 spacing=3F_4WIRE wires= [AAAC_3/0_7STR AAAC_3/0_7STR AAAC_3/0_7STR AAAC_3/0_7STR]  Reduce=Y
+New Linegeometry.3FLV1/0AAAC1/0AAAC    nconds=4 nphases=3 spacing=3F_4WIRE wires= [AAAC_1/0_7STR AAAC_1/0_7STR AAAC_1/0_7STR AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.3FLV1/0CU1/0CU    nconds=4 nphases=3 spacing=3F_4WIRE wires= [CU_1/0_19STR CU_1/0_19STR CU_1/0_19STR CU_1/0_19STR]  Reduce=Y
+New Linegeometry.3FLV3/0CU3/0CU    nconds=4 nphases=3 spacing=3F_4WIRE wires= [CU_3/0_7STR CU_3/0_7STR CU_3/0_7STR CU_3/0_7STR]  Reduce=Y
+New Linegeometry.3FLV2CU2CU    nconds=4 nphases=3 spacing=3F_4WIRE wires= [CU_2_7STR CU_2_7STR CU_2_7STR CU_2_7STR]  Reduce=Y
+New Linegeometry.3FLV4CU4CU    nconds=4 nphases=3 spacing=3F_4WIRE wires= [CU_4_SLD CU_4_SLD CU_4_SLD CU_4_SLD]  Reduce=Y
+New Linegeometry.3FLV2/0AAAC2/0AAAC    nconds=4 nphases=3 spacing=3F_4WIRE wires= [AAAC_2/0_7STR AAAC_2/0_7STR AAAC_2/0_7STR AAAC_2/0_7STR]  Reduce=Y
+New Linegeometry.3FMV477AAC4AAC_H  nconds=4 nphases=3 spacing=3F_MTH  wires= [AAC_477_19STR AAC_477_19STR AAC_477_19STR AAC_4_7STR] Reduce=Y
+New Linegeometry.3FLV4/0AAC4/0AAC    nconds=4 nphases=3 spacing=3F_4WIRE wires= [AAC_4/0_7STR AAC_4/0_7STR AAC_4/0_7STR AAC_4/0_7STR]  Reduce=Y
+
+
+
+!Líneas incluidas por MAJJ
+New Linegeometry.1FMV2AAAC2AAAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_2_7STR     AAAC_2_7STR]  Reduce=Y
+New Linegeometry.2FMV1/0AAAC1/0AAAC_B    nconds=3 nphases=2 spacing=2F_MTB  wires= [AAAC_1/0_7STR     AAAC_1/0_7STR      AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.1FMV4/0AAAC1/0AAAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_4/0_7STR     AAAC_1/0_7STR]  Reduce=Y
+New Linegeometry.3FMV4AAAC4AAAC_T    nconds=4 nphases=3 spacing=3F_MTT  wires= [AAAC_4_7STR     AAAC_4_7STR     AAAC_4_7STR     AAAC_4_7STR]  Reduce=Y
+New Linegeometry.1FMV559AAAC4/0AAAC_M    nconds=2 nphases=1 spacing=1F_MTM  wires= [AAAC_559_19STR     AAAC_4/0_7STR]  Reduce=Y
+New Linegeometry.3FMV2AAAC2AAAC_T    nconds=4 nphases=3 spacing=3F_MTT  wires= [AAAC_2_7STR     AAAC_2_7STR     AAAC_2_7STR     AAAC_2_7STR]  Reduce=Y
+
+ 
+ !Líneas monofásicas MT subterráneas, agregado por AGL
+New Linegeometry.1FMV1/0CU_35EPR   nconds=1 nphases=1 units=m cond=1 cncable=Cu_1/0_19STR_35kv_100N_EPR  x=1   h=-1
+New Linegeometry.1FMV1/0CU_35XLP     nconds=1 nphases=1 units=m cond=1 cncable=Cu_1/0_19STR_35kv_100N_XLPE  x=1   h=-1
+New Linegeometry.1FMV1/0CU_15EPR     nconds=1 nphases=1 units=m  cond=1 cncable=Cu_1/0_19STR_15kv_100N_EPR  x=1   h=-1 
+New Linegeometry.1FMV1/0CU_15XLP     nconds=1 nphases=1 units=m  cond=1 cncable=Cu_1/0_19STR_15kv_100N_XLPE  x=1   h=-1 
+ 
+
+
+! Líneas bifásicas MT incluidas por AAG
+New Linegeometry.2FMV3/0AAC3/0AAC_B  nconds=3 nphases=2 spacing=2F_MTB  wires= [AAC_3/0_7STR AAC_3/0_7STR AAC_3/0_7STR] Reduce=Y
+New Linegeometry.2FMV4CU3/0AAC_B     nconds=3 nphases=2 spacing=2F_MTB  wires= [CU_4_SLD CU_4_SLD AAC_3/0_7STR] Reduce=Y
+New Linegeometry.2FMV4/0AAC4/0AAC_B  nconds=3 nphases=2 spacing=2F_MTB  wires= [AAC_4/0_7STR AAC_4/0_7STR AAC_4/0_7STR] Reduce=Y
+
+ 
+! Líneas trifásicas MT correcto
+New Linegeometry.3FMV477AAC3/0AAC_H  nconds=4 nphases=3 spacing=3F_MTH  wires= [AAC_477_19STR AAC_477_19STR AAC_477_19STR AAC_3/0_7STR] Reduce=Y
+New Linegeometry.3FMV4CU3/0AAC_H     nconds=4 nphases=3 spacing=3F_MTH  wires= [CU_4_SLD CU_4_SLD CU_4_SLD AAC_3/0_7STR] Reduce=Y
+New Linegeometry.3FMV4CU4AAC_H       nconds=4 nphases=3 spacing=3F_MTH  wires= [CU_4_SLD CU_4_SLD CU_4_SLD AAC_4_7STR] Reduce=Y
+New Linegeometry.3FMV4CU4CU_H        nconds=4 nphases=3 spacing=3F_MTH  wires= [CU_4_SLD CU_4_SLD CU_4_SLD CU_4_SLD] Reduce=Y
+New Linegeometry.3FMV3/0AAC3/0AAC_H  nconds=4 nphases=3 spacing=3F_MTH  wires= [AAC_3/0_7STR AAC_3/0_7STR AAC_3/0_7STR AAC_3/0_7STR] Reduce=Y
+New Linegeometry.3FMV2AAC3/0AAC_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [AAC_2_7STR  AAC_2_7STR AAC_2_7STR AAC_3/0_7STR] Reduce=Y
+ 
+ 
+ 
+! Líneas trifásicas MT incluidas por AAG
+New Linegeometry.3FMV266AAC3/0AAC_H  nconds=4 nphases=3 spacing=3F_MTH  wires= [AAC_266.8_7STR AAC_266.8_7STR AAC_266.8_7STR AAC_3/0_7STR] Reduce=Y
+New Linegeometry.3FMV4CU1/0CU_H      nconds=4 nphases=3 spacing=3F_MTH  wires= [CU_4_SLD CU_4_SLD CU_4_SLD CU_1/0_7STR] Reduce=Y
+New Linegeometry.3FMV3/0CU3/0AAC_H   nconds=4 nphases=3 spacing=3F_MTH  wires= [CU_3/0_7STR CU_3/0_7STR CU_3/0_7STR AAC_3/0_7STR] Reduce=Y
+New Linegeometry.3FMV3/0CU4CU_H      nconds=4 nphases=3 spacing=3F_MTH  wires= [CU_3/0_7STR CU_3/0_7STR CU_3/0_7STR CU_4_SLD] Reduce=Y
+New Linegeometry.3FMV3/0CU1/0CU_H    nconds=4 nphases=3 spacing=3F_MTH  wires= [CU_3/0_7STR CU_3/0_7STR CU_3/0_7STR CU_1/0_7STR] Reduce=Y
+ 
+ 
+! Líneas trifásicas MT subterránea incluidas por AGL
+
+New Linegeometry.3FMV1/0CU_15EPR     nconds=3 nphases=3  units=m
+~ cond=1 cncable=Cu_1/0_19STR_15kv_100N_EPR  x=-0.3   h=-1
+~ cond=2 cncable=Cu_1/0_19STR_15kv_100N_EPR  x=0      h=-1
+~ cond=3 cncable=Cu_1/0_19STR_15kv_100N_EPR  x=0.3    h=-1
+
+New Linegeometry.3FMV1/0CU_15XLP     nconds=3 nphases=3   units=m
+~ cond=1 cncable=Cu_1/0_19STR_15kv_100N_XLPE  x=-0.3   h=-1
+~ cond=2 cncable=Cu_1/0_19STR_15kv_100N_XLPE  x=0      h=-1
+~ cond=3 cncable=Cu_1/0_19STR_15kv_100N_XLPE  x=0.3    h=-1
+
+New Linegeometry.3FMV1/0CU_35XLP     nconds=3 nphases=3   units=m
+~ cond=1 cncable=Cu_1/0_19STR_35kv_100N_XLPE  x=-0.3   h=-1
+~ cond=2 cncable=Cu_1/0_19STR_35kv_100N_XLPE  x=0      h=-1
+~ cond=3 cncable=Cu_1/0_19STR_35kv_100N_XLPE  x=0.3    h=-1
+ 
+New Linegeometry.3FMV1/0CU_35EPR     nconds=3 nphases=3   units=m
+~ cond=1 cncable=Cu_1/0_19STR_35kv_100N_EPR  x=-0.3   h=-1
+~ cond=2 cncable=Cu_1/0_19STR_35kv_100N_EPR  x=0      h=-1
+~ cond=3 cncable=Cu_1/0_19STR_35kv_100N_EPR  x=0.3    h=-1
+ 
+New Linegeometry.3FMV500CU_35EPR     nconds=3 nphases=3   units=m
+~ cond=1 cncable=Cu_500_37STR_35kV_100N_EPR  x=-0.3   h=-1
+~ cond=2 cncable=Cu_500_37STR_35kV_100N_EPR  x=0      h=-1
+~ cond=3 cncable=Cu_500_37STR_35kV_100N_EPR  x=0.3    h=-1
+ 
+New Linegeometry.3FMV500CU_35XLP     nconds=3 nphases=3   units=m
+~ cond=1 cncable=Cu_500_37STR_35kv_100N_XLPE  x=-0.3   h=-1
+~ cond=2 cncable=Cu_500_37STR_35kv_100N_XLPE  x=0      h=-1
+~ cond=3 cncable=Cu_500_37STR_35kv_100N_XLPE  x=0.3    h=-1
+ 
+New Linegeometry.3FMV500CU_15XLP     nconds=3 nphases=3   units=m 
+~ cond=1 cncable=Cu_500_37STR_15kv_1/3N_XLPE  x=-0.3   h=-1
+~ cond=2 cncable=Cu_500_37STR_15kv_1/3N_XLPE  x=0      h=-1
+~ cond=3 cncable=Cu_500_37STR_15kv_1/3N_XLPE  x=0.3    h=-1
+ 
+New Linegeometry.1FMV1000CU_35EPR     nconds=1 nphases=1   units=m
+~ cond=1 cncable=Cu_1000_61STR_35kV_1/3N_EPR  x=-0.3   h=-1
+
+New Linegeometry.1FMV1/0AL_35EPR     nconds=1 nphases=1   units=m
+~ cond=1 cncable=Al_1/0_19STR_35kv_100N_EPR  x=-0.3   h=-1
+
+
+
+!!!!! REVISAR
+New Linecode.3FLV1/0AAAC1/0AAAC_XLP nphases=4 units=mile
+~ rmatrix=[ 1.4179 0.0953 0.0953 0.0953 | 0.0953 1.4179 0.0953 0.0953 | 0.0953 0.0953 1.4179 0.0953 | 0.0953 0.0953 0.0953 1.4179 ]
+~ xmatrix=[ 1.5088 1.2718 1.2718 1.2718 | 1.2718 1.5088 1.2718 1.2718 | 1.2718 1.2718 1.5088 1.2718 | 1.2718 1.2718 1.2718 1.5088 ]
+~ Normamps=117.0
+~ kron=y
+
+New Linecode.3FLV3/0AAAC3/0AAAC_XLP nphases=4 units=mile
+~ rmatrix=[ 0.7564 0.0953 0.0953 0.0953 | 0.0953 0.7564 0.0953 0.0953 | 0.0953 0.0953 0.7564 0.0953 | 0.0953 0.0953 0.0953 0.7564 ]
+~ xmatrix=[ 1.4807 1.2452 1.2452 1.2452 | 1.2452 1.4807 1.2452 1.2452 | 1.2452 1.2452 1.4807 1.2452 | 1.2452 1.2452 1.2452 1.4807 ]
+~ Normamps=175.0
+~ kron=y
+
+New Linecode.1FLV1/0AAAC1/0AAAC_XLP nphases=3 units=mile  !!!! XLPE
+~ rmatrix=[ 1.4179 0.0953 0.0953 | 0.0953 1.4179 0.0953 | 0.0953 0.0953 1.4179 ]
+~ xmatrix=[ 1.5088 1.2718 1.2718 | 1.2718 1.5088 1.2718 | 1.2718 1.2718 1.5088 ]
+~ Normamps=117.0
+~ kron=y
+
+New Linecode.1FLV3/0AAAC3/0AAAC_XLP nphases=3 units=mile   !!!! XLPE
+~ rmatrix=[ 0.7564 0.0953 0.0953 | 0.0953 0.7564 0.0953 | 0.0953 0.0953 0.7564 ]
+~ xmatrix=[ 1.4807 1.2452 1.2452 | 1.2452 1.4807 1.2452 | 1.2452 1.2452 1.4807 ]
+~ Normamps=175.0
+~ kron=y
+
+
+!Lineas monofásicas MT aereas agregadas por BMG
+New Linegeometry.1FMV3/0CU4CU_M  nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_3/0_7STR CU_4_SLD]  Reduce=Y
+New Linegeometry.1FMV3/0AAC4CU_M  nconds=2 nphases=1 spacing=1F_MTM  wires= [AAC_3/0_7STR CU_4_SLD]  Reduce=Y
+New Linegeometry.1FMV4CU3/0CU_M  nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_4_SLD CU_3/0_7STR]  Reduce=Y
+New Linegeometry.1FMV3/0AAC3/0AAC_H  nconds=2 nphases=1 spacing=1F_MTM  wires= [AAC_3/0_7STR AAC_3/0_7STR]  Reduce=Y
+New Linegeometry.1FMV3/0AAC1/0AAC_M  nconds=2 nphases=1 spacing=1F_MTM  wires= [AAC_3/0_7STR AAC_1/0_7STR]  Reduce=Y
+New Linegeometry.1FMV4CU3/0AAC_H  nconds=2 nphases=1 spacing=1F_MTM  wires= [CU_4_SLD AAC_3/0_7STR]  Reduce=Y
+
+!Lineas trifásicas MT aereas agregadas por BMG 
+New Linegeometry.3FMV4CU3/0AAC_T  nconds=4 nphases=3 spacing=3F_MTT  wires= [CU_4_SLD CU_4_SLD CU_4_SLD AAC_3/0_7STR]  Reduce=Y
+
+
+ 

@@ -1,0 +1,26 @@
+!Este archivo .dss es generado automáticamente por el script calculoDeMatricesDPXOpenDSS.py
+
+New Linecode.DPX6AAC nphases=2 units=mile
+~ rmatrix=[ 2.767 0.0953 | 0.0953 2.767 ]
+~ xmatrix=[ 1.5648 1.42 | 1.42 1.5648 ]
+~ Normamps=85.0
+~ kron=y
+
+New Linecode.DPX4AAC nphases=2 units=mile
+~ rmatrix=[ 1.146 0.0953 | 0.0953 1.146 ]
+~ xmatrix=[ 1.5014 1.3707 | 1.3707 1.5014 ]
+~ Normamps=115.0
+~ kron=y
+
+New Linecode.DPX2AAC nphases=2 units=mile
+~ rmatrix=[ 0.9348 0.0953 | 0.0953 0.9348 ]
+~ xmatrix=[ 1.4944 1.3587 | 1.3587 1.4944 ]
+~ Normamps=150.0
+~ kron=y
+
+New Linecode.DPX1/0AAC nphases=2 units=mile
+~ rmatrix=[ 0.7606 0.0953 | 0.0953 0.7606 ]
+~ xmatrix=[ 1.4807 1.3427 | 1.3427 1.4807 ]
+~ Normamps=205.0
+~ kron=y
+

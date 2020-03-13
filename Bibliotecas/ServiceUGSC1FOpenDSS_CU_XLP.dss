@@ -1,0 +1,122 @@
+!Este archivo .dss es generado automáticamente por el script calculoDeMatrices1FOpenDSS.py
+
+New Linecode.1FLV8CU8CU_XLP nphases=3 units=mile
+~ rmatrix=[ 3.4782 0.0953 0.0953 | 0.0953 3.4782 0.0953 | 0.0953 0.0953 3.4782 ]
+~ xmatrix=[ 1.6213 1.4251 1.4251 | 1.4251 1.6213 1.4251 | 1.4251 1.4251 1.6213 ]
+~ Normamps=55.0
+~ kron=y
+
+New Linecode.1FLV6CU6CU_XLP nphases=3 units=mile
+~ rmatrix=[ 2.2245 0.0953 0.0953 | 0.0953 2.2245 0.0953 | 0.0953 0.0953 2.2245 ]
+~ xmatrix=[ 1.5931 1.4088 1.4088 | 1.4088 1.5931 1.4088 | 1.4088 1.4088 1.5931 ]
+~ Normamps=75.0
+~ kron=y
+
+New Linecode.1FLV4CU4CU_XLP nphases=3 units=mile
+~ rmatrix=[ 1.4335 0.0953 0.0953 | 0.0953 1.4335 0.0953 | 0.0953 0.0953 1.4335 ]
+~ xmatrix=[ 1.5645 1.391 1.391 | 1.391 1.5645 1.391 | 1.391 1.391 1.5645 ]
+~ Normamps=95.0
+~ kron=y
+
+New Linecode.1FLV2CU2CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.937 0.0953 0.0953 | 0.0953 0.937 0.0953 | 0.0953 0.0953 0.937 ]
+~ xmatrix=[ 1.5367 1.3718 1.3718 | 1.3718 1.5367 1.3718 | 1.3718 1.3718 1.5367 ]
+~ Normamps=130.0
+~ kron=y
+
+New Linecode.1FLV1CU1CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.7627 0.0953 0.0953 | 0.0953 0.7627 0.0953 | 0.0953 0.0953 0.7627 ]
+~ xmatrix=[ 1.516 1.3523 1.3523 | 1.3523 1.516 1.3523 | 1.3523 1.3523 1.516 ]
+~ Normamps=150.0
+~ kron=y
+
+New Linecode.1FLV1/0CU1/0CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.6243 0.0953 0.0953 | 0.0953 0.6243 0.0953 | 0.0953 0.0953 0.6243 ]
+~ xmatrix=[ 1.5017 1.3406 1.3406 | 1.3406 1.5017 1.3406 | 1.3406 1.3406 1.5017 ]
+~ Normamps=170.0
+~ kron=y
+
+New Linecode.1FLV2/0CU2/0CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.515 0.0953 0.0953 | 0.0953 0.515 0.0953 | 0.0953 0.0953 0.515 ]
+~ xmatrix=[ 1.4876 1.3306 1.3306 | 1.3306 1.4876 1.3306 | 1.3306 1.3306 1.4876 ]
+~ Normamps=195.0
+~ kron=y
+
+New Linecode.1FLV3/0CU3/0CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.4281 0.0953 0.0953 | 0.0953 0.4281 0.0953 | 0.0953 0.0953 0.4281 ]
+~ xmatrix=[ 1.4735 1.3203 1.3203 | 1.3203 1.4735 1.3203 | 1.3203 1.3203 1.4735 ]
+~ Normamps=225.0
+~ kron=y
+
+New Linecode.1FLV4/0CU4/0CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.3592 0.0953 0.0953 | 0.0953 0.3592 0.0953 | 0.0953 0.0953 0.3592 ]
+~ xmatrix=[ 1.4596 1.3096 1.3096 | 1.3096 1.4596 1.3096 | 1.3096 1.3096 1.4596 ]
+~ Normamps=260.0
+~ kron=y
+
+New Linecode.1FLV250CU250CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.3187 0.0953 0.0953 | 0.0953 0.3187 0.0953 | 0.0953 0.0953 0.3187 ]
+~ xmatrix=[ 1.4475 1.2966 1.2966 | 1.2966 1.4475 1.2966 | 1.2966 1.2966 1.4475 ]
+~ Normamps=290.0
+~ kron=y
+
+New Linecode.1FLV300CU300CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.2815 0.0953 0.0953 | 0.0953 0.2815 0.0953 | 0.0953 0.0953 0.2815 ]
+~ xmatrix=[ 1.4364 1.2882 1.2882 | 1.2882 1.4364 1.2882 | 1.2882 1.2882 1.4364 ]
+~ Normamps=320.0
+~ kron=y
+
+New Linecode.1FLV350CU350CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.2546 0.0953 0.0953 | 0.0953 0.2546 0.0953 | 0.0953 0.0953 0.2546 ]
+~ xmatrix=[ 1.4271 1.2811 1.2811 | 1.2811 1.4271 1.2811 | 1.2811 1.2811 1.4271 ]
+~ Normamps=350.0
+~ kron=y
+
+New Linecode.1FLV400CU400CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.2348 0.0953 0.0953 | 0.0953 0.2348 0.0953 | 0.0953 0.0953 0.2348 ]
+~ xmatrix=[ 1.4189 1.2746 1.2746 | 1.2746 1.4189 1.2746 | 1.2746 1.2746 1.4189 ]
+~ Normamps=380.0
+~ kron=y
+
+New Linecode.1FLV500CU500CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.207 0.0953 0.0953 | 0.0953 0.207 0.0953 | 0.0953 0.0953 0.207 ]
+~ xmatrix=[ 1.4054 1.2638 1.2638 | 1.2638 1.4054 1.2638 | 1.2638 1.2638 1.4054 ]
+~ Normamps=430.0
+~ kron=y
+
+New Linecode.1FLV600CU600CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.1884 0.0953 0.0953 | 0.0953 0.1884 0.0953 | 0.0953 0.0953 0.1884 ]
+~ xmatrix=[ 1.3935 1.2513 1.2513 | 1.2513 1.3935 1.2513 | 1.2513 1.2513 1.3935 ]
+~ Normamps=475.0
+~ kron=y
+
+New Linecode.1FLV700CU700CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.1751 0.0953 0.0953 | 0.0953 0.1751 0.0953 | 0.0953 0.0953 0.1751 ]
+~ xmatrix=[ 1.3842 1.2437 1.2437 | 1.2437 1.3842 1.2437 | 1.2437 1.2437 1.3842 ]
+~ Normamps=520.0
+~ kron=y
+
+New Linecode.1FLV750CU750CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.1698 0.0953 0.0953 | 0.0953 0.1698 0.0953 | 0.0953 0.0953 0.1698 ]
+~ xmatrix=[ 1.3799 1.2403 1.2403 | 1.2403 1.3799 1.2403 | 1.2403 1.2403 1.3799 ]
+~ Normamps=535.0
+~ kron=y
+
+New Linecode.1FLV800CU800CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.1651 0.0953 0.0953 | 0.0953 0.1651 0.0953 | 0.0953 0.0953 0.1651 ]
+~ xmatrix=[ 1.376 1.2371 1.2371 | 1.2371 1.376 1.2371 | 1.2371 1.2371 1.376 ]
+~ Normamps=555.0
+~ kron=y
+
+New Linecode.1FLV900CU900CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.1574 0.0953 0.0953 | 0.0953 0.1574 0.0953 | 0.0953 0.0953 0.1574 ]
+~ xmatrix=[ 1.3689 1.2312 1.2312 | 1.2312 1.3689 1.2312 | 1.2312 1.2312 1.3689 ]
+~ Normamps=585.0
+~ kron=y
+
+New Linecode.1FLV1000CU1000CU_XLP nphases=3 units=mile
+~ rmatrix=[ 0.1512 0.0953 0.0953 | 0.0953 0.1512 0.0953 | 0.0953 0.0953 0.1512 ]
+~ xmatrix=[ 1.3625 1.2258 1.2258 | 1.2258 1.3625 1.2258 | 1.2258 1.2258 1.3625 ]
+~ Normamps=615.0
+~ kron=y
+

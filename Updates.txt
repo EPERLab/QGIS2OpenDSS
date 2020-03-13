@@ -1,0 +1,38 @@
+23/05/2017: Se actualizó el módulo de creación de curvas.
+23/05/2017: Se cambió la impresión de líneas de sentencias de los loadshapes.
+23/05/2017: Se agregó un espacio para introducir una capa de generación distribuida.
+
+25/05/2017: Se le agregó el parámetro NormHkVA a TODAS las sentencias de transformadores.
+25/05/2017: Se agregó la opción de modelar el transformador de la subestación como un 
+	    auto-transformador y de NO modelarla. Esto se modificó en la lectura y escritura de la subestación.
+
+29/05/2017 Se agregó el modelado de generadores distribuidos
+29/05/2017 Se movió el "close" del archivo de loadshapes hasta después de la escritura de generación distribuida (buscar como: output_shpdss.close())
+29/05/2017 Se modificó la función "renamePhases" del archivo "phaseOperations.py": Se agregó una variable más llamada "phaseNumberTraf", 
+		ésta es exclusiva de transformadores, y se utiliza en la lectura de datos de transformadores 
+		en vez de 
+			numfase = phaseOperations.renamePhase(trafo1['PHASEDESIG']).get('phaseNumber')
+		se utiliza
+			numfase = phaseOperations.renamePhase(trafo1['PHASEDESIG']).get('phaseNumberTraf')
+
+30/05/2017 Se cambiaron TODOS los "DESCONOCIDO" por "UNKNOWN", en todos los archivos
+30/05/2017 Cuando la tensión del transformador se desconoce se le asigna "UNKNOWN", ésto se cambió en la función "ReaderDataTrafos"
+30/05/2017 En la escritura de GD se cambia el atributo DSSName
+30/05/2017 Se quitó del archivo de salida "OutputQGIS2OpenDSS" las coordenadas y tensiones bases de los buses de media y baja tensión.
+
+13/06/2017 Se modificó para que lea un nuevo atributo llamado TAPSETTING, este se le introduce al tap del transformador
+13/06/2017 Si la carga es residencial kVAr=0.1, si no kVAr=1
+13/06/2017 Se actualizó la biblioteca de conductores
+
+19/06/2017 Se corrigío la escritura de tensión en autotrafo de la subestación
+
+27/06/2017 
+27/06/2017 Se creó la función NewShape
+27/06/2017 Se modificó la lectura de capas, ahora se leen por el nombre
+27/06/2017 Se quitó el clear de los parámetros de entrada (Al inicio de la función run)
+27/06/2017 En la escritura de cargas: si la carga es comercial o industrial kvar=0.3
+
+28/06/2017 Se agrega la opción de conectar los generadores directamente a las líneas de MT
+28/06/2017 Se le incrusta el logo del EperLab a la interfaz del plugin
+
+03/07/2017 La línea de MT conectada a la subestación se llama: "MV"+str(cantFases)+'P'+circuitName+str(n+1)

@@ -1,0 +1,91 @@
+<!DOCTYPE QPH>
+<QPH language="en" sourcelanguage="es">
+<phrase>
+    <source>QGIS2OpenDSS</source>
+    <target></target>
+</phrase>
+<phrase>
+    <source>Seleccione las capas</source>
+    <target>Choose layers</target>
+</phrase>
+<phrase>
+    <source>Generación distribuida BT:</source>
+    <target>Distributed Generation (LV):</target>
+</phrase>
+<phrase>
+    <source>Transformadores:</source>
+    <target>Transformers:</target>
+</phrase>
+<phrase>
+    <source>Sub</source>
+    <target>UG</target>
+</phrase>
+<phrase>
+    <source>Acometidas:</source>
+    <target>Service wire:</target>
+</phrase>
+<phrase>
+    <source>Modelar como Auto-transformador</source>
+    <target>Substation as autotransformer</target>
+</phrase>
+<phrase>
+    <source>...</source>
+    <target></target>
+</phrase>
+<phrase>
+    <source>Ingrese el nombre del circuito</source>
+    <target>Enter the circuit name</target>
+</phrase>
+<phrase>
+    <source>Líneas de baja tensión:</source>
+    <target>LV lines</target>
+</phrase>
+<phrase>
+    <source>Cargas de baja tensión:</source>
+    <target>LV Loads</target>
+</phrase>
+<phrase>
+    <source>No modelar subestación</source>
+    <target>Don&apos;t model substation</target>
+</phrase>
+<phrase>
+    <source>Modelar subestación</source>
+    <target>Model substation</target>
+</phrase>
+<phrase>
+    <source>Subestación:</source>
+    <target>Substation</target>
+</phrase>
+<phrase>
+    <source>Vehículos eléctricos:</source>
+    <target>Electric Vehicles</target>
+</phrase>
+<phrase>
+    <source>Generación distribuida MV:</source>
+    <target>MV Distributed Generation</target>
+</phrase>
+<phrase>
+    <source>Generación distribuida LV:</source>
+    <target>LV Distributed Generation</target>
+</phrase>
+<phrase>
+    <source>Cargas de media tensión:</source>
+    <target>MV Loads</target>
+</phrase>
+<phrase>
+    <source>Líneas de media tensión:</source>
+    <target>MV lines</target>
+</phrase>
+<phrase>
+    <source>Calcular ruta más larga</source>
+    <target>Largest route</target>
+</phrase>
+<phrase>
+    <source>Seleccione la ubicación de los archivos de salida</source>
+    <target>Select the location of output files</target>
+</phrase>
+<phrase>
+    <source>Seleccione la ubicación de los perfiles de carga</source>
+    <target>Select the location of load profiles</target>
+</phrase>
+</QPH>

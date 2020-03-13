@@ -1,0 +1,70 @@
+!Cu_15kV_33n_PVC
+New CNData.Cu_2_7STR_15kv_1/3N_PVC	    Normamps=160	Runits=kft	Rdc=0.159	Rstrand=2.525	GMRUnits=in	GMR=0.106	GmrStrand=0.0250	Radunits=in	DIAM=0.284	DiaIns=0.68	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.05	EpsR=7	k=6
+New CNData.Cu_1_19STR_15kv_1/3N_PVC 	Normamps=187	Runits=kft	Rdc=0.127	Rstrand=2.525	GMRUnits=in	GMR=0.126	GmrStrand=0.0250	Radunits=in	DIAM=0.324	DiaIns=0.71	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.09	EpsR=7	k=7
+New CNData.Cu_1/0_19STR_15kv_1/3N_PVC	Normamps=212	Runits=kft	Rdc=0.100	Rstrand=2.525	GMRUnits=in	GMR=0.141	GmrStrand=0.0250	Radunits=in	DIAM=0.364	DiaIns=0.75	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.13	EpsR=7	k=9
+New CNData.Cu_2/0_19STR_15kv_1/3N_PVC	Normamps=241	Runits=kft	Rdc=0.0795	Rstrand=2.525	GMRUnits=in	GMR=0.159	GmrStrand=0.0250	Radunits=in	DIAM=0.408	DiaIns=0.80	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.17	EpsR=7	k=11
+New CNData.Cu_3/0_19STR_15kv_1/3N_PVC	Normamps=273	Runits=kft	Rdc=0.063	Rstrand=2.525	GMRUnits=in	GMR=0.178	GmrStrand=0.0250	Radunits=in	DIAM=0.458	DiaIns=0.85	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.22	EpsR=7	k=14
+New CNData.Cu_4/0_19STR_15kv_1/3N_PVC	Normamps=309	Runits=kft	Rdc=0.050	Rstrand=2.525	GMRUnits=in	GMR=0.200	GmrStrand=0.0250	Radunits=in	DIAM=0.515	DiaIns=0.90	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.28	EpsR=7	k=18
+New CNData.Cu_250_37STR_15kv_1/3N_PVC	Normamps=336	Runits=kft	Rdc=0.0423	Rstrand=1.588	GMRUnits=in	GMR=0.221	GmrStrand=0.0315	Radunits=in	DIAM=0.561	DiaIns=0.96	InsLayer=0.175	DiaStrand=0.0808	DiaCable=1.37	EpsR=7	k=13
+New CNData.Cu_350_37STR_15kv_1/3N_PVC	Normamps=398	Runits=kft	Rdc=0.0302	Rstrand=1.588	GMRUnits=in	GMR=0.261	GmrStrand=0.0315	Radunits=in	DIAM=0.664	DiaIns=1.06	InsLayer=0.175	DiaStrand=0.0808	DiaCable=1.49	EpsR=7	k=18
+New CNData.Cu_500_37STR_15kv_1/3N_PVC	Normamps=476	Runits=kft	Rdc=0.0192	Rstrand=0.999	GMRUnits=in	GMR=0.313	GmrStrand=0.0397	Radunits=in	DIAM=0.794	DiaIns=1.19	InsLayer=0.175	DiaStrand=0.1019	DiaCable=1.66	EpsR=7	k=17
+New CNData.Cu_750_61STR_15kv_1/3N_PVC	Normamps=547	Runits=kft	Rdc=0.0141	Rstrand=0.999	GMRUnits=in	GMR=0.385	GmrStrand=0.0397	Radunits=in	DIAM=0.974	DiaIns=1.38	InsLayer=0.175	DiaStrand=0.1019	DiaCable=1.94	EpsR=7	k=20
+New CNData.Cu_1000_61STR_15kv_1/3N_PVC	Normamps=620	Runits=kft	Rdc=0.0106	Rstrand=0.999	GMRUnits=in	GMR=0.445	GmrStrand=0.0397	Radunits=in	DIAM=1.124	DiaIns=1.53	InsLayer=0.175	DiaStrand=0.1019	DiaCable=2.12	EpsR=7	k=26
+
+
+!Cu_25kV_33n_PVC
+New CNData.Cu_1_19STR_25kv_1/3N_PVC	    Normamps=189	Runits=kft	Rdc=0.127	Rstrand=2.525	GMRUnits=in	GMR=0.126	GmrStrand=0.0250	Radunits=in	DIAM=0.324	DiaIns=0.89	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.26	EpsR=7	k=7
+New CNData.Cu_1/0_19STR_25kv_1/3N_PVC	Normamps=214	Runits=kft	Rdc=0.100	Rstrand=2.525	GMRUnits=in	GMR=0.141	GmrStrand=0.0250	Radunits=in	DIAM=0.364	DiaIns=0.93	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.30	EpsR=7	k=9
+New CNData.Cu_2/0_19STR_25kv_1/3N_PVC	Normamps=248	Runits=kft	Rdc=0.0795	Rstrand=2.525	GMRUnits=in	GMR=0.159	GmrStrand=0.0250	Radunits=in	DIAM=0.408	DiaIns=0.97	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.34	EpsR=7	k=11
+New CNData.Cu_3/0_19STR_25kv_1/3N_PVC	Normamps=281	Runits=kft	Rdc=0.063	Rstrand=2.525	GMRUnits=in	GMR=0.178	GmrStrand=0.0250	Radunits=in	DIAM=0.458	DiaIns=1.02	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.42	EpsR=7	k=14
+New CNData.Cu_4/0_19STR_25kv_1/3N_PVC	Normamps=317	Runits=kft	Rdc=0.050	Rstrand=2.525	GMRUnits=in	GMR=0.200	GmrStrand=0.0250	Radunits=in	DIAM=0.515	DiaIns=1.08	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.47	EpsR=7	k=18
+New CNData.Cu_250_37STR_25kv_1/3N_PVC	Normamps=344	Runits=kft	Rdc=0.0423	Rstrand=1.588	GMRUnits=in	GMR=0.221	GmrStrand=0.0315	Radunits=in	DIAM=0.561	DiaIns=1.13	InsLayer=0.260	DiaStrand=0.0808	DiaCable=1.56	EpsR=7	k=13
+New CNData.Cu_350_37STR_25kv_1/3N_PVC	Normamps=407	Runits=kft	Rdc=0.0302	Rstrand=1.588	GMRUnits=in	GMR=0.261	GmrStrand=0.0315	Radunits=in	DIAM=0.664	DiaIns=1.24	InsLayer=0.260	DiaStrand=0.0808	DiaCable=1.66	EpsR=7	k=18
+New CNData.Cu_500_37STR_25kv_1/3N_PVC	Normamps=476	Runits=kft	Rdc=0.0192	Rstrand=0.999	GMRUnits=in	GMR=0.313	GmrStrand=0.0397	Radunits=in	DIAM=0.794	DiaIns=1.37	InsLayer=0.260	DiaStrand=0.1019	DiaCable=1.90	EpsR=7	k=17
+New CNData.Cu_750_61STR_25kv_1/3N_PVC	Normamps=565	Runits=kft	Rdc=0.0141	Rstrand=0.999	GMRUnits=in	GMR=0.385	GmrStrand=0.0397	Radunits=in	DIAM=0.974	DiaIns=1.56	InsLayer=0.260	DiaStrand=0.1019	DiaCable=2.14	EpsR=7	k=20
+New CNData.Cu_1000_61STR_25kv_1/3N_PVC	Normamps=625	Runits=kft	Rdc=0.0106	Rstrand=0.999	GMRUnits=in	GMR=0.445	GmrStrand=0.0397	Radunits=in	DIAM=1.124	DiaIns=1.70	InsLayer=0.260	DiaStrand=0.1019	DiaCable=2.29	EpsR=7	k=26
+
+
+!Cu_35kV_33n_PVC
+New CNData.Cu_1/0_19STR_35kv_1/3N_PVC	Normamps=214	Runits=kft	Rdc=0.100	Rstrand=2.525	GMRUnits=in	GMR=0.141	GmrStrand=0.0250	Radunits=in	DIAM=0.364	DiaIns=1.10	InsLayer=0.345	DiaStrand=0.0641	DiaCable=1.50	EpsR=7	k=9
+New CNData.Cu_2/0_19STR_35kv_1/3N_PVC	Normamps=248	Runits=kft	Rdc=0.0795	Rstrand=2.525	GMRUnits=in	GMR=0.159	GmrStrand=0.0250	Radunits=in	DIAM=0.408	DiaIns=1.15	InsLayer=0.345	DiaStrand=0.0641	DiaCable=1.54	EpsR=7	k=11
+New CNData.Cu_3/0_19STR_35kv_1/3N_PVC	Normamps=281	Runits=kft	Rdc=0.063	Rstrand=2.525	GMRUnits=in	GMR=0.178	GmrStrand=0.0250	Radunits=in	DIAM=0.458	DiaIns=1.20	InsLayer=0.345	DiaStrand=0.0641	DiaCable=1.59	EpsR=7	k=14
+New CNData.Cu_4/0_19STR_35kv_1/3N_PVC	Normamps=317	Runits=kft	Rdc=0.050	Rstrand=2.525	GMRUnits=in	GMR=0.200	GmrStrand=0.0250	Radunits=in	DIAM=0.515	DiaIns=1.25	InsLayer=0.345	DiaStrand=0.0641	DiaCable=1.65	EpsR=7	k=18
+New CNData.Cu_250_37STR_35kv_1/3N_PVC	Normamps=344	Runits=kft	Rdc=0.0423	Rstrand=1.588	GMRUnits=in	GMR=0.221	GmrStrand=0.0315	Radunits=in	DIAM=0.561	DiaIns=1.31	InsLayer=0.345	DiaStrand=0.0808	DiaCable=1.80	EpsR=7	k=13
+New CNData.Cu_350_37STR_35kv_1/3N_PVC	Normamps=407	Runits=kft	Rdc=0.0302	Rstrand=1.588	GMRUnits=in	GMR=0.261	GmrStrand=0.0315	Radunits=in	DIAM=0.664	DiaIns=1.41	InsLayer=0.345	DiaStrand=0.0808	DiaCable=1.90	EpsR=7	k=18
+New CNData.Cu_500_37STR_35kv_1/3N_PVC	Normamps=476	Runits=kft	Rdc=0.0192	Rstrand=0.999	GMRUnits=in	GMR=0.313	GmrStrand=0.0397	Radunits=in	DIAM=0.794	DiaIns=1.54	InsLayer=0.345	DiaStrand=0.1019	DiaCable=2.10	EpsR=7	k=17
+New CNData.Cu_750_61STR_35kv_1/3N_PVC	Normamps=565	Runits=kft	Rdc=0.0141	Rstrand=0.999	GMRUnits=in	GMR=0.385	GmrStrand=0.0397	Radunits=in	DIAM=0.974	DiaIns=1.73	InsLayer=0.345	DiaStrand=0.1019	DiaCable=2.32	EpsR=7	k=20
+New CNData.Cu_1000_61STR_35kv_1/3N_PVC	Normamps=625	Runits=kft	Rdc=0.0106	Rstrand=0.999	GMRUnits=in	GMR=0.445	GmrStrand=0.0397	Radunits=in	DIAM=1.124	DiaIns=1.88	InsLayer=0.345	DiaStrand=0.1019	DiaCable=2.47	EpsR=7	k=26
+
+
+!Cu_15kV_100n_PVC
+New CNData.Cu_2_7STR_15kv_100N_PVC	Normamps=160	Runits=kft	Rdc=0.159	Rstrand=2.525	GMRUnits=in	GMR=0.106	GmrStrand=0.0250	Radunits=in	DIAM=0.284	DiaIns=0.68	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.05	EpsR=7	k=16
+New CNData.Cu_1_19STR_15kv_100N_PVC	Normamps=187	Runits=kft	Rdc=0.127	Rstrand=1.588	GMRUnits=in	GMR=0.126	GmrStrand=0.0315	Radunits=in	DIAM=0.324	DiaIns=0.71	InsLayer=0.175	DiaStrand=0.0808	DiaCable=1.12	EpsR=7	k=13
+New CNData.Cu_1/0_19STR_15kv_100N_PVC	Normamps=212	Runits=kft	Rdc=0.100	Rstrand=1.588	GMRUnits=in	GMR=0.141	GmrStrand=0.0315	Radunits=in	DIAM=0.364	DiaIns=0.75	InsLayer=0.175	DiaStrand=0.0808	DiaCable=1.16	EpsR=7	k=16
+New CNData.Cu_2/0_19STR_15kv_100N_PVC	Normamps=241	Runits=kft	Rdc=0.0795	Rstrand=0.999	GMRUnits=in	GMR=0.159	GmrStrand=0.0397	Radunits=in	DIAM=0.408	DiaIns=0.80	InsLayer=0.175	DiaStrand=0.1019	DiaCable=1.25	EpsR=7	k=13
+New CNData.Cu_3/0_19STR_15kv_100N_PVC	Normamps=273	Runits=kft	Rdc=0.063	Rstrand=0.999	GMRUnits=in	GMR=0.178	GmrStrand=0.0397	Radunits=in	DIAM=0.458	DiaIns=0.85	InsLayer=0.175	DiaStrand=0.1019	DiaCable=1.30	EpsR=7	k=16
+New CNData.Cu_4/0_19STR_15kv_100N_PVC	Normamps=309	Runits=kft	Rdc=0.050	Rstrand=0.999	GMRUnits=in	GMR=0.200	GmrStrand=0.0397	Radunits=in	DIAM=0.515	DiaIns=0.90	InsLayer=0.175	DiaStrand=0.1019	DiaCable=1.38	EpsR=7	k=16
+New CNData.Cu_250_37STR_15kv_100N_PVC	Normamps=336	Runits=kft	Rdc=0.0423	Rstrand=0.999	GMRUnits=in	GMR=0.221	GmrStrand=0.0397	Radunits=in	DIAM=0.561	DiaIns=0.96	InsLayer=0.175	DiaStrand=0.1019	DiaCable=1.41	EpsR=7	k=25
+New CNData.Cu_350_37STR_15kv_100N_PVC	Normamps=398	Runits=kft	Rdc=0.0302	Rstrand=0.628	GMRUnits=in	GMR=0.261	GmrStrand=0.0501	Radunits=in	DIAM=0.664	DiaIns=1.06	InsLayer=0.175	DiaStrand=0.1285	DiaCable=1.59	EpsR=7	k=22
+New CNData.Cu_500_37STR_15kv_100N_PVC	Normamps=476	Runits=kft	Rdc=0.0192	Rstrand=0.628	GMRUnits=in	GMR=0.313	GmrStrand=0.0501	Radunits=in	DIAM=0.794	DiaIns=1.19	InsLayer=0.175	DiaStrand=0.1285	DiaCable=1.78	EpsR=7	k=31
+
+
+!Cu_25kV_100n_PVC
+New CNData.Cu_1_19STR_25kv_100N_PVC	Normamps=189	Runits=kft	Rdc=0.127	Rstrand=1.588	GMRUnits=in	GMR=0.126	GmrStrand=0.0315	Radunits=in	DIAM=0.324	DiaIns=0.89	InsLayer=0.260	DiaStrand=0.0808	DiaCable=1.29	EpsR=7	k=13
+New CNData.Cu_1/0_19STR_25kv_100N_PVC	Normamps=214	Runits=kft	Rdc=0.100	Rstrand=1.588	GMRUnits=in	GMR=0.141	GmrStrand=0.0315	Radunits=in	DIAM=0.364	DiaIns=0.93	InsLayer=0.260	DiaStrand=0.0808	DiaCable=1.33	EpsR=7	k=16
+New CNData.Cu_2/0_19STR_25kv_100N_PVC	Normamps=248	Runits=kft	Rdc=0.0795	Rstrand=0.999	GMRUnits=in	GMR=0.159	GmrStrand=0.0397	Radunits=in	DIAM=0.408	DiaIns=0.97	InsLayer=0.260	DiaStrand=0.1019	DiaCable=1.42	EpsR=7	k=13
+New CNData.Cu_3/0_19STR_25kv_100N_PVC	Normamps=281	Runits=kft	Rdc=0.063	Rstrand=0.999	GMRUnits=in	GMR=0.178	GmrStrand=0.0397	Radunits=in	DIAM=0.458	DiaIns=1.02	InsLayer=0.260	DiaStrand=0.1019	DiaCable=1.49	EpsR=7	k=16
+New CNData.Cu_4/0_19STR_25kv_100N_PVC	Normamps=317	Runits=kft	Rdc=0.050	Rstrand=0.999	GMRUnits=in	GMR=0.200	GmrStrand=0.0397	Radunits=in	DIAM=0.515	DiaIns=1.08	InsLayer=0.260	DiaStrand=0.1019	DiaCable=1.57	EpsR=7	k=16
+New CNData.Cu_250_37STR_25kv_100N_PVC	Normamps=344	Runits=kft	Rdc=0.0423	Rstrand=0.999	GMRUnits=in	GMR=0.221	GmrStrand=0.0397	Radunits=in	DIAM=0.561	DiaIns=1.13	InsLayer=0.260	DiaStrand=0.1019	DiaCable=1.60	EpsR=7	k=25
+New CNData.Cu_350_37STR_25kv_100N_PVC	Normamps=407	Runits=kft	Rdc=0.0302	Rstrand=0.628	GMRUnits=in	GMR=0.261	GmrStrand=0.0501	Radunits=in	DIAM=0.664	DiaIns=1.24	InsLayer=0.260	DiaStrand=0.1285	DiaCable=1.82	EpsR=7	k=22
+New CNData.Cu_500_37STR_25kv_100N_PVC	Normamps=476	Runits=kft	Rdc=0.0192	Rstrand=0.628	GMRUnits=in	GMR=0.313	GmrStrand=0.0501	Radunits=in	DIAM=0.794	DiaIns=1.37	InsLayer=0.260	DiaStrand=0.1285	DiaCable=1.95	EpsR=7	k=31
+
+
+!Cu_35kV_100n_PVC
+New CNData.Cu_1/0_19STR_35kv_100N_PVC	Normamps=214	Runits=kft	Rdc=0.100	Rstrand=1.588	GMRUnits=in	GMR=0.141	GmrStrand=0.0315	Radunits=in	DIAM=0.364	DiaIns=1.10	InsLayer=0.345	DiaStrand=0.0808	DiaCable=1.53	EpsR=7	k=16
+New CNData.Cu_2/0_19STR_35kv_100N_PVC	Normamps=248	Runits=kft	Rdc=0.0795	Rstrand=0.999	GMRUnits=in	GMR=0.159	GmrStrand=0.0397	Radunits=in	DIAM=0.408	DiaIns=1.15	InsLayer=0.345	DiaStrand=0.1019	DiaCable=1.62	EpsR=7	k=13
+New CNData.Cu_3/0_19STR_35kv_100N_PVC	Normamps=281	Runits=kft	Rdc=0.063	Rstrand=0.999	GMRUnits=in	GMR=0.178	GmrStrand=0.0397	Radunits=in	DIAM=0.458	DiaIns=1.20	InsLayer=0.345	DiaStrand=0.1019	DiaCable=1.67	EpsR=7	k=16
+New CNData.Cu_4/0_19STR_35kv_100N_PVC	Normamps=317	Runits=kft	Rdc=0.050	Rstrand=0.999	GMRUnits=in	GMR=0.200	GmrStrand=0.0397	Radunits=in	DIAM=0.515	DiaIns=1.25	InsLayer=0.345	DiaStrand=0.1019	DiaCable=1.81	EpsR=7	k=16
+New CNData.Cu_250_37STR_35kv_100N_PVC	Normamps=344	Runits=kft	Rdc=0.0423	Rstrand=0.999	GMRUnits=in	GMR=0.221	GmrStrand=0.0397	Radunits=in	DIAM=0.561	DiaIns=1.31	InsLayer=0.345	DiaStrand=0.1019	DiaCable=1.84	EpsR=7	k=25
+New CNData.Cu_350_37STR_35kv_100N_PVC	Normamps=407	Runits=kft	Rdc=0.0302	Rstrand=0.628	GMRUnits=in	GMR=0.261	GmrStrand=0.0501	Radunits=in	DIAM=0.664	DiaIns=1.41	InsLayer=0.345	DiaStrand=0.1285	DiaCable=2.00	EpsR=7	k=22
+New CNData.Cu_500_37STR_35kv_100N_PVC	Normamps=476	Runits=kft	Rdc=0.0192	Rstrand=0.628	GMRUnits=in	GMR=0.313	GmrStrand=0.0501	Radunits=in	DIAM=0.794	DiaIns=1.54	InsLayer=0.345	DiaStrand=0.1285	DiaCable=2.16	EpsR=7	k=31

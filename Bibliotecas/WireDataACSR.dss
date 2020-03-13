@@ -1,0 +1,77 @@
+
+!Conductores tipo ACSR
+
+!Para  convertir R a ohms/milla multiplicar por 5.28.
+!Para convertir a ohms/km multiplicar por 3.281.
+
+New WireData.ACSR_6_6STR       Rac=0.806      Runits=kft    GMR=0.0064      GMRunits=ft     DIAM=0.198      Radunits=in     Normamps=105
+
+New WireData.ACSR_4_6STR  	   Rac=0.515      Runits=kft 	GMR=0.0080 		GMRunits=ft 	DIAM=0.250		Radunits=in		Normamps=140
+																			
+New WireData.ACSR_4_7STR  	   Rac=0.519      Runits=kft 	GMR=0.0085 		GMRunits=ft 	DIAM=0.257		Radunits=in		Normamps=140
+																			
+New WireData.ACSR_2_6STR  	   Rac=0.332      Runits=kft 	GMR=0.0101 		GMRunits=ft 	DIAM=0.316		Radunits=in		Normamps=184  
+																			
+New WireData.ACSR_2_7STR  	   Rac=0.338      Runits=kft 	GMR=0.0107 		GMRunits=ft 	DIAM=0.325		Radunits=in		Normamps=184 
+																			
+New WireData.ACSR_1_6STR  	   Rac=0.268      Runits=kft 	GMR=0.0113 		GMRunits=ft 	DIAM=0.354		Radunits=in		Normamps=212
+																			
+New WireData.ACSR_1/0_6STR     Rac=0.217      Runits=kft 	GMR=0.0127 		GMRunits=ft 	DIAM=0.398		Radunits=in		Normamps=242
+																			
+New WireData.ACSR_2/0_6STR     Rac=0.176      Runits=kft 	GMR=0.0143 		GMRunits=ft 	DIAM=0.447		Radunits=in		Normamps=276 
+																			
+New WireData.ACSR_3/0_6STR     Rac=0.144      Runits=kft 	GMR=0.0161 		GMRunits=ft 	DIAM=0.502		Radunits=in		Normamps=315   
+																			
+New WireData.ACSR_4/0_6STR     Rac=0.119      Runits=kft 	GMR=0.0180 		GMRunits=ft 	DIAM=0.563		Radunits=in		Normamps=357
+																			
+New WireData.ACSR_266.8_18STR  Rac=0.0787     Runits=kft 	GMR=0.0197 		GMRunits=ft 	DIAM=0.609		Radunits=in		Normamps=449
+																			
+New WireData.ACSR_266.8_22STR  Rac=0.0786     Runits=kft 	GMR=0.0207 		GMRunits=ft 	DIAM=0.624		Radunits=in		Normamps=450     
+																			
+New WireData.ACSR_266.8_24STR  Rac=0.0782 	  Runits=kft 	GMR=0.0212 		GMRunits=ft 	DIAM=0.633		Radunits=in		Normamps=455
+																			
+New WireData.ACSR_266.8_26STR  Rac=0.0779 	  Runits=kft 	GMR=0.0217 		GMRunits=ft 	DIAM=0.642		Radunits=in		Normamps=475     
+																			
+New WireData.ACSR_266.8_30STR  Rac=0.0773 	  Runits=kft 	GMR=0.0227 		GMRunits=ft 	DIAM=0.660		Radunits=in		Normamps=460 
+																			
+New WireData.ACSR_300_26STR    Rac=0.0693 	  Runits=kft 	GMR=0.0230 		GMRunits=ft 	DIAM=0.68		Radunits=in     Normamps=492   
+																			
+New WireData.ACSR_336.4_18STR  Rac=0.0625 	  Runits=kft 	GMR=0.0221 		GMRunits=ft 	DIAM=0.684		Radunits=in		Normamps=519    
+																			
+New WireData.ACSR_336.4_20STR  Rac=0.0626 	  Runits=kft 	GMR=0.0226 		GMRunits=ft 	DIAM=0.692		Radunits=in		Normamps=520  
+																			
+New WireData.ACSR_336.4_22STR  Rac=0.0624 	  Runits=kft 	GMR=0.0232 		GMRunits=ft 	DIAM=0.701		Radunits=in		Normamps=520 
+																			
+New WireData.ACSR_336.4_24STR  Rac=0.0621 	  Runits=kft 	GMR=0.0238 		GMRunits=ft 	DIAM=0.710		Radunits=in		Normamps=525  
+																			
+New WireData.ACSR_336.4_26STR  Rac=0.0618 	  Runits=kft 	GMR=0.0244 		GMRunits=ft 	DIAM=0.720		Radunits=in		Normamps=529  
+																			
+New WireData.ACSR_336.4_30STR  Rac=0.0613 	  Runits=kft 	GMR=0.0255 		GMRunits=ft 	DIAM=0.741		Radunits=in		Normamps=535
+																			
+New WireData.ACSR_397.5_18STR  Rac=0.0529 	  Runits=kft 	GMR=0.0240 		GMRunits=ft 	DIAM=0.743		Radunits=in		Normamps=576
+																			
+New WireData.ACSR_397.5_20STR  Rac=0.0531 	  Runits=kft 	GMR=0.0245 		GMRunits=ft 	DIAM=0.752		Radunits=in		Normamps=575
+																			
+New WireData.ACSR_397.5_22STR  Rac=0.0528 	  Runits=kft 	GMR=0.0252 		GMRunits=ft 	DIAM=0.762		Radunits=in		Normamps=580
+																			
+New WireData.ACSR_397.5_24STR  Rac=0.0526 	  Runits=kft 	GMR=0.0259 		GMRunits=ft 	DIAM=0.772		Radunits=in		Normamps=584
+																			
+New WireData.ACSR_397.5_26STR  Rac=0.0523 	  Runits=kft 	GMR=0.0265 		GMRunits=ft 	DIAM=0.783		Radunits=in		Normamps=587
+																			
+New WireData.ACSR_397.5_30STR  Rac=0.0519 	  Runits=kft 	GMR=0.0277 		GMRunits=ft 	DIAM=0.806		Radunits=in		Normamps=594
+
+New WireData.ACSR_477_18STR    Rac=0.0442 	  Runits=kft 	GMR=0.0263 		GMRunits=ft 	DIAM=0.814		Radunits=in		Normamps=646
+
+New WireData.ACSR_477_24STR    Rac=0.0439 	  Runits=kft 	GMR=0.0283 		GMRunits=ft 	DIAM=0.846		Radunits=in		Normamps=655
+
+New WireData.ACSR_477_26STR    Rac=0.0436 	  Runits=kft 	GMR=0.0290 		GMRunits=ft 	DIAM=0.858		Radunits=in		Normamps=659
+
+New WireData.ACSR_477_30STR    Rac=0.0433 	  Runits=kft 	GMR=0.0304 		GMRunits=ft 	DIAM=0.883		Radunits=in		Normamps=666
+
+New WireData.ACSR_556.5_18STR  Rac=0.0379 	  Runits=kft 	GMR=0.0275 		GMRunits=ft 	DIAM=0.879		Radunits=in		Normamps=711
+
+New WireData.ACSR_556.5__24STR Rac=0.0376 	  Runits=kft 	GMR=0.0275 		GMRunits=ft 	DIAM=0.914		Radunits=in		Normamps=721
+
+New WireData.ACSR_556.5__26STR Rac=0.0375 	  Runits=kft 	GMR=0.0275 		GMRunits=ft 	DIAM=0.927		Radunits=in		Normamps=726
+
+New WireData.ACSR_556.5__30STR Rac=0.0372 	  Runits=kft 	GMR=0.0275 		GMRunits=ft 	DIAM=0.953		Radunits=in		Normamps=734

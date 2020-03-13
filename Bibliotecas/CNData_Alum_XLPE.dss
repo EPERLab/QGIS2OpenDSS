@@ -1,0 +1,81 @@
+!Al_15kV_33n_XLPE
+!New CNData.Al_2_SOL_15kv_1/3N_XLPE	Normamps=125	Runits=kft	Rac=	Rstrand=2.525	GMRUnits=in	GMR=	GmrStrand=0.0250	Radunits=in	DIAM=0.258	DiaIns=0.65	InsLayer=0.175	DiaStrand=0.0641	DiaCable=0.96	EpsR=2.3	k=6
+New CNData.Al_2_7STR_15kv_1/3N_XLPE	Normamps=125	Runits=kft	Rac=0.3182	Rstrand=2.525	GMRUnits=in	GMR=0.106	GmrStrand=0.0250	Radunits=in	DIAM=0.284	DiaIns=0.67	InsLayer=0.175	DiaStrand=0.0641	DiaCable=0.99	EpsR=2.3	k=6
+!New CNData.Al_1_SOL_15kv_1/3N_XLPE	Normamps=146	Runits=kft	Rac=	Rstrand=2.525	GMRUnits=in	GMR=	GmrStrand=0.0250	Radunits=in	DIAM=0.289	DiaIns=0.69	InsLayer=0.175	DiaStrand=0.0641	DiaCable=0.99	EpsR=2.3	k=6
+New CNData.Al_1_19STR_15kv_1/3N_XLPE	Normamps=146	Runits=kft	Rac=0.2527	Rstrand=2.525	GMRUnits=in	GMR=0.119	GmrStrand=0.0250	Radunits=in	DIAM=0.324	DiaIns=0.71	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.03	EpsR=2.3	k=6
+!New CNData.Al_1/0_SOL_15kv_1/3N_XLPE	Normamps=166	Runits=kft	Rac=	Rstrand=2.525	GMRUnits=in	GMR=	GmrStrand=0.0250	Radunits=in	DIAM=0.325	DiaIns=0.72	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.03	EpsR=2.3	k=6
+New CNData.Al_1/0_19STR_15kv_1/3N_XLPE	Normamps=166	Runits=kft	Rac=0.2002	Rstrand=2.525	GMRUnits=in	GMR=0.133	GmrStrand=0.0250	Radunits=in	DIAM=0.364	DiaIns=0.75	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.07	EpsR=2.3	k=6
+New CNData.Al_2/0_19STR_15kv_1/3N_XLPE	Normamps=189	Runits=kft	Rac=0.1587	Rstrand=2.525	GMRUnits=in	GMR=0.15	GmrStrand=0.0250	Radunits=in	DIAM=0.408	DiaIns=0.80	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.11	EpsR=2.3	k=7
+New CNData.Al_3/0_19STR_15kv_1/3N_XLPE	Normamps=214	Runits=kft	Rac=0.1259	Rstrand=2.525	GMRUnits=in	GMR=0.168	GmrStrand=0.0250	Radunits=in	DIAM=0.458	DiaIns=0.85	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.16	EpsR=2.3	k=9
+New CNData.Al_4/0_19STR_15kv_1/3N_XLPE	Normamps=244	Runits=kft	Rac=0.1000	Rstrand=2.525	GMRUnits=in	GMR=0.1896	GmrStrand=0.0250	Radunits=in	DIAM=0.515	DiaIns=0.90	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.22	EpsR=2.3	k=11
+New CNData.Al_250_37STR_15kv_1/3N_XLPE	Normamps=266	Runits=kft	Rac=0.0847	Rstrand=2.525	GMRUnits=in	GMR=0.2172	GmrStrand=0.0250	Radunits=in	DIAM=0.561	DiaIns=0.96	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.27	EpsR=2.3	k=13
+New CNData.Al_350_37STR_15kv_1/3N_XLPE	Normamps=320	Runits=kft	Rac=0.0606	Rstrand=2.525	GMRUnits=in	GMR=0.2568	GmrStrand=0.0250	Radunits=in	DIAM=0.664	DiaIns=1.06	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.39	EpsR=2.3	k=18
+New CNData.Al_500_37STR_15kv_1/3N_XLPE	Normamps=394	Runits=kft	Rac=0.0426	Rstrand=1.588	GMRUnits=in	GMR=0.3072	GmrStrand=0.0315	Radunits=in	DIAM=0.794	DiaIns=1.19	InsLayer=0.176	DiaStrand=0.0808	DiaCable=1.56	EpsR=2.3	k=16
+New CNData.Al_750_61STR_15kv_1/3N_XLPE	Normamps=476	Runits=kft	Rac=0.0286	Rstrand=1.588	GMRUnits=in	GMR=0.3828	GmrStrand=0.0315	Radunits=in	DIAM=0.974	DiaIns=1.40	InsLayer=0.177	DiaStrand=0.0808	DiaCable=1.81	EpsR=2.3	k=24
+New CNData.Al_1000_61STR_15kv_1/3N_XLPE	Normamps=550	Runits=kft	Rac=0.0216	Rstrand=0.999	GMRUnits=in	GMR=0.4416	GmrStrand=0.0397	Radunits=in	DIAM=1.124	DiaIns=1.54	InsLayer=0.178	DiaStrand=0.1019	DiaCable=2.03	EpsR=2.3	k=20
+
+!Al_25kV_33n_XLPE
+!New CNData.Al_1_SOL_25kv_1/3N_XLPE	Normamps=147	Runits=kft	Rac=	Rstrand=2.525	GMRUnits=in	GMR=	GmrStrand=0.0250	Radunits=in	DIAM=0.289	DiaIns=0.86	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.16	EpsR=2.3	k=6
+New CNData.Al_1_19STR_25kv_1/3N_XLPE	Normamps=147	Runits=kft	Rac=0.2527	Rstrand=2.525	GMRUnits=in	GMR=0.119	GmrStrand=0.0250	Radunits=in	DIAM=0.324	DiaIns=0.89	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.20	EpsR=2.3	k=6
+!New CNData.Al_1/0_SOL_25kv_1/3N_XLPE	Normamps=167	Runits=kft	Rac=	Rstrand=2.525	GMRUnits=in	GMR=	GmrStrand=0.0250	Radunits=in	DIAM=0.325	DiaIns=0.89	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.20	EpsR=2.3	k=6
+New CNData.Al_1/0_19STR_25kv_1/3N_XLPE	Normamps=167	Runits=kft	Rac=0.2002	Rstrand=2.525	GMRUnits=in	GMR=0.133	GmrStrand=0.0250	Radunits=in	DIAM=0.364	DiaIns=0.93	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.24	EpsR=2.3	k=6
+!New CNData.Al_2/0_SOL_25kv_1/3N_XLPE	Normamps=194	Runits=kft	Rac=	Rstrand=2.525	GMRUnits=in	GMR=	GmrStrand=0.0250	Radunits=in	DIAM=0.408	DiaIns=0.97	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.28	EpsR=2.3	k=7
+New CNData.Al_3/0_19STR_25kv_1/3N_XLPE	Normamps=220	Runits=kft	Rac=0.1259	Rstrand=2.525	GMRUnits=in	GMR=0.168	GmrStrand=0.0250	Radunits=in	DIAM=0.458	DiaIns=1.02	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.35	EpsR=2.3	k=9
+New CNData.Al_4/0_19STR_25kv_1/3N_XLPE	Normamps=250	Runits=kft	Rac=0.1000	Rstrand=2.525	GMRUnits=in	GMR=0.1896	GmrStrand=0.0250	Radunits=in	DIAM=0.515	DiaIns=1.08	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.41	EpsR=2.3	k=11
+New CNData.Al_250_37STR_25kv_1/3N_XLPE	Normamps=273	Runits=kft	Rac=0.0847	Rstrand=2.525	GMRUnits=in	GMR=0.2172	GmrStrand=0.0250	Radunits=in	DIAM=0.561	DiaIns=1.14	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.46	EpsR=2.3	k=13
+New CNData.Al_350_37STR_25kv_1/3N_XLPE	Normamps=326	Runits=kft	Rac=0.0606	Rstrand=2.525	GMRUnits=in	GMR=0.2568	GmrStrand=0.0250	Radunits=in	DIAM=0.664	DiaIns=1.24	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.56	EpsR=2.3	k=18
+New CNData.Al_500_37STR_25kv_1/3N_XLPE	Normamps=392	Runits=kft	Rac=0.0426	Rstrand=1.588	GMRUnits=in	GMR=0.3072	GmrStrand=0.0315	Radunits=in	DIAM=0.794	DiaIns=1.37	InsLayer=0.260	DiaStrand=0.0808	DiaCable=1.79	EpsR=2.3	k=16
+New CNData.Al_750_37STR_25kv_1/3N_XLPE	Normamps=486	Runits=kft	Rac=0.0286	Rstrand=1.588	GMRUnits=in	GMR=0.3828	GmrStrand=0.0315	Radunits=in	DIAM=0.974	DiaIns=1.56	InsLayer=0.260	DiaStrand=0.0808	DiaCable=2.01	EpsR=2.3	k=24
+New CNData.Al_1000_37STR_25kv_1/3N_XLPE	Normamps=556	Runits=kft	Rac=0.0216	Rstrand=0.999	GMRUnits=in	GMR=0.4416	GmrStrand=0.0397	Radunits=in	DIAM=1.124	DiaIns=1.71	InsLayer=0.260	DiaStrand=0.1019	DiaCable=2.20	EpsR=2.3	k=20
+
+
+!Al_35kV_33n_XLPE
+!New CNData.Al_1/0_SOL_35kv_1/3N_XLPE	Normamps=167	Runits=kft	Rac=	Rstrand=2.525	GMRUnits=in	GMR=	GmrStrand=0.0250	Radunits=in	DIAM=0.325	DiaIns=1.07	InsLayer=0.345	DiaStrand=0.0641	DiaCable=1.39	EpsR=2.3	k=6
+New CNData.Al_1/0_19STR_35kv_1/3N_XLPE	Normamps=167	Runits=kft	Rac=0.2002	Rstrand=2.525	GMRUnits=in	GMR=0.133	GmrStrand=0.0250	Radunits=in	DIAM=0.364	DiaIns=1.10	InsLayer=0.345	DiaStrand=0.0641	DiaCable=1.43	EpsR=2.3	k=6
+New CNData.Al_2/0_19STR_35kv_1/3N_XLPE	Normamps=194	Runits=kft	Rac=0.1587	Rstrand=2.525	GMRUnits=in	GMR=0.15	GmrStrand=0.0250	Radunits=in	DIAM=0.408	DiaIns=1.15	InsLayer=0.345	DiaStrand=0.0641	DiaCable=1.47	EpsR=2.3	k=7
+New CNData.Al_3/0_19STR_35kv_1/3N_XLPE	Normamps=220	Runits=kft	Rac=0.1259	Rstrand=2.525	GMRUnits=in	GMR=0.168	GmrStrand=0.0250	Radunits=in	DIAM=0.458	DiaIns=1.20	InsLayer=0.345	DiaStrand=0.0641	DiaCable=1.52	EpsR=2.3	k=9
+New CNData.Al_4/0_19STR_35kv_1/3N_XLPE	Normamps=250	Runits=kft	Rac=0.1000	Rstrand=2.525	GMRUnits=in	GMR=0.1896	GmrStrand=0.0250	Radunits=in	DIAM=0.515	DiaIns=1.26	InsLayer=0.345	DiaStrand=0.0641	DiaCable=1.58	EpsR=2.3	k=11
+New CNData.Al_250_37STR_35kv_1/3N_XLPE	Normamps=273	Runits=kft	Rac=0.0847	Rstrand=2.525	GMRUnits=in	GMR=0.2172	GmrStrand=0.0250	Radunits=in	DIAM=0.561	DiaIns=1.31	InsLayer=0.345	DiaStrand=0.0641	DiaCable=1.70	EpsR=2.3	k=13
+New CNData.Al_350_37STR_35kv_1/3N_XLPE	Normamps=326	Runits=kft	Rac=0.0606	Rstrand=2.525	GMRUnits=in	GMR=0.2568	GmrStrand=0.0250	Radunits=in	DIAM=0.664	DiaIns=1.41	InsLayer=0.345	DiaStrand=0.0641	DiaCable=1.80	EpsR=2.3	k=18
+New CNData.Al_500_37STR_35kv_1/3N_XLPE	Normamps=392	Runits=kft	Rac=0.0426	Rstrand=1.588	GMRUnits=in	GMR=0.3072	GmrStrand=0.0315	Radunits=in	DIAM=0.794	DiaIns=1.54	InsLayer=0.345	DiaStrand=0.0808	DiaCable=1.99	EpsR=2.3	k=16
+New CNData.Al_750_61STR_35kv_1/3N_XLPE	Normamps=486	Runits=kft	Rac=0.0286	Rstrand=1.588	GMRUnits=in	GMR=0.3828	GmrStrand=0.0315	Radunits=in	DIAM=0.974	DiaIns=1.73	InsLayer=0.345	DiaStrand=0.0808	DiaCable=2.18	EpsR=2.3	k=24
+New CNData.Al_1000_61STR_35kv_1/3N_XLPE	Normamps=556	Runits=kft	Rac=0.0216	Rstrand=0.999	GMRUnits=in	GMR=0.4416	GmrStrand=0.0397	Radunits=in	DIAM=1.124	DiaIns=1.88	InsLayer=0.345	DiaStrand=0.1019	DiaCable=2.37	EpsR=2.3	k=20
+
+
+!Al_15kV_100n_XLPE
+!New CNData.Al_2_SOL_15kv_100N_XLPE	Normamps=125	Runits=kft	Rac=	Rstrand=2.525	GMRUnits=in	GMR=	GmrStrand=0.0250	Radunits=in	DIAM=0.258	DiaIns=0.65	InsLayer=0.175	DiaStrand=0.0641	DiaCable=0.96	EpsR=2.3	k=10
+New CNData.Al_2_7STR_15kv_100N_XLPE	Normamps=125	Runits=kft	Rac=0.3182	Rstrand=2.525	GMRUnits=in	GMR=0.106	GmrStrand=0.0250	Radunits=in	DIAM=0.284	DiaIns=0.67	InsLayer=0.175	DiaStrand=0.0641	DiaCable=0.99	EpsR=2.3	k=10
+!New CNData.Al_1_SOL_15kv_100N_XLPE	Normamps=145	Runits=kft	Rac=	Rstrand=2.525	GMRUnits=in	GMR=	GmrStrand=0.0250	Radunits=in	DIAM=0.289	DiaIns=0.69	InsLayer=0.175	DiaStrand=0.0641	DiaCable=0.99	EpsR=2.3	k=13
+New CNData.Al_1_19STR_15kv_100N_XLPE	Normamps=145	Runits=kft	Rac=0.2527	Rstrand=2.525	GMRUnits=in	GMR=0.119	GmrStrand=0.0250	Radunits=in	DIAM=0.324	DiaIns=0.71	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.03	EpsR=2.3	k=13
+!New CNData.Al_1/0_SOL_15kv_100N_XLPE	Normamps=165	Runits=kft	Rac=	Rstrand=2.525	GMRUnits=in	GMR=	GmrStrand=0.0250	Radunits=in	DIAM=0.325	DiaIns=0.72	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.03	EpsR=2.3	k=16
+New CNData.Al_1/0_19STR_15kv_100N_XLPE	Normamps=165	Runits=kft	Rac=0.2002	Rstrand=2.525	GMRUnits=in	GMR=0.133	GmrStrand=0.0250	Radunits=in	DIAM=0.364	DiaIns=0.75	InsLayer=0.175	DiaStrand=0.0641	DiaCable=1.07	EpsR=2.3	k=16
+New CNData.Al_2/0_19STR_15kv_100N_XLPE	Normamps=188	Runits=kft	Rac=0.1587	Rstrand=1.588	GMRUnits=in	GMR=0.15	GmrStrand=0.0315	Radunits=in	DIAM=0.408	DiaIns=0.80	InsLayer=0.175	DiaStrand=0.0808	DiaCable=1.14	EpsR=2.3	k=13
+New CNData.Al_3/0_19STR_15kv_100N_XLPE	Normamps=213	Runits=kft	Rac=0.1259	Rstrand=1.588	GMRUnits=in	GMR=0.168	GmrStrand=0.0315	Radunits=in	DIAM=0.458	DiaIns=0.80	InsLayer=0.175	DiaStrand=0.0808	DiaCable=1.19	EpsR=2.3	k=16
+New CNData.Al_4/0_19STR_15kv_100N_XLPE	Normamps=241	Runits=kft	Rac=0.1000	Rstrand=0.999	GMRUnits=in	GMR=0.1896	GmrStrand=0.0397	Radunits=in	DIAM=0.515	DiaIns=0.85	InsLayer=0.175	DiaStrand=0.1019	DiaCable=1.29	EpsR=2.3	k=13
+!New CNData.Al_250_37STR_15kv_100N_XLPE	Normamps=??	Runits=kft	Rac=0.0847	Rstrand=0.999	GMRUnits=in	GMR=0.2172	GmrStrand=0.0397	Radunits=in	DIAM=0.561	DiaIns=0.85	InsLayer=0.175	DiaStrand=0.1019	DiaCable=1.35	EpsR=2.3	k=16
+!New CNData.Al_350_37STR_15kv_100N_XLPE	Normamps=??	Runits=kft	Rac=0.0606	Rstrand=0.999	GMRUnits=in	GMR=0.2568	GmrStrand=0.0397	Radunits=in	DIAM=0.664	DiaIns=0.90	InsLayer=0.175	DiaStrand=0.1019	DiaCable=1.49	EpsR=2.3	k=16
+
+
+!Al_25kV_100n_XLPE
+!New CNData.Al_1_SOL_25kv_100N_XLPE	Normamps=147	Runits=kft	Rac=	Rstrand=2.525	GMRUnits=in	GMR=	GmrStrand=0.0250	Radunits=in	DIAM=0.289	DiaIns=0.86	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.16	EpsR=2.3	k=13
+New CNData.Al_1_19STR_25kv_100N_XLPE	Normamps=147	Runits=kft	Rac=0.2527	Rstrand=2.525	GMRUnits=in	GMR=0.119	GmrStrand=0.0250	Radunits=in	DIAM=0.324	DiaIns=0.89	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.20	EpsR=2.3	k=13
+!New CNData.Al_1/0_SOL_25kv_100N_XLPE	Normamps=167	Runits=kft	Rac=	Rstrand=2.525	GMRUnits=in	GMR=	GmrStrand=0.0250	Radunits=in	DIAM=0.325	DiaIns=0.89	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.20	EpsR=2.3	k=16
+New CNData.Al_1/0_19STR_25kv_100N_XLPE	Normamps=167	Runits=kft	Rac=0.2002	Rstrand=2.525	GMRUnits=in	GMR=0.133	GmrStrand=0.0250	Radunits=in	DIAM=0.364	DiaIns=0.93	InsLayer=0.260	DiaStrand=0.0641	DiaCable=1.24	EpsR=2.3	k=16
+!New CNData.Al_2/0_SOL_25kv_100N_XLPE	Normamps=193	Runits=kft	Rac=	Rstrand=1.588	GMRUnits=in	GMR=	GmrStrand=0.0315	Radunits=in	DIAM=0.408	DiaIns=0.97	InsLayer=0.260	DiaStrand=0.0808	DiaCable=1.31	EpsR=2.3	k=13
+New CNData.Al_3/0_19STR_25kv_100N_XLPE	Normamps=218	Runits=kft	Rac=0.1259	Rstrand=1.588	GMRUnits=in	GMR=0.168	GmrStrand=0.0315	Radunits=in	DIAM=0.458	DiaIns=1.02	InsLayer=0.260	DiaStrand=0.0808	DiaCable=1.38	EpsR=2.3	k=16
+New CNData.Al_4/0_19STR_25kv_100N_XLPE	Normamps=247	Runits=kft	Rac=0.1000	Rstrand=0.999	GMRUnits=in	GMR=0.1896	GmrStrand=0.0397	Radunits=in	DIAM=0.515	DiaIns=1.08	InsLayer=0.260	DiaStrand=0.1019	DiaCable=1.48	EpsR=2.3	k=13
+!New CNData.Al_250_37STR_25kv_100N_XLPE	Normamps=??	Runits=kft	Rac=0.0847	Rstrand=0.999	GMRUnits=in	GMR=0.2172	GmrStrand=0.0397	Radunits=in	DIAM=0.561	DiaIns=1.14	InsLayer=0.260	DiaStrand=0.1019	DiaCable=1.54	EpsR=2.3	k=16
+!New CNData.Al_350_37STR_25kv_100N_XLPE	Normamps=??	Runits=kft	Rac=0.0606	Rstrand=0.999	GMRUnits=in	GMR=0.2568	GmrStrand=0.0397	Radunits=in	DIAM=0.664	DiaIns=1.24	InsLayer=0.260	DiaStrand=0.1019	DiaCable=1.72	EpsR=2.3	k=16
+
+
+!Al_35kV_100n_XLPE
+!New CNData.Al_1/0_SOL_35kv_100N_XLPE	Normamps=167	Runits=kft	Rac=	Rstrand=2.525	GMRUnits=in	GMR=	GmrStrand=0.0250	Radunits=in	DIAM=0.325	DiaIns=1.07	InsLayer=0.345	DiaStrand=0.0641	DiaCable=1.39	EpsR=2.3	k=16
+New CNData.Al_1/0_19STR_35kv_100N_XLPE	Normamps=167	Runits=kft	Rac=0.2002	Rstrand=2.525	GMRUnits=in	GMR=0.133	GmrStrand=0.0250	Radunits=in	DIAM=0.364	DiaIns=1.10	InsLayer=0.345	DiaStrand=0.0641	DiaCable=1.43	EpsR=2.3	k=16
+New CNData.Al_2/0_19STR_35kv_100N_XLPE	Normamps=193	Runits=kft	Rac=0.1587	Rstrand=1.588	GMRUnits=in	GMR=0.15	GmrStrand=0.0315	Radunits=in	DIAM=0.408	DiaIns=1.15	InsLayer=0.345	DiaStrand=0.0808	DiaCable=1.51	EpsR=2.3	k=13
+New CNData.Al_3/0_19STR_35kv_100N_XLPE	Normamps=218	Runits=kft	Rac=0.1259	Rstrand=1.588	GMRUnits=in	GMR=0.168	GmrStrand=0.0315	Radunits=in	DIAM=0.458	DiaIns=1.20	InsLayer=0.345	DiaStrand=0.0808	DiaCable=1.56	EpsR=2.3	k=16
+New CNData.Al_4/0_19STR_35kv_100N_XLPE	Normamps=247	Runits=kft	Rac=0.1000	Rstrand=0.999	GMRUnits=in	GMR=0.1896	GmrStrand=0.0397	Radunits=in	DIAM=0.515	DiaIns=1.26	InsLayer=0.345	DiaStrand=0.1019	DiaCable=1.72	EpsR=2.3	k=13
+New CNData.Al_250_37STR_35kv_100N_XLPE	Normamps=200	Runits=kft	Rac=0.0847	Rstrand=0.999	GMRUnits=in	GMR=0.2172	GmrStrand=0.0397	Radunits=in	DIAM=0.561	DiaIns=1.31	InsLayer=0.345	DiaStrand=0.1019	DiaCable=1.77	EpsR=2.3	k=16
+New CNData.Al_350_37STR_35kv_100N_XLPE	Normamps=200	Runits=kft	Rac=0.0606	Rstrand=0.999	GMRUnits=in	GMR=0.2568	GmrStrand=0.0397	Radunits=in	DIAM=0.664	DiaIns=1.41	InsLayer=0.345	DiaStrand=0.1019	DiaCable=1.90	EpsR=2.3	k=16
+
+
+

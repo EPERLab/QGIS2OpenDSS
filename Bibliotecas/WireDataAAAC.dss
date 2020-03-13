@@ -1,0 +1,28 @@
+!Calibre para conductores tipo AAAC
+
+!Calibres referenciados en su equivalente ACSR
+New WireData.AAAC_6_7STR  	   Rac=0.785		Runits=kft 		GMR=0.0060		GMRunits=ft		DIAM=0.198	Radunits=in 	Normamps=107
+
+New WireData.AAAC_4_7STR  	   Rac=0.4928		Runits=kft 		GMR=0.0076		GMRunits=ft		DIAM=0.250	Radunits=in 	Normamps=143
+										
+New WireData.AAAC_2_7STR  	   Rac=0.3098		Runits=kft 		GMR=0.0095		GMRunits=ft		DIAM=0.316	Radunits=in 	Normamps=191
+										
+New WireData.AAAC_1/0_7STR     Rac=0.1947		Runits=kft 		GMR=0.0120		GMRunits=ft		DIAM=0.398	Radunits=in 	Normamps=256
+										
+New WireData.AAAC_2/0_7STR     Rac=0.1545		Runits=kft 		GMR=0.0135		GMRunits=ft		DIAM=0.447	Radunits=in 	Normamps=296
+										
+New WireData.AAAC_3/0_7STR     Rac=0.1227		Runits=kft 		GMR=0.0152		GMRunits=ft		DIAM=0.502	Radunits=in 	Normamps=342
+										
+New WireData.AAAC_4/0_7STR     Rac=0.0973		Runits=kft 		GMR=0.0170		GMRunits=ft		DIAM=0.563	Radunits=in 	Normamps=395
+										
+New WireData.AAAC_266.8_19STR  Rac=0.0769		Runits=kft 		GMR=0.0203		GMRunits=ft		DIAM=0.642	Radunits=in 	Normamps=460
+										
+New WireData.AAAC_336_19STR  Rac=0.0610		Runits=kft 		GMR=0.0227		GMRunits=ft		DIAM=0.720	Radunits=in 	Normamps=532
+										
+New WireData.AAAC_394_19STR  Rac=0.0518		Runits=kft 		GMR=0.0247		GMRunits=ft		DIAM=0.783	Radunits=in 	Normamps=590
+
+New WireData.AAAC_477_19STR    Rac=0.0447		Runits=kft 		GMR=0.0254		GMRunits=ft		DIAM=0.795	Radunits=in 	Normamps=610
+
+New WireData.AAAC_559_19STR  Rac=0.0431		Runits=kft 		GMR=0.0270		GMRunits=ft		DIAM=0.856	Radunits=in 	Normamps=645
+
+New WireData.AAAC_652_19STR  Rac=0.0371		Runits=kft 		GMR=0.0292		GMRunits=ft		DIAM=0.927	Radunits=in 	Normamps=729

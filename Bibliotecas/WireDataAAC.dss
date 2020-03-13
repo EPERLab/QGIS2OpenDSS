@@ -1,0 +1,52 @@
+!! Biblioteca Conductores AAC
+
+new Wiredata.AAC_6_7STR	       GMR=0.00555  DIAM=0.184		 Rac=0.805 	 Normamps=103 	Runits=kft      Radunits=in 	GMRunits=ft
+
+new Wiredata.AAC_4_7STR 	   GMR=0.00700  DIAM=0.232		 Rac=0.506 	 Normamps=138 	Runits=kft 		Radunits=in 	GMRunits=ft
+
+new Wiredata.AAC_2_7STR 	   GMR=0.00883  DIAM=0.292		 Rac=0.318 	 Normamps=185 	Runits=kft 		Radunits=in 	GMRunits=ft
+
+new Wiredata.AAC_1_7STR 	   GMR=0.0099   DIAM=0.328		 Rac=0.252 	 Normamps=214 	Runits=kft 		Radunits=in 	GMRunits=ft
+							
+new Wiredata.AAC_1/0_7STR      GMR=0.0111   DIAM=0.368		 Rac=0.2000	 Normamps=247 	Runits=kft 		Radunits=in 	GMRunits=ft
+
+new Wiredata.AAC_2/0_7STR      GMR=0.0125   DIAM=0.414		 Rac=0.1590	 Normamps=286 	Runits=kft 		Radunits=in 	GMRunits=ft
+
+new Wiredata.AAC_3/0_7STR      GMR=0.0140   DIAM=0.464		 Rac=0.1260	 Normamps=331 	Runits=kft 		Radunits=in 	GMRunits=ft
+
+new Wiredata.AAC_4/0_7STR      GMR=0.0158   DIAM=0.522		 Rac=0.0999	 Normamps=383 	Runits=kft 		Radunits=in 	GMRunits=ft
+							
+new Wiredata.AAC_250_7STR      GMR=0.0171   DIAM=0.567		 Rac=0.0846	 Normamps=425 	Runits=kft 		Radunits=in 	GMRunits=ft
+
+new Wiredata.AAC_250_19STR     GMR=0.0181   DIAM=0.574		 Rac=0.0846	 Normamps=426 	Runits=kft 		Radunits=in 	GMRunits=ft
+							
+new Wiredata.AAC_266.8_7STR    GMR=0.0177   DIAM=0.586		 Rac=0.0793	 Normamps=443 	Runits=kft 		Radunits=in 	GMRunits=ft
+
+new Wiredata.AAC_266.8_19STR   GMR=0.0187   DIAM=0.592		 Rac=0.0793	 Normamps=444 	Runits=kft 		Radunits=in 	GMRunits=ft
+							
+new Wiredata.AAC_300_19STR     GMR=0.0198   DIAM=0.628		 Rac=0.0706	 Normamps=478 	Runits=kft 		Radunits=in 	GMRunits=ft
+
+new Wiredata.AAC_336.4_19STR   GMR=0.0210   DIAM=0.665		 Rac=0.0630	 Normamps=513 	Runits=kft 		Radunits=in 	GMRunits=ft
+
+new Wiredata.AAC_350_19STR     GMR=0.0214   DIAM=0.679		 Rac=0.0605	 Normamps=526 	Runits=kft 		Radunits=in 	GMRunits=ft
+
+new Wiredata.AAC_397.5_19STR   GMR=0.0228   DIAM=0.723		 Rac=0.0534	 Normamps=570 	Runits=kft 		Radunits=in 	GMRunits=ft
+ 
+new Wiredata.AAC_450_19STR     GMR=0.0228   DIAM=0.769		 Rac=0.0472	 Normamps=616 	Runits=kft 		Radunits=in 	GMRunits=ft
+						
+new Wiredata.AAC_477_19STR     GMR=0.0250   DIAM=0.792	     Rac=0.0445	 Normamps=639 	Runits=kft      Radunits=in 	GMRunits=ft	
+		
+new Wiredata.AAC_477_37STR     GMR=0.0254   DIAM=0.795		 Rac=0.0445	 Normamps=639 	Runits=kft      Radunits=in  	GMRunits=ft
+		
+new Wiredata.AAC_500_19STR     GMR=0.0256   DIAM=0.811		 Rac=0.0425	 Normamps=658 	Runits=kft      Radunits=in  	GMRunits=ft
+		
+new Wiredata.AAC_500_37STR     GMR=0.0260   DIAM=0.814		 Rac=0.0425	 Normamps=658 	Runits=kft      Radunits=in  	GMRunits=ft
+		
+new Wiredata.AAC_556.5_19STR   GMR=0.0270   DIAM=0.856		 Rac=0.0382	 Normamps=703 	Runits=kft      Radunits=in  	GMRunits=ft
+		
+new Wiredata.AAC_556.5_37STR   GMR=0.0275   DIAM=0.858		 Rac=0.0382	 Normamps=704 	Runits=kft      Radunits=in  	GMRunits=ft                                                                        
+
+
+
+
+

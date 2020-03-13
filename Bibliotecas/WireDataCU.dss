@@ -1,0 +1,32 @@
+
+! Conductores tipo Cobre
+
+New WireData.CU_14_SLD     Rdc=2.626       Runits=kft 	GMR=0.00208		GMRunits=ft 	DIAM=0.0641		 Radunits=in	 Normamps=20
+
+New WireData.CU_8_SLD      Rdc=0.653       Runits=kft   GMR=0.00416     GMRUnits=ft     DIAM=0.1285      Radunits=in     Normamps=95   
+                              
+New WireData.CU_6_SLD  	   Rdc=0.411       Runits=kft 	GMR=0.00526		GMRunits=ft 	DIAM=0.1620		 Radunits=in	 Normamps=125
+
+New WireData.CU_4_SLD  	   Rdc=0.258       Runits=kft 	GMR=0.00663		GMRunits=ft 	DIAM=0.2043		 Radunits=in	 Normamps=170
+                            
+New WireData.CU_2_SLD  	   Rdc=0.163       Runits=kft 	GMR=0.00836		GMRunits=ft 	DIAM=0.2576		 Radunits=in	 Normamps=225
+
+New WireData.CU_2_7STR     Rdc=0.1660      Runits=kft 	GMR=0.00883		GMRunits=ft 	DIAM=0.2920		 Radunits=in	 Normamps=230
+
+New WireData.CU_1/0_7STR   Rdc=0.1042      Runits=kft   GMR=0.01113     GMRunits=ft     DIAM=0.3680      Radunits=in     Normamps=310
+
+New WireData.CU_1/0_19STR  Rdc=0.1040      Runits=kft   GMR=0.01178     GMRunits=ft     DIAM=0.3730      Radunits=in     Normamps=310
+
+New WireData.CU_2/0_7STR   Rdc=0.08267     Runits=kft   GMR=0.01252     GMRunits=ft     DIAM=0.4140      Radunits=in     Normamps=355
+
+New WireData.CU_3/0_7STR   Rdc=0.06556     Runits=kft   GMR=0.01404     GMRunits=ft     DIAM=0.4640      Radunits=in     Normamps=410
+
+New WireData.CU_4/0_19STR  Rdc=0.05199     Runits=kft   GMR=0.01668     GMRunits=ft     DIAM=0.5280      Radunits=in     Normamps=480
+
+New WireData.CU_250_19STR  Rdc=0.04400     Runits=kft   GMR=0.01813     GMRunits=ft     DIAM=0.5740      Radunits=in     Normamps=530
+
+New WireData.CU_300_19STR  Rdc=0.03667     Runits=kft   GMR=0.02017     GMRunits=ft     DIAM=0.6280      Radunits=in     Normamps=590
+
+New WireData.CU_350_19STR  Rdc=0.03143     Runits=kft   GMR=0.02140     GMRunits=ft     DIAM=0.6790      Radunits=in     Normamps=650
+
+New WireData.CU_500_37STR  Rdc=0.02200     Runits=kft   GMR=0.02605     GMRunits=ft     DIAM=0.8140      Radunits=in     Normamps=810
