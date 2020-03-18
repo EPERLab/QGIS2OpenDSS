@@ -1513,14 +1513,17 @@ class QGIS2OpenDSS(object):
             filename_loadshapes = self.foldername + "/" + name_loadshapes
             print( filename_ev_dss, " ", filename_loadshapes, " ", name_csv )
             
-            file_ev = open( filename_ev_dss, 'w' )
-            file_loadshape = open( filename_loadshapes, 'w' )
+            
+            linea_ev = ""
+            linea_loadshape = ""
+            
             
             columns_evs_loadshapes = self.evs_loadshapes.columns            
             contador = -1 #Ya que se aumenta al principio, no al final
             
             linea = "redirect " +  name_loadshapes + "\n"
-            file_ev.write(linea)
+            linea_ev += linea
+            #file_ev.write(linea)
             
             for ve in grafoEV.nodes(data=True):
                 contador += 1
@@ -1569,17 +1572,24 @@ class QGIS2OpenDSS(object):
                 sentence += " %stored=" + str( soc[0] )
                 sentence += " %EffCharge=100 %IdlingkW=0 enabled=y dispmode=FOLLOW daily=" + daily_curve
                 sentence += " " + extra_sentence + "\n"
-                sentence = str( sentence )
-                file_ev.write( sentence )
+                #file_ev.write( sentence )
+                linea_ev += sentence
                 
                 sentence_loadshape = "New Loadshape." + daily_curve  + " npts=96 mInterval=15 mult=(file="
                 sentence_loadshape += name_csv + ", col=" + str(contador + 1) + ", header=no) useactual=no\n"
                 sentence_loadshape = str( sentence_loadshape )
-                file_loadshape.write( sentence_loadshape )
+                linea_loadshape += sentence_loadshape
+                #file_loadshape.write( sentence_loadshape )
             
-            #se cierran los archivos
-            file_ev.close() 
-            file_loadshape.close()
+            #se escriben y cierran los archivos
+            
+            with open(filename_ev_dss, 'w') as file_ev:
+                file_ev.write( linea_ev )
+                
+            
+            with open(filename_loadshapes, 'w') as file_loadshape:
+                file_loadshape.write( linea_loadshape )
+            
             
             #Escritura master
             self.output_filesQGIS2DSS.write('\nredirect ' + name_dss)
@@ -1807,10 +1817,7 @@ class QGIS2OpenDSS(object):
             file_bus.close()
             
             #Temporal
-            file_loadshape_bus.close()
-                                    
-            
-            
+            file_loadshape_bus.close()            
             
             #Escritura master            
             self.output_filesQGIS2DSS.write('\nredirect ' + name_dss)
@@ -6032,7 +6039,8 @@ class QGIS2OpenDSS(object):
                 try:
                     os.remove( dir_archivo_log )
                 except:
-                    pass
+                    with open( dir_archivo_log, 'w' ) as archivo_errlog:
+                        archivo_errlog.write( "" )
                 
             ##Copia las bibliotecas a la carpeta de salida
             try:
