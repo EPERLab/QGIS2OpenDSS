@@ -76,6 +76,6 @@ New CNData.Al_3/0_19STR_35kv_100N_XLPE	Normamps=218	Runits=kft	Rac=0.1259	Rstran
 New CNData.Al_4/0_19STR_35kv_100N_XLPE	Normamps=247	Runits=kft	Rac=0.1000	Rstrand=0.999	GMRUnits=in	GMR=0.1896	GmrStrand=0.0397	Radunits=in	DIAM=0.515	DiaIns=1.26	InsLayer=0.345	DiaStrand=0.1019	DiaCable=1.72	EpsR=2.3	k=13
 New CNData.Al_250_37STR_35kv_100N_XLPE	Normamps=200	Runits=kft	Rac=0.0847	Rstrand=0.999	GMRUnits=in	GMR=0.2172	GmrStrand=0.0397	Radunits=in	DIAM=0.561	DiaIns=1.31	InsLayer=0.345	DiaStrand=0.1019	DiaCable=1.77	EpsR=2.3	k=16
 New CNData.Al_350_37STR_35kv_100N_XLPE	Normamps=200	Runits=kft	Rac=0.0606	Rstrand=0.999	GMRUnits=in	GMR=0.2568	GmrStrand=0.0397	Radunits=in	DIAM=0.664	DiaIns=1.41	InsLayer=0.345	DiaStrand=0.1019	DiaCable=1.90	EpsR=2.3	k=16
-
+New CNData.Al_1/0_7STR_35kv_100N_XLPE	Normamps=167	Runits=kft	Rac=0.2004	Rstrand=2.525	GMRUnits=in	GMR=0.133	GmrStrand=0.0250	Radunits=in	DIAM=0.325	DiaIns=1.07	InsLayer=0.345	DiaStrand=0.0641	DiaCable=1.39	EpsR=2.3	k=16
 
 

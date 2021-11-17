@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>793</width>
-    <height>586</height>
+    <width>839</width>
+    <height>699</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,9 +23,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>70</y>
-     <width>771</width>
-     <height>481</height>
+     <y>60</y>
+     <width>811</width>
+     <height>591</height>
     </rect>
    </property>
    <property name="title">
@@ -40,9 +40,9 @@
    <widget class="QGroupBox" name="groupBox_5">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>380</y>
-      <width>341</width>
+      <x>40</x>
+      <y>490</y>
+      <width>351</width>
       <height>91</height>
      </rect>
     </property>
@@ -55,9 +55,9 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>120</x>
        <y>60</y>
-       <width>141</width>
+       <width>171</width>
        <height>20</height>
       </rect>
      </property>
@@ -77,9 +77,9 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>120</x>
        <y>44</y>
-       <width>205</width>
+       <width>221</width>
        <height>20</height>
       </rect>
      </property>
@@ -99,9 +99,9 @@
     <widget class="QCheckBox" name="Model">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>120</x>
        <y>28</y>
-       <width>119</width>
+       <width>151</width>
        <height>20</height>
       </rect>
      </property>
@@ -121,9 +121,9 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>120</x>
        <y>6</y>
-       <width>191</width>
+       <width>181</width>
        <height>22</height>
       </rect>
      </property>
@@ -131,65 +131,14 @@
     <widget class="QLabel" name="label_SE">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>8</y>
-       <width>71</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Subestación:</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_6">
-    <property name="geometry">
-     <rect>
-      <x>380</x>
-      <y>260</y>
-      <width>341</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string/>
-    </property>
-    <widget class="QComboBox" name="comboBox_EV">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>6</y>
-       <width>191</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="toolTip">
-      <string/>
-     </property>
-     <property name="whatsThis">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_EQ_3">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-     <property name="geometry">
-      <rect>
        <x>30</x>
        <y>8</y>
-       <width>101</width>
+       <width>81</width>
        <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>Vehículos eléctricos:</string>
+      <string>Subestación</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -200,9 +149,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>260</y>
-      <width>341</width>
-      <height>41</height>
+      <y>300</y>
+      <width>791</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="title">
@@ -214,14 +163,15 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>400</x>
        <y>10</y>
        <width>131</width>
-       <height>21</height>
+       <height>41</height>
       </rect>
      </property>
      <property name="text">
-      <string>Generación distribuida BT:</string>
+      <string>Generación distribuida
+pequeña escala</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -233,9 +183,48 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>540</x>
+       <y>20</y>
+       <width>181</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="whatsThis">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_GD_ls">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
        <y>10</y>
-       <width>191</width>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Generación distribuida
+gran escala</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_GD_ls">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>181</width>
        <height>22</height>
       </rect>
      </property>
@@ -252,7 +241,7 @@
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>751</width>
+      <width>791</width>
       <height>71</height>
      </rect>
     </property>
@@ -262,9 +251,9 @@
     <widget class="QCheckBox" name="checkBox_LMT2">
      <property name="geometry">
       <rect>
-       <x>500</x>
+       <x>520</x>
        <y>10</y>
-       <width>41</width>
+       <width>51</width>
        <height>20</height>
       </rect>
      </property>
@@ -275,9 +264,9 @@
     <widget class="QCheckBox" name="checkBox_LMT1">
      <property name="geometry">
       <rect>
-       <x>300</x>
+       <x>310</x>
        <y>10</y>
-       <width>41</width>
+       <width>51</width>
        <height>20</height>
       </rect>
      </property>
@@ -291,7 +280,7 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>344</x>
+       <x>360</x>
        <y>40</y>
        <width>191</width>
        <height>22</height>
@@ -304,7 +293,7 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>40</y>
        <width>191</width>
        <height>22</height>
@@ -314,24 +303,24 @@
     <widget class="QComboBox" name="comboBox_LMT2">
      <property name="geometry">
       <rect>
-       <x>344</x>
+       <x>360</x>
        <y>10</y>
        <width>151</width>
-       <height>20</height>
+       <height>22</height>
       </rect>
      </property>
     </widget>
     <widget class="QLabel" name="label_CA_2">
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>-10</x>
        <y>40</y>
-       <width>131</width>
+       <width>151</width>
        <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>Cargas de media tensión:</string>
+      <string>Cargas de media tensión</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -340,9 +329,9 @@
     <widget class="QCheckBox" name="checkBox_LMT3">
      <property name="geometry">
       <rect>
-       <x>694</x>
+       <x>730</x>
        <y>10</y>
-       <width>41</width>
+       <width>51</width>
        <height>20</height>
       </rect>
      </property>
@@ -353,20 +342,20 @@
     <widget class="QComboBox" name="comboBox_LMT3">
      <property name="geometry">
       <rect>
-       <x>548</x>
+       <x>570</x>
        <y>10</y>
-       <width>141</width>
-       <height>20</height>
+       <width>151</width>
+       <height>22</height>
       </rect>
      </property>
     </widget>
     <widget class="QComboBox" name="comboBox_LMT1">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>10</y>
        <width>151</width>
-       <height>20</height>
+       <height>22</height>
       </rect>
      </property>
     </widget>
@@ -376,7 +365,7 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>548</x>
+       <x>570</x>
        <y>40</y>
        <width>191</width>
        <height>22</height>
@@ -386,14 +375,17 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>0</x>
        <y>10</y>
-       <width>121</width>
+       <width>141</width>
        <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>Líneas de media tensión:</string>
+      <string>Líneas de media tensión</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
    </widget>
@@ -401,9 +393,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>150</y>
-      <width>751</width>
-      <height>101</height>
+      <y>170</y>
+      <width>791</width>
+      <height>131</height>
      </rect>
     </property>
     <property name="title">
@@ -412,9 +404,9 @@
     <widget class="QCheckBox" name="checkBox_LBT2">
      <property name="geometry">
       <rect>
-       <x>500</x>
+       <x>530</x>
        <y>10</y>
-       <width>41</width>
+       <width>51</width>
        <height>20</height>
       </rect>
      </property>
@@ -428,7 +420,7 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>548</x>
+       <x>583</x>
        <y>68</y>
        <width>191</width>
        <height>22</height>
@@ -438,14 +430,14 @@
     <widget class="QLabel" name="label_LBT">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>0</x>
        <y>12</y>
-       <width>111</width>
+       <width>141</width>
        <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>Líneas de baja tensión:</string>
+      <string>Líneas de baja tensión</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -457,7 +449,7 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>38</y>
        <width>191</width>
        <height>22</height>
@@ -470,7 +462,7 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>344</x>
+       <x>366</x>
        <y>38</y>
        <width>191</width>
        <height>22</height>
@@ -480,9 +472,9 @@
     <widget class="QComboBox" name="comboBox_LBT3">
      <property name="geometry">
       <rect>
-       <x>548</x>
+       <x>583</x>
        <y>10</y>
-       <width>141</width>
+       <width>151</width>
        <height>22</height>
       </rect>
      </property>
@@ -493,7 +485,7 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>344</x>
+       <x>366</x>
        <y>68</y>
        <width>191</width>
        <height>22</height>
@@ -506,7 +498,7 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>68</y>
        <width>191</width>
        <height>22</height>
@@ -516,7 +508,7 @@
     <widget class="QComboBox" name="comboBox_LBT1">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>10</y>
        <width>151</width>
        <height>22</height>
@@ -526,9 +518,9 @@
     <widget class="QCheckBox" name="checkBox_LBT3">
      <property name="geometry">
       <rect>
-       <x>694</x>
+       <x>740</x>
        <y>10</y>
-       <width>41</width>
+       <width>51</width>
        <height>20</height>
       </rect>
      </property>
@@ -539,14 +531,14 @@
     <widget class="QLabel" name="label_CA">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>0</x>
        <y>70</y>
-       <width>121</width>
-       <height>16</height>
+       <width>141</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>Cargas de baja tensión:</string>
+      <string>Cargas de baja tensión</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -555,14 +547,14 @@
     <widget class="QLabel" name="label_LBT_2">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>60</x>
        <y>40</y>
-       <width>61</width>
+       <width>81</width>
        <height>20</height>
       </rect>
      </property>
      <property name="text">
-      <string>Acometidas:</string>
+      <string>Acometidas</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -571,7 +563,7 @@
     <widget class="QComboBox" name="comboBox_LBT2">
      <property name="geometry">
       <rect>
-       <x>344</x>
+       <x>366</x>
        <y>8</y>
        <width>151</width>
        <height>22</height>
@@ -584,7 +576,7 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>548</x>
+       <x>583</x>
        <y>38</y>
        <width>191</width>
        <height>22</height>
@@ -594,9 +586,9 @@
     <widget class="QCheckBox" name="checkBox_LBT1">
      <property name="geometry">
       <rect>
-       <x>300</x>
+       <x>310</x>
        <y>10</y>
-       <width>41</width>
+       <width>51</width>
        <height>20</height>
       </rect>
      </property>
@@ -604,13 +596,68 @@
       <string>Sub</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label_CA_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>102</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Alumbrado público</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_CI2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>366</x>
+       <y>100</y>
+       <width>191</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_CI3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>583</x>
+       <y>100</y>
+       <width>191</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_CI1">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>100</y>
+       <width>191</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_11">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>100</y>
-      <width>751</width>
+      <y>130</y>
+      <width>791</width>
       <height>41</height>
      </rect>
     </property>
@@ -620,9 +667,9 @@
     <widget class="QLabel" name="label_TR">
      <property name="geometry">
       <rect>
-       <x>40</x>
+       <x>20</x>
        <y>12</y>
-       <width>91</width>
+       <width>111</width>
        <height>20</height>
       </rect>
      </property>
@@ -630,7 +677,7 @@
       <string/>
      </property>
      <property name="text">
-      <string>Transformadores:</string>
+      <string>Transformadores</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -639,7 +686,7 @@
     <widget class="QComboBox" name="comboBox_TR1">
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>150</x>
        <y>10</y>
        <width>191</width>
        <height>22</height>
@@ -649,7 +696,7 @@
     <widget class="QComboBox" name="comboBox_TR3">
      <property name="geometry">
       <rect>
-       <x>548</x>
+       <x>560</x>
        <y>10</y>
        <width>191</width>
        <height>22</height>
@@ -659,7 +706,7 @@
     <widget class="QComboBox" name="comboBox_TR2">
      <property name="geometry">
       <rect>
-       <x>344</x>
+       <x>356</x>
        <y>10</y>
        <width>191</width>
        <height>22</height>
@@ -670,9 +717,9 @@
    <widget class="QGroupBox" name="groupBox_9">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>420</y>
-      <width>171</width>
+      <x>410</x>
+      <y>520</y>
+      <width>181</width>
       <height>41</height>
      </rect>
     </property>
@@ -685,9 +732,9 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>10</x>
        <y>10</y>
-       <width>141</width>
+       <width>161</width>
        <height>20</height>
       </rect>
      </property>
@@ -706,8 +753,8 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>310</y>
-      <width>751</width>
+      <y>420</y>
+      <width>791</width>
       <height>61</height>
      </rect>
     </property>
@@ -720,14 +767,14 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>400</x>
        <y>20</y>
        <width>131</width>
        <height>21</height>
       </rect>
      </property>
      <property name="text">
-      <string>Planteles de buses:</string>
+      <string>Planteles de buses</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -739,9 +786,9 @@
      </property>
      <property name="geometry">
       <rect>
-       <x>140</x>
+       <x>540</x>
        <y>20</y>
-       <width>191</width>
+       <width>181</width>
        <height>22</height>
       </rect>
      </property>
@@ -752,86 +799,268 @@
       <string/>
      </property>
     </widget>
-    <widget class="QGroupBox" name="groupBox_13">
+    <widget class="QComboBox" name="comboBox_EV">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
      <property name="geometry">
       <rect>
-       <x>340</x>
-       <y>0</y>
-       <width>191</width>
-       <height>51</height>
+       <x>150</x>
+       <y>20</y>
+       <width>181</width>
+       <height>22</height>
       </rect>
      </property>
-     <property name="title">
-      <string>CSV con datos de buses</string>
+     <property name="toolTip">
+      <string/>
      </property>
-     <widget class="QLineEdit" name="lineEdit_csvbus">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>20</y>
-        <width>131</width>
-        <height>21</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_bus">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>20</y>
-        <width>41</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>...</string>
-      </property>
-     </widget>
+     <property name="whatsThis">
+      <string/>
+     </property>
     </widget>
-    <widget class="QGroupBox" name="groupBox_14">
+    <widget class="QLabel" name="label_EQ_3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>22</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Vehículos eléctricos</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_13">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>791</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="label_buses_2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>10</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Fusibles</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_fusib">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>10</y>
+       <width>151</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="whatsThis">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_secc">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>10</y>
+       <width>151</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="whatsThis">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_EQ_4">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Seccionadores</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_buses_3">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>10</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reconectadores</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_recon">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>10</y>
+       <width>151</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="whatsThis">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_14">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>791</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="label_cap">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>20</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Capacitores</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_cap">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
      <property name="geometry">
       <rect>
        <x>540</x>
-       <y>0</y>
-       <width>191</width>
-       <height>51</height>
+       <y>20</y>
+       <width>181</width>
+       <height>22</height>
       </rect>
      </property>
-     <property name="title">
-      <string>CSV con datos del cargador</string>
+     <property name="toolTip">
+      <string/>
      </property>
-     <widget class="QLineEdit" name="lineEdit_dircsvcarg">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>20</y>
-        <width>131</width>
-        <height>21</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_carg">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>20</y>
-        <width>41</width>
-        <height>21</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>...</string>
-      </property>
-     </widget>
+     <property name="whatsThis">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_reg">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>181</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="whatsThis">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_reg">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>22</y>
+       <width>121</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Reguladores</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
     </widget>
    </widget>
   </widget>
   <widget class="QGroupBox" name="groupBox_2">
    <property name="geometry">
     <rect>
-     <x>480</x>
-     <y>20</y>
-     <width>301</width>
+     <x>530</x>
+     <y>10</y>
+     <width>291</width>
      <height>51</height>
     </rect>
    </property>
@@ -866,8 +1095,8 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>20</y>
-     <width>155</width>
+     <y>10</y>
+     <width>231</width>
      <height>51</height>
     </rect>
    </property>
@@ -879,7 +1108,7 @@
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>135</width>
+      <width>211</width>
       <height>21</height>
      </rect>
     </property>
@@ -888,9 +1117,9 @@
   <widget class="QGroupBox" name="groupBox_4">
    <property name="geometry">
     <rect>
-     <x>172</x>
-     <y>20</y>
-     <width>301</width>
+     <x>240</x>
+     <y>10</y>
+     <width>291</width>
      <height>51</height>
     </rect>
    </property>
@@ -927,9 +1156,9 @@
   <widget class="QDialogButtonBox" name="button_box">
    <property name="geometry">
     <rect>
-     <x>580</x>
-     <y>550</y>
-     <width>181</width>
+     <x>630</x>
+     <y>660</y>
+     <width>191</width>
      <height>32</height>
     </rect>
    </property>

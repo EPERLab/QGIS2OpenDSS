@@ -1,0 +1,88 @@
+Timestamp,Nombre completo,Tipo de vehículo eléctrico,Tamaño de la batería del vehículo eléctrico (si la conoce),Potencia a la que se conecta el vehículo eléctrico en casa,Día de la conexión de vehículo eléctrico,Hora de conexión (hh:mm en formato 24h),Estado de carga inicial del vehículo eléctrico en porcentaje de la batería,Estado de carga final estimado del vehículo eléctrico en porcentaje de la batería,Hora de estimada de desconexión (hh:mm en formato 24h)
+2019/07/24 2:14:46 pm GMT-5,Kathlenn Vásquez Arce,Nissan Leaf,24 kWh,1.8 kW,Viernes,21:00,14,97,06:00
+2019/07/24 4:17:02 pm GMT-5,Jeremy Quirós ,Reva,13 kw,No sé ,Domingo,23:00,30,100,06:00
+2019/07/24 4:17:06 pm GMT-5,Jose Fernandez Rodriguez,Tesla Model S,18 kWh,1.8 kW,Lunes,23:59,0,30,12:00
+2019/07/24 4:17:45 pm GMT-5,Julia Arrieta Solano,Audi e-tron,18 kWh,1.8 kW,Lunes,23:59,0,35,11:00
+2019/07/24 4:18:31 pm GMT-5,Luis Chacon Gutierrez,Tesla Model S,18 kWh,1.8 kW,Lunes,01:00,80,100,03:00
+2019/07/24 4:19:19 pm GMT-5,Joaquin Solano Montero,Tesla Model X,18 kWh,1.8 kW,Lunes,07:00,90,100,09:00
+2019/07/24 4:20:18 pm GMT-5,Elsa Gutierrez Montero,BYD-e5,18 kWh,1.8 kW,Lunes,02:00,70,100,07:00
+2019/07/24 4:21:14 pm GMT-5,Luis Baltodano,Ford Focus,18 kWh,1.8 kW,Lunes,05:00,85,100,07:00
+2019/07/24 4:22:20 pm GMT-5,Luis Morena Espinoza,BYD-e5,18 kWh,1.8 kW,Lunes,07:00,65,100,09:00
+2019/07/24 4:23:19 pm GMT-5,Jose Alberto Mejia Esquivel,Renault Zoe,18 kWh,1.8 kW,Lunes,09:00,85,100,11:00
+2019/07/24 4:24:13 pm GMT-5,Fabricio Mendez Azofeifa,BYD-e5,18 kWh,1.8 kW,Lunes,07:00,75,95,09:00
+2019/07/24 4:25:03 pm GMT-5,Aurelio Barrantes Escalante,Fiat 500e,18 kWh,1.8 kW,Lunes,07:30,10,90,12:30
+2019/07/24 4:25:48 pm GMT-5,David Valverde Jimenez,Renault Zoe,18 kWh,3.6 kW,Lunes,03:00,20,90,06:00
+2019/07/24 4:27:03 pm GMT-5,Rodrigo Azofeifa Orozco,Chevrolet Spark EV,18 kWh,3.6 kW,Lunes,07:30,75,100,09:30
+2019/07/24 4:27:50 pm GMT-5,Jose Viquez Salazar,Audi e-tron,18 kWh,1.8 kW,Lunes,09:00,80,100,11:00
+2019/07/24 4:32:14 pm GMT-5,Jeremy Alberto Quirós,Chevrolet Spark EV,24 kWh,1.8 kW,Lunes,09:00,80,100,11:00
+2019/07/24 4:33:40 pm GMT-5,Jose Mario Jara Castro,Reva,18 kWh,3.6 kW,Lunes,04:00,10,100,12:00
+2019/07/24 4:34:31 pm GMT-5,Diego Arguedas Ortiz,Smart ForTwo,18 kWh,3.6 kW,Martes,23:00,5,100,07:00
+2019/07/24 5:22:33 pm GMT-5,Abel Hernández Muñoz ,Hyundai Ioniq EV,24 kWh,7.2 kW,Martes,20:00,23,100,02:00
+2019/07/24 5:30:50 pm GMT-5,Stephanie Solano Elizondo,Smart ForTwo,18 kWh,3.6 kW,Lunes,00:00,0,100,08:00
+2019/07/24 5:31:59 pm GMT-5,Maria Jose Arley Quiros,Audi e-tron,18 kWh,3.6 kW,Lunes,01:00,85,100,03:00
+2019/07/24 5:33:00 pm GMT-5,Roldan Muñoz,Mitsubishi iMiev,18 kWh,3.6 kW,Lunes,03:00,80,100,05:00
+2019/07/24 5:34:12 pm GMT-5,Ericka Sanchez Monge,Renault Zoe,18 kWh,1.8 kW,Lunes,07:00,20,100,13:00
+2019/07/24 5:35:13 pm GMT-5,Rogelio Hernandez Gutierrez ,BYD-e5,18 kWh,1.8 kW,Lunes,08:00,23,95,14:00
+2019/07/24 5:37:31 pm GMT-5,Beatriz Solórzano Juarez,Ford Focus,18 kWh,3.6 kW,Lunes,23:00,15,95,06:00
+2019/07/24 5:38:27 pm GMT-5,Mauricio Acuña Montero,Reva,18 kWh,1.8 kW,Martes,00:00,17,95,06:00
+2019/07/24 5:39:55 pm GMT-5,Eduardo Conejo Rojas,Ford Focus,18 kWh,3.6 kW,Martes,23:37,20,95,07:00
+2019/07/24 5:40:58 pm GMT-5,Edgar Olsen Barrantes,Nissan Leaf,18 kWh,3.6 kW,Martes,07:00,10,95,13:00
+2019/07/24 5:42:26 pm GMT-5,Alberto Estrada Rojas,BMW i3,18 kWh,1.8 kW,Lunes,23:00,18,95,05:00
+2019/07/24 5:43:39 pm GMT-5,Carmen Estefania González Pérez ,Nissan Leaf,24 kWh,1.8 kW,Martes,08:00,20,95,13:00
+2019/07/24 5:45:04 pm GMT-5,Pavlo Arce Avendaño ,BMW i3,18 kWh,3.6 kW,Martes,23:30,8,90,08:00
+2019/07/24 5:46:10 pm GMT-5,Jason Zuliga Torres,Hyundai Ioniq EV,24 kWh,3.6 kW,Martes,23:00,5,95,13:00
+2019/07/24 5:48:16 pm GMT-5,Ignacio Chacon Mata,Nissan Leaf,24 kWh,1.8 kW,Martes,00:00,20,90,11:00
+2019/07/24 5:49:34 pm GMT-5,Noelia Solis Estrada,Ford Focus,18 kWh,3.6 kW,Martes,23:30,60,100,03:00
+2019/07/24 5:50:44 pm GMT-5,Isaac Mata Guerrero,Mitsubishi iMiev,24 kWh,1.8 kW,Martes,13:00,35,95,18:00
+2019/07/24 5:51:58 pm GMT-5,Melania Juares Sandí,BMW i3,24 kWh,1.8 kW,Martes,12:00,70,90,16:00
+2019/07/24 5:53:37 pm GMT-5,Diana Cercone Rojas,Renault Zoe,18 kWh,3.6 kW,Martes,14:00,80,100,17:00
+2019/07/24 5:54:20 pm GMT-5,Victor Carranza Orocú,Hyundai Ioniq EV,24 kWh,3.6 kW,Miércoles,12:00,13,95,16:00
+2019/07/24 5:56:49 pm GMT-5,Fiorella Álvarez Sanchez,Mitsubishi iMiev,24 kWh,1.8 kW,Martes,23:00,15,95,06:00
+2019/07/24 5:59:18 pm GMT-5,Ignacio Caamaño Abarca,BMW i3,24 kWh,1.8 kW,Martes,04:00,25,95,13:00
+2019/07/24 6:00:34 pm GMT-5,Lina serrano Vargas,Hyundai Ioniq EV,24 kWh,1.8 kW,Martes,23:00,20,95,05:00
+2019/07/24 6:02:02 pm GMT-5,Fabian Benavides Valencia,Nissan Leaf,18 kWh,3.6 kW,Lunes,12:00,30,95,15:00
+2019/07/24 6:03:04 pm GMT-5,Kevin Hernandez Hernandez ,Hyundai Ioniq EV,24 kWh,1.8 kW,Martes,13:00,23,95,18:00
+2019/07/24 6:04:32 pm GMT-5,Antumn Lobo Mora,Ford Focus,18 kWh,3.6 kW,Miércoles,08:00,30,90,13:00
+2019/07/24 6:05:21 pm GMT-5,Melany Quiros Zanabria ,Nissan Leaf,24 kWh,1.8 kW,Lunes,02:00,15,90,13:00
+2019/07/24 6:06:29 pm GMT-5,Fernanda Cantillo González ,Renault Zoe,24 kWh,1.8 kW,Lunes,23:00,20,95,08:00
+2019/07/24 6:08:40 pm GMT-5,Mario Jorge Sánchez Pérez ,Fiat 500e,24 kWh,1.8 kW,Martes,09:00,60,95,14:00
+2019/07/24 6:09:50 pm GMT-5,Ariel Morales Gallego,BYD-e5,24 kWh,1.8 kW,Miércoles,09:00,10,95,18:00
+2019/07/24 6:11:00 pm GMT-5,Jose Daniel Hernández  Chassoul,BMW i3,18 kWh,1.8 kW,Martes,23:00,15,95,09:00
+2019/07/24 6:11:54 pm GMT-5,Alejandro Jimenez Salas,Audi e-tron,24 kWh,1.8 kW,Miércoles,12:00,20,95,17:00
+2019/07/24 6:13:14 pm GMT-5,Jose Francisco Ureña Esquivel,BMW i3,18 kWh,1.8 kW,Martes,08:00,18,95,14:00
+2019/07/24 6:15:45 pm GMT-5,Tomas Ruiz Navarro,BMW i3,24 kWh,1.8 kW,Martes,02:00,12,95,14:30
+2019/07/24 6:17:04 pm GMT-5,Esteban Alfaro Blanco,Chevrolet Bolt,24 kWh,1.8 kW,Martes,03:00,22,95,13:00
+2019/07/24 6:18:55 pm GMT-5,Jhon Cordero Torres,BMW i3,24 kWh,1.8 kW,Martes,07:00,10,95,14:00
+2019/07/24 9:27:37 pm GMT-5,Miriam Morera Guillén,BMW i3,22 kWh,7.2 kW,Miércoles,19:00,50,100,22:49
+2019/07/25 11:42:00 am GMT-5,Carlos cordero ,BMW i3,42 kWh,"No tengo idea, con el cargador del fabricante a 220",Domingo,15:00,15,100,20:00
+2019/07/25 12:34:31 pm GMT-5,Max Lizano Chavarría,Nissan Leaf,24 kWh,1.8 kW,Martes,18:00,20,100,06:00
+2019/07/29 3:28:45 pm GMT-5,Kevin Villalobos Rodríguez ,Hyundai Ioniq EV,28 kWh,7.2 kW,Sábado,22:00,45,100,06:00
+2019/07/29 3:33:16 pm GMT-5,jesus ugalde,Nissan Leaf,24 kWh,1.8 kW,Martes,19:00,60,100,06:00
+2019/07/29 4:07:26 pm GMT-5,Sergio Gutierrez,BMW i3,30 kWh,3.6 kW,Lunes,20:00,20,100,08:00
+2019/07/29 4:36:29 pm GMT-5,Adriana Escobedo Aguilar,Nissan Leaf,24 kWh,7.2 kW,Lunes,18:00,60,100,22:00
+2019/07/29 5:19:36 pm GMT-5,William Borges Quesada,BMW i3,33 kWh,16 KW,Domingo,20:00,10,100,01:30
+2019/07/29 5:21:50 pm GMT-5,William Borges,Reva,18 kWh,3.6 kW,Domingo,16:00,5,100,21:00
+2019/07/29 5:50:25 pm GMT-5,Roxana Quiel Molina,Hyundai Ioniq EV,28 kWh,1.8 kW,Domingo,19:00,50,100,07:00
+2019/07/30 12:21:06 am GMT-5,Kevin Villalobos Rodríguez ,Hyundai Ioniq EV,28 kWh,7.2 kW,Lunes,23:20,35,100,03:00
+2019/07/30 9:31:28 am GMT-5,Diego Benavides Saborío,Chevrolet Spark EV,"18,4 Kwh",1.8 kW,Lunes,21:00,60,100,07:00
+2019/07/30 3:38:56 pm GMT-5,Gerardo Arias Fernández,Nissan Leaf,24 kWh,3.6 kW,Viernes,22:00,20,80,08:00
+2019/07/30 4:18:37 pm GMT-5,Giovanni Burgos Barrantes,BMW i3,35 kWh,7.2 kW,Sábado,18:00,10,100,23:00
+2019/07/31 10:25:01 am GMT-5,ERNESTO SOLORZANO,BMW i3,24 kWh,7.2 kW,Miércoles,09:15,15,100,00:15
+2019/07/31 9:27:00 pm GMT-5,Randall Camacho,Nissan Leaf,24 kWh,1.8 kW,Miércoles,08:10,20,100,06:00
+2019/08/02 12:21:39 pm GMT-5,MARIA RIVAS,Nissan Leaf,,1.8 kW,Jueves,20:00,32,100,11:00
+2019/08/05 8:53:19 pm GMT-5,CHRISTIAN SANDOVAL HIDALGO,Nissan Leaf,24 kWh,7.2 kW,Martes,20:00,20,100,06:00
+2019/08/06 11:22:23 am GMT-5,Ana Maria Blanco,Mitsubishi iMiev,16 kWh,7.2 kW,Miércoles,18:00,15,100,22:00
+2019/08/06 11:27:50 am GMT-5,Hernán Villalobos Slon,BMW i3,24 kWh,1.8 kW,Lunes,11:00,1,30,07:30
+2019/08/06 11:30:10 am GMT-5,Carlomagno Guevara González ,Nissan Leaf,24 kWh,3.6 kW,Lunes,08:00,50,100,09:30
+2019/08/06 11:30:23 am GMT-5,Jorge Alonso Araya Morales,Nissan Leaf,30 kWh,1.8 kW,Domingo,21:00,25,85,06:00
+2019/08/06 11:53:55 am GMT-5,William Borges,Reva,18 kWh,1.8 kW,Domingo,08:00,10,100,11:45
+2019/08/06 11:56:01 am GMT-5,William Borges Q,BMW i3,33 kWh,7.2 kW,Domingo,18:00,10,100,22:30
+2019/08/06 2:49:35 pm GMT-5,Alan Blanco Coto,BMW i3,24 kWh,7.2 kW,Lunes,11:00,50,100,03:00
+2019/08/09 4:23:43 pm GMT-5,Jose Arnoldo Rojas Coto,BMW i3,18 kWh,7.2 kW,Lunes,18:00,50,90,20:00
+2019/08/12 12:45:59 pm GMT-5,Rodolfo Jugo Romero,Nissan Leaf,24 kWh,4.4 kW,Domingo,22:00,18,100,02:00
+2019/08/12 12:48:16 pm GMT-5,Rodolfo Jugo Romero,Reva,9 kWh,1.8 kW,Sábado,00:00,0,100,04:00
+2019/08/16 3:09:32 pm GMT-5,Rodolfo Jugo Romero,Reva,9 kWh,1.8 kW,Sábado,08:00,0,100,13:00
+2019/08/19 12:51:00 pm GMT-5,Rodolfo Jugo Romero,Nissan Leaf,24 kWh,3.6 kW,Domingo,20:00,20,100,06:00
+2019/08/21 3:51:31 pm GMT-5,Rodolfo Jugo Romero ,Reva,9 kWh ,3.6 kW,Miércoles,20:00,10,100,06:00
+2019/08/25 3:29:42 pm GMT-5,Rodolfo Jugo Romero,Nissan Leaf,24 kWh,7.2 kW,Viernes,20:00,20,100,00:00
+2019/08/25 3:31:05 pm GMT-5,Rodolfo Jugo Romero,Reva,9 kWh,3.6 kW,Sábado,00:00,10,100,06:00

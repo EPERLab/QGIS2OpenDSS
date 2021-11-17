@@ -7,10 +7,25 @@ New Linecode.1flv14cu14cu nphases=2  Units=km
 ~ Xmatrix=[1.05793  |0.623326  1.05637  ]
 ~ Cmatrix=[7.40254  |-2.51366  7.90438  ]
 
+New Linecode.1flv8cu8cu nphases=2  Units=km
+~ Rmatrix=[2.31559  |0.184035  2.33839  ]
+~ Xmatrix=[0.934076  |0.546075  0.920767  ]
+~ Cmatrix=[8.30194  |-3.01468  8.98247  ]
+
+New Linecode.1flv8aac8cu nphases=2  Units=km
+~ Rmatrix=[2.76248  |0.184035  2.78529  ]
+~ Xmatrix=[0.91234  |0.546075  0.899031  ]
+~ Cmatrix=[8.84143  |-3.38277  9.60506  ]
+
 New Linecode.1flv6aac6aac nphases=2  Units=km
 ~ Rmatrix=[2.75111  |0.171493  2.77145  ]
 ~ Xmatrix=[0.93175  |0.567104  0.921811  ]
 ~ Cmatrix=[8.8652  |-3.3423  9.67395  ]
+
+New Linecode.1flv6aac6cu nphases=2  Units=km
+~ Rmatrix=[2.78443  |0.208483  2.81249  ]
+~ Xmatrix=[0.850717  |0.479189  0.826438  ]
+~ Cmatrix=[8.85646  |-3.35717  9.64863  ]
 
 New Linecode.1flv4cu4cu nphases=2  Units=km
 ~ Rmatrix=[1.03879  |0.205992  1.06777  ]
@@ -62,6 +77,16 @@ New Linecode.1flv3/0cu3/0cu nphases=2  Units=km
 ~ Xmatrix=[0.570897  |0.249828  0.505785  ]
 ~ Cmatrix=[10.7869  |-4.5355  12.1318  ]
 
+New Linecode.1flv3/0acsr3/0cu nphases=2  Units=km
+~ Rmatrix=[0.55335  |0.0958488  0.566017  ]
+~ Xmatrix=[0.560574  |0.249828  0.495462  ]
+~ Cmatrix=[10.9847  |-4.68644  12.3743  ]
+
+New Linecode.1flv3/0cu4aac nphases=2  Units=km
+~ Rmatrix=[0.406447  |0.203559  0.433166  ]
+~ Xmatrix=[0.809099  |0.510023  0.789981  ]
+~ Cmatrix=[10.722  |-4.6572  11.9036  ]
+
 New Linecode.1flv4/0aac4/0aac nphases=2  Units=km
 ~ Rmatrix=[0.446886  |0.134112  0.465788  ]
 ~ Xmatrix=[0.57679  |0.266249  0.515095  ]
@@ -77,10 +102,20 @@ New Linecode.1flv4/0cu4/0cu nphases=2  Units=km
 ~ Xmatrix=[0.547734  |0.238628  0.480465  ]
 ~ Cmatrix=[11.1301  |-4.76037  12.5872  ]
 
+New Linecode.1flv4/0cu6cu nphases=2  Units=km
+~ Rmatrix=[0.366361  |0.208483  0.394421  ]
+~ Xmatrix=[0.767748  |0.479189  0.743469  ]
+~ Cmatrix=[11.0222  |-4.96636  12.194  ]
+
 New Linecode.1flv1/0cu14cu nphases=2  Units=km
 ~ Rmatrix=[0.438088  |0.0992934  0.445228  ]
 ~ Xmatrix=[0.93147  |0.623326  0.929907  ]
 ~ Cmatrix=[10.0989  |-4.40492  10.9783  ]
+
+New Linecode.1flv3/0cu14cu nphases=2  Units=km
+~ Rmatrix=[0.31152  |0.0992934  0.31866  ]
+~ Xmatrix=[0.913958  |0.623326  0.912394  ]
+~ Cmatrix=[10.6348  |-4.82063  11.5972  ]
 
 New Linecode.1flv1/0cu4cu nphases=2  Units=km
 ~ Rmatrix=[0.534407  |0.205992  0.563381  ]
@@ -92,6 +127,16 @@ New Linecode.1flv2/0aac3/0aac nphases=2  Units=km
 ~ Xmatrix=[0.614049  |0.28776  0.556371  ]
 ~ Cmatrix=[10.5142  |-4.3301  11.7982  ]
 
+New Linecode.1flv3/0aac1/0aac nphases=2  Units=km
+~ Rmatrix=[0.588856  |0.196683  0.617041  ]
+~ Xmatrix=[0.661448  |0.348993  0.614843  ]
+~ Cmatrix=[10.7634  |-4.57967  12.049  ]
+
+New Linecode.1flv1/0aac1/0aac nphases=2  Units=km
+~ Rmatrix=[0.82677  |0.196683  0.854955  ]
+~ Xmatrix=[0.678949  |0.348993  0.632344  ]
+~ Cmatrix=[10.2251  |-4.17494  11.3971  ]
+
 New Linecode.1flv3/0aac4aac nphases=2  Units=km
 ~ Rmatrix=[0.596378  |0.203559  0.623097  ]
 ~ Xmatrix=[0.809314  |0.510023  0.790196  ]
@@ -102,6 +147,16 @@ New Linecode.1flv4/0cu3/0cu nphases=2  Units=km
 ~ Xmatrix=[0.557906  |0.249828  0.492794  ]
 ~ Cmatrix=[11.1159  |-4.7875  12.5354  ]
 
+New Linecode.1flv3/0cu3/0aac nphases=2  Units=km
+~ Rmatrix=[0.361204  |0.156117  0.383494  ]
+~ Xmatrix=[0.605289  |0.28776  0.547611  ]
+~ Cmatrix=[10.7869  |-4.5355  12.1318  ]
+
+New Linecode.1flv8cu8aac nphases=2  Units=km
+~ Rmatrix=[2.30422  |0.171493  2.32456  ]
+~ Xmatrix=[0.953486  |0.567104  0.943547  ]
+~ Cmatrix=[8.32473  |-2.9769  9.04506  ]
+
 New Linecode.1flv4acsr4cu nphases=2  Units=km
 ~ Rmatrix=[1.84877  |0.205992  1.87775  ]
 ~ Xmatrix=[0.748123  |0.397493  0.709915  ]
@@ -111,6 +166,11 @@ New Linecode.1flv4cu2aac nphases=2  Units=km
 ~ Rmatrix=[1.04828  |0.216047  1.07842  ]
 ~ Xmatrix=[0.792527  |0.430497  0.760094  ]
 ~ Cmatrix=[9.073  |-3.40151  9.97954  ]
+
+New Linecode.1flv8aac8aac nphases=2  Units=km
+~ Rmatrix=[2.75111  |0.171493  2.77145  ]
+~ Xmatrix=[0.93175  |0.567104  0.921811  ]
+~ Cmatrix=[8.8652  |-3.3423  9.67395  ]
 
 New Linecode.1flv6cu6cu nphases=2  Units=km
 ~ Rmatrix=[1.54361  |0.208483  1.57167  ]
@@ -157,6 +217,26 @@ New Linecode.3flv4/0cu4/0cu nphases=3  Units=km
 ~ Xmatrix=[0.584476  |0.289711  0.547739  |0.206866  0.238632  0.480469  ]
 ~ Cmatrix=[11.3268  |-4.50657  12.9147  |-1.9059  -4.00838  12.9032  ]
 
+New Linecode.3flv8cu8cu nphases=3  Units=km
+~ Rmatrix=[2.30319  |0.166764  2.31558  |0.17706  0.184028  2.33839  ]
+~ Xmatrix=[0.941438  |0.556267  0.934101  |0.497864  0.5461  0.920792  ]
+~ Cmatrix=[8.45768  |-2.81695  9.23351  |-1.44242  -2.53967  9.22406  ]
+
+New Linecode.3flv8aac8cu nphases=3  Units=km
+~ Rmatrix=[2.75008  |0.166764  2.76247  |0.17706  0.184028  2.78528  ]
+~ Xmatrix=[0.919702  |0.556267  0.912365  |0.497864  0.5461  0.899056  ]
+~ Cmatrix=[9.02182  |-3.1425  9.92885  |-1.56824  -2.84234  9.87294  ]
+
+New Linecode.3flv6cu6cu nphases=3  Units=km
+~ Rmatrix=[1.52839  |0.187268  1.54361  |0.199898  0.208481  1.57167  ]
+~ Xmatrix=[0.868127  |0.49772  0.854785  |0.434312  0.47921  0.830505  ]
+~ Cmatrix=[8.81835  |-3.01309  9.67887  |-1.50731  -2.71007  9.6691  ]
+
+New Linecode.3flv4aac4aac nphases=3  Units=km
+~ Rmatrix=[1.80393  |0.183343  1.81843  |0.195388  0.203555  1.84515  ]
+~ Xmatrix=[0.872121  |0.524635  0.8616  |0.463576  0.510046  0.842482  ]
+~ Cmatrix=[9.44718  |-3.36645  10.4671  |-1.61628  -3.01682  10.4568  ]
+
 New Linecode.1flv1/0aaac2aaac nphases=2  Units=km
 ~ Rmatrix=[0.828641  |0.216649  0.858966  ]
 ~ Xmatrix=[0.743312  |0.425624  0.710061  ]
@@ -176,6 +256,176 @@ New Linecode.3flv3/0aac3/0aac nphases=3  Units=km
 ~ Rmatrix=[0.539193  |0.139389  0.551135  |0.149253  0.156118  0.573427  ]
 ~ Xmatrix=[0.637061  |0.331606  0.605513  |0.253062  0.287768  0.547834  ]
 ~ Cmatrix=[10.9798  |-4.28682  12.4524  |-1.85685  -3.81676  12.4411  ]
+
+New Linecode.3flv3/0aac1/0aac nphases=3  Units=km
+~ Rmatrix=[0.573658  |0.175448  0.588857  |0.188037  0.196685  0.617043  ]
+~ Xmatrix=[0.686988  |0.384459  0.661461  |0.310916  0.349005  0.614855  ]
+~ Cmatrix=[10.9714  |-4.29764  12.4384  |-1.88182  -3.84895  12.3668  ]
+
+New Linecode.3flv4/0aac4/0aac nphases=3  Units=km
+~ Rmatrix=[0.436808  |0.119969  0.446886  |0.128276  0.134113  0.465789  ]
+~ Xmatrix=[0.610525  |0.313131  0.576797  |0.232779  0.266255  0.515101  ]
+~ Cmatrix=[11.2952  |-4.48636  12.8723  |-1.90151  -3.99075  12.8608  ]
+
+New Linecode.1flv3/0aac4/0aac nphases=2  Units=km
+~ Rmatrix=[0.530761  |0.134112  0.549663  ]
+~ Xmatrix=[0.58591  |0.266249  0.524215  ]
+~ Cmatrix=[10.7997  |-4.51151  12.1767  ]
+
+New Linecode.3flv350aac6aac nphases=3  Units=km
+~ Rmatrix=[0.345925  |0.156089  0.356975  |0.165275  0.171484  0.377309  ]
+~ Xmatrix=[0.835508  |0.574732  0.830019  |0.517869  0.56713  0.82008  ]
+~ Cmatrix=[12.0299  |-5.05219  13.8529  |-2.1483  -4.62096  13.4531  ]
+
+New Linecode.3flv14cu14cu nphases=3  Units=km
+~ Rmatrix=[8.70748  |0.0938665  8.71136  |0.0970998  0.0992746  8.7185  ]
+~ Xmatrix=[1.05883  |0.624555  1.05796  |0.571553  0.623352  1.0564  ]
+~ Cmatrix=[7.5405  |-2.34009  8.12274  |-1.27037  -2.12443  8.11421  ]
+
+New Linecode.1flv3/0aac3/0cu nphases=2  Units=km
+~ Rmatrix=[0.49549  |0.0958488  0.508156  ]
+~ Xmatrix=[0.571112  |0.249828  0.506  ]
+~ Cmatrix=[10.7869  |-4.5355  12.1318  ]
+
+New Linecode.1flv2cu2aac nphases=2  Units=km
+~ Rmatrix=[0.73668  |0.216047  0.766823  ]
+~ Xmatrix=[0.775045  |0.430497  0.742613  ]
+~ Cmatrix=[9.48385  |-3.68936  10.4671  ]
+
+New Linecode.1flv14aac14aac nphases=2  Units=km
+~ Rmatrix=[2.75111  |0.171493  2.77145  ]
+~ Xmatrix=[0.93175  |0.567104  0.921811  ]
+~ Cmatrix=[8.8652  |-3.3423  9.67395  ]
+
+New Linecode.1flv1/0cu1/0aac nphases=2  Units=km
+~ Rmatrix=[0.525494  |0.196683  0.553679  ]
+~ Xmatrix=[0.678745  |0.348993  0.632141  ]
+~ Cmatrix=[10.2251  |-4.17494  11.3971  ]
+
+New Linecode.1flv14aac14cu nphases=2  Units=km
+~ Rmatrix=[2.68521  |0.0992934  2.69235  ]
+~ Xmatrix=[0.983936  |0.623326  0.982372  ]
+~ Cmatrix=[8.80197  |-3.44994  9.49073  ]
+
+New Linecode.1flv2cu3/0aac nphases=2  Units=km
+~ Rmatrix=[0.68056  |0.156117  0.702851  ]
+~ Xmatrix=[0.644379  |0.28776  0.586701  ]
+~ Cmatrix=[9.52649  |-3.61458  10.5983  ]
+
+New Linecode.1flv2/0aac2/0aac nphases=2  Units=km
+~ Rmatrix=[0.677504  |0.177975  0.703059  ]
+~ Xmatrix=[0.639229  |0.315349  0.586598  ]
+~ Cmatrix=[10.5025  |-4.35177  11.7581  ]
+
+New Linecode.1flv2aac3/0cu nphases=2  Units=km
+~ Rmatrix=[1.11288  |0.0958488  1.12555  ]
+~ Xmatrix=[0.605863  |0.249828  0.540751  ]
+~ Cmatrix=[9.76696  |-3.78449  10.8891  ]
+
+New Linecode.1flv2/0cu2cu nphases=2  Units=km
+~ Rmatrix=[0.43495  |0.175096  0.459832  ]
+~ Xmatrix=[0.649428  |0.326561  0.598656  ]
+~ Cmatrix=[10.4586  |-4.4328  11.6084  ]
+
+New Linecode.1flv4/0aac6aac nphases=2  Units=km
+~ Rmatrix=[0.483476  |0.171493  0.50381  ]
+~ Xmatrix=[0.852868  |0.567104  0.842929  ]
+~ Cmatrix=[11.0018  |-4.92446  12.1934  ]
+
+New Linecode.1flv6aac4/0aac nphases=2  Units=km
+~ Rmatrix=[2.71452  |0.134112  2.73343  ]
+~ Xmatrix=[0.655673  |0.266249  0.593978  ]
+~ Cmatrix=[8.95265  |-3.19344  9.92736  ]
+
+New Linecode.1flv14cu3/0aac nphases=2  Units=km
+~ Rmatrix=[8.76106  |0.156117  8.78335  ]
+~ Xmatrix=[0.749265  |0.28776  0.691587  ]
+~ Cmatrix=[7.52454  |-2.31981  8.21239  ]
+
+New Linecode.1flv6cu6aac nphases=2  Units=km
+~ Rmatrix=[1.51029  |0.171493  1.53063  ]
+~ Xmatrix=[0.935797  |0.567104  0.925857  ]
+~ Cmatrix=[8.66485  |-3.20504  9.44038  ]
+
+New Linecode.3flv6aac2aac nphases=3  Units=km
+~ Rmatrix=[2.7747  |0.193279  2.79102  |0.20682  0.216048  2.82116  ]
+~ Xmatrix=[0.823751  |0.455219  0.805951  |0.388101  0.430515  0.773518  ]
+~ Cmatrix=[9.04425  |-3.11388  9.96536  |-1.51022  -2.76832  10.023  ]
+
+New Linecode.3flv3/0aac4/0aac nphases=3  Units=km
+~ Rmatrix=[0.520683  |0.119969  0.53076  |0.128276  0.134113  0.549663  ]
+~ Xmatrix=[0.619644  |0.313131  0.585917  |0.232779  0.266255  0.524221  ]
+~ Cmatrix=[10.9844  |-4.28093  12.46  |-1.84327  -3.79925  12.4815  ]
+
+New Linecode.3fmv2aac2aac_h nphases=3  Units=km
+~ Rmatrix=[1.14315  |0.120791  1.14437  |0.120649  0.12126  1.14408  ]
+~ Xmatrix=[0.862751  |0.419717  0.861312  |0.367622  0.419164  0.861649  ]
+~ Cmatrix=[7.67155  |-2.2005  8.11105  |-1.2466  -2.19696  7.67927  ]
+
+New Linecode.2fmv6cu3/0aac_b nphases=2  Units=km
+~ Rmatrix=[1.43595  |0.0876504  1.43638  ]
+~ Xmatrix=[0.839777  |0.305503  0.838499  ]
+~ Cmatrix=[6.56097  |-1.58779  6.5669  ]
+
+New Linecode.3fmv4cu6cu_h nphases=3  Units=km
+~ Rmatrix=[0.965411  |0.119385  0.966557  |0.119251  0.119826  0.966288  ]
+~ Xmatrix=[0.906551  |0.442086  0.905462  |0.389951  0.441668  0.905717  ]
+~ Cmatrix=[7.27047  |-2.01424  7.65114  |-1.16486  -2.01118  7.27707  ]
+
+New Linecode.1fmv3/0cu4aac_m nphases=1  Units=km
+~ Rmatrix=[0.33115  ]
+~ Xmatrix=[0.865953  ]
+~ Cmatrix=[6.90785  ]
+
+New Linecode.2fmv2aac2aac_b nphases=2  Units=km
+~ Rmatrix=[1.14334  |0.120686  1.14396  ]
+~ Xmatrix=[0.862525  |0.367579  0.861788  ]
+~ Cmatrix=[7.07635  |-1.84238  7.0828  ]
+
+New Linecode.2fmv4cu2aac_b nphases=2  Units=km
+~ Rmatrix=[0.966971  |0.120686  0.967595  ]
+~ Xmatrix=[0.884131  |0.367579  0.883394  ]
+~ Cmatrix=[6.74975  |-1.68588  6.75566  ]
+
+New Linecode.1fmv1/0cu3/0aac_m nphases=1  Units=km
+~ Rmatrix=[0.427719  ]
+~ Xmatrix=[0.789011  ]
+~ Cmatrix=[6.73146  ]
+
+New Linecode.1fmv2/0aac2/0aac_m nphases=1  Units=km
+~ Rmatrix=[0.60782  ]
+~ Xmatrix=[0.791307  ]
+~ Cmatrix=[6.82571  ]
+
+New Linecode.3fmv3/0aac4cu_h nphases=3  Units=km
+~ Rmatrix=[0.519863  |0.114866  0.52102  |0.114732  0.115312  0.520749  ]
+~ Xmatrix=[0.813588  |0.405185  0.811906  |0.353119  0.404538  0.8123  ]
+~ Cmatrix=[8.2554  |-2.4985  8.79315  |-1.37832  -2.49473  8.26367  ]
+
+New Linecode.1fmv250aac3/0aac_m nphases=1  Units=km
+~ Rmatrix=[0.35806  ]
+~ Xmatrix=[0.756633  ]
+~ Cmatrix=[7.10299  ]
+
+New Linecode.3fmv336aac3/0aac_h nphases=3  Units=km
+~ Rmatrix=[0.29053  |0.087722  0.291365  |0.0876249  0.088044  0.291169  ]
+~ Xmatrix=[0.735788  |0.35755  0.733291  |0.305578  0.35659  0.733876  ]
+~ Cmatrix=[8.7919  |-2.76559  9.42646  |-1.48181  -2.76102  8.80202  ]
+
+New Linecode.2fmv2aac3/0aac_b nphases=2  Units=km
+~ Rmatrix=[1.1104  |0.0876504  1.11083  ]
+~ Xmatrix=[0.800719  |0.305503  0.799441  ]
+~ Cmatrix=[7.08404  |-1.83449  7.09089  ]
+
+New Linecode.1fmv266aac3/0aac_m nphases=1  Units=km
+~ Rmatrix=[0.341042  ]
+~ Xmatrix=[0.754032  ]
+~ Cmatrix=[7.13301  ]
+
+New Linecode.2fmv4cu6cu_b nphases=2  Units=km
+~ Rmatrix=[0.96559  |0.119286  0.966177  ]
+~ Xmatrix=[0.90638  |0.389918  0.905823  ]
+~ Cmatrix=[6.74173  |-1.69411  6.74722  ]
 
 New Linecode.1fmv4cu3/0aac_m nphases=1  Units=km
 ~ Rmatrix=[0.932106  ]
@@ -206,6 +456,11 @@ New Linecode.1fmv2aac3/0aac_m nphases=1  Units=km
 ~ Rmatrix=[1.10847  ]
 ~ Xmatrix=[0.806465  ]
 ~ Cmatrix=[6.54817  ]
+
+New Linecode.1fmv1/0acsr3/0acsr_m nphases=1  Units=km
+~ Rmatrix=[0.791337  ]
+~ Xmatrix=[0.783389  ]
+~ Cmatrix=[6.79806  ]
 
 New Linecode.3fmv336aaac1/0aaac_t nphases=3  Units=km
 ~ Rmatrix=[0.331441  |0.134538  0.331254  |0.134632  0.134538  0.331441  ]
@@ -292,6 +547,86 @@ New Linecode.3fmv3/0aaac1/0aaac_h nphases=3  Units=km
 ~ Xmatrix=[0.783819  |0.381421  0.781746  |0.3294  0.380624  0.782231  ]
 ~ Cmatrix=[8.37194  |-2.54832  8.92834  |-1.39457  -2.54414  8.38114  ]
 
+New Linecode.1fmv3/0aac2aac_m nphases=1  Units=km
+~ Rmatrix=[0.523134  ]
+~ Xmatrix=[0.831125  ]
+~ Cmatrix=[6.91343  ]
+
+New Linecode.1fmv3/0aac6cu_m nphases=1  Units=km
+~ Rmatrix=[0.521913  ]
+~ Xmatrix=[0.852578  ]
+~ Cmatrix=[6.89972  ]
+
+New Linecode.1fmv477aac3/0aac_m nphases=1  Units=km
+~ Rmatrix=[0.229467  ]
+~ Xmatrix=[0.727997  ]
+~ Cmatrix=[7.41959  ]
+
+New Linecode.1fmv4aac1/0cu_m nphases=1  Units=km
+~ Rmatrix=[1.7035  ]
+~ Xmatrix=[0.820884  ]
+~ Cmatrix=[6.37019  ]
+
+New Linecode.3fmv2/0aac2aac_h nphases=3  Units=km
+~ Rmatrix=[0.631841  |0.120791  0.633059  |0.120649  0.12126  0.632774  ]
+~ Xmatrix=[0.836544  |0.419717  0.835105  |0.367622  0.419164  0.835442  ]
+~ Cmatrix=[8.10564  |-2.41697  8.61626  |-1.34132  -2.41313  8.11405  ]
+
+New Linecode.3fm6cu3/0aac_h nphases=3  Units=km
+~ Rmatrix=[1.43582  |0.087722  1.43666  |0.0876249  0.088044  1.43646  ]
+~ Xmatrix=[0.840168  |0.35755  0.837672  |0.305578  0.35659  0.838256  ]
+~ Cmatrix=[7.04506  |-1.89489  7.39203  |-1.10313  -1.89156  7.05222  ]
+
+New Linecode.3fmv1/0cu1/0cu_h nphases=3  Units=km
+~ Rmatrix=[0.419563  |0.077693  0.420247  |0.0776134  0.0779567  0.420086  ]
+~ Xmatrix=[0.780408  |0.354265  0.777837  |0.302302  0.353276  0.77844  ]
+~ Cmatrix=[7.95588  |-2.338  8.44054  |-1.30568  -2.33415  7.96429  ]
+
+New Linecode.3fmv6cu3/0aac_h nphases=3  Units=km
+~ Rmatrix=[1.43582  |0.087722  1.43666  |0.0876249  0.088044  1.43646  ]
+~ Xmatrix=[0.840168  |0.35755  0.837672  |0.305578  0.35659  0.838256  ]
+~ Cmatrix=[7.04506  |-1.89489  7.39203  |-1.10313  -1.89156  7.05222  ]
+
+New Linecode.3fmv1/0cu3/0aac_h nphases=3  Units=km
+~ Rmatrix=[0.429516  |0.087722  0.430352  |0.0876249  0.088044  0.430156  ]
+~ Xmatrix=[0.783656  |0.35755  0.78116  |0.305578  0.35659  0.781745  ]
+~ Cmatrix=[7.95845  |-2.33558  8.4428  |-1.30298  -2.33161  7.96713  ]
+
+New Linecode.2fmv1/0cu_35xlp nphases=2  Units=km
+~ Rmatrix=[0.532049  |0.105563  0.532049  ]
+~ Xmatrix=[0.229319  |-0.0404853  0.229319  ]
+~ Cmatrix=[129.649  |0  129.649  ]
+
+New Linecode.2fmv1/0cu_35epr nphases=2  Units=km
+~ Rmatrix=[0.528703  |0.104124  0.528703  ]
+~ Xmatrix=[0.232235  |-0.0394206  0.232235  ]
+~ Cmatrix=[169.108  |0  169.108  ]
+
+New Linecode.3fmv1/0aac_35epr nphases=3  Units=km
+~ Rmatrix=[0.969239  |0.295557  0.974504  |0.276697  0.295557  0.969239  ]
+~ Xmatrix=[0.481501  |0.137821  0.458958  |0.101024  0.137821  0.481501  ]
+~ Cmatrix=[169.108  |0  169.108  |0  0  169.108  ]
+
+New Linecode.3fmv3/0cu3/0aaac_h nphases=3  Units=km
+~ Rmatrix=[0.302179  |0.0869493  0.303007  |0.0868531  0.0872681  0.302813  ]
+~ Xmatrix=[0.764344  |0.355735  0.761817  |0.303767  0.354763  0.762409  ]
+~ Cmatrix=[8.26511  |-2.48943  8.80162  |-1.36811  -2.4852  8.27441  ]
+
+New Linecode.2fmv1/0aaac3/0aaac_b nphases=2  Units=km
+~ Rmatrix=[0.713111  |0.0868783  0.713534  ]
+~ Xmatrix=[0.775786  |0.30369  0.774492  ]
+~ Cmatrix=[7.39751  |-1.98699  7.40502  ]
+
+New Linecode.1flv1/0cu1/0cu_xlp nphases=1  Units=km
+~ Rmatrix=[0.607711  ]
+~ Xmatrix=[0.227852  ]
+~ Cmatrix=[129.649  ]
+
+New Linecode.1flv350cu350cu_xlp nphases=1  Units=km
+~ Rmatrix=[0.192049  ]
+~ Xmatrix=[0.104036  ]
+~ Cmatrix=[190.378  ]
+
 New Linecode.1fmv3/0aac3/0aac_m nphases=1  Units=km
 ~ Rmatrix=[0.491081  ]
 ~ Xmatrix=[0.771714  ]
@@ -321,6 +656,126 @@ New Linecode.1fmv4/0aac4/0aac_m nphases=1  Units=km
 ~ Rmatrix=[0.396746  ]
 ~ Xmatrix=[0.75419  ]
 ~ Cmatrix=[7.03225  ]
+
+New Linecode.1fmv4/0aac4aac_m nphases=1  Units=km
+~ Rmatrix=[0.396746  ]
+~ Xmatrix=[0.75419  ]
+~ Cmatrix=[7.03225  ]
+
+New Linecode.1fmv3/0aaac4cu_m nphases=1  Units=km
+~ Rmatrix=[0.506766  ]
+~ Xmatrix=[0.811026  ]
+~ Cmatrix=[6.97302  ]
+
+New Linecode.1fmv394aaac3/0aaac_m nphases=1  Units=km
+~ Rmatrix=[0.252082  ]
+~ Xmatrix=[0.727171  ]
+~ Cmatrix=[7.41086  ]
+
+New Linecode.3fmv3/0aaac4cu_h nphases=3  Units=km
+~ Rmatrix=[0.509256  |0.114866  0.510414  |0.114732  0.115312  0.510142  ]
+~ Xmatrix=[0.807388  |0.405185  0.805706  |0.353119  0.404538  0.8061  ]
+~ Cmatrix=[8.36488  |-2.55491  8.9222  |-1.40201  -2.55107  8.37332  ]
+
+New Linecode.3fmv3/0aaac2aaac_h nphases=3  Units=km
+~ Rmatrix=[0.515217  |0.120861  0.516442  |0.120718  0.121332  0.516155  ]
+~ Xmatrix=[0.819584  |0.417485  0.81811  |0.365394  0.416918  0.818455  ]
+~ Cmatrix=[8.36936  |-2.55073  8.9261  |-1.39729  -2.54667  8.37828  ]
+
+New Linecode.3fmv4aaac4cu_h nphases=3  Units=km
+~ Rmatrix=[1.69946  |0.114866  1.70062  |0.114732  0.115312  1.70035  ]
+~ Xmatrix=[0.85965  |0.405185  0.857968  |0.353119  0.404538  0.858362  ]
+~ Cmatrix=[7.49062  |-2.11709  7.9032  |-1.21101  -2.11381  7.49773  ]
+
+New Linecode.1fmv3/0aaac3/0aaac_h nphases=1  Units=km
+~ Rmatrix=[0.479724  ]
+~ Xmatrix=[0.763777  ]
+~ Cmatrix=[6.99654  ]
+
+New Linecode.3fmv336aaac3/0aaac_h nphases=3  Units=km
+~ Rmatrix=[0.283347  |0.0869493  0.284175  |0.0868531  0.0872681  0.28398  ]
+~ Xmatrix=[0.728118  |0.355735  0.725591  |0.303767  0.354763  0.726183  ]
+~ Cmatrix=[8.9193  |-2.83207  9.57864  |-1.50741  -2.82737  8.92975  ]
+
+New Linecode.1fmv1/0acsr1/0aaac_m nphases=1  Units=km
+~ Rmatrix=[0.80331  ]
+~ Xmatrix=[0.801832  ]
+~ Cmatrix=[6.79183  ]
+
+New Linecode.3fmv336aaac1/0acsr_h nphases=3  Units=km
+~ Rmatrix=[0.309278  |0.113049  0.310444  |0.112913  0.113498  0.310171  ]
+~ Xmatrix=[0.760759  |0.388664  0.758812  |0.336629  0.387915  0.759268  ]
+~ Cmatrix=[8.91636  |-2.83479  9.57613  |-1.5105  -2.83023  8.92649  ]
+
+New Linecode.1fmv6cu1/0aaac_m nphases=1  Units=km
+~ Rmatrix=[1.45367  ]
+~ Xmatrix=[0.868293  ]
+~ Cmatrix=[6.12021  ]
+
+New Linecode.2fmv6cu1/0aaac_b nphases=2  Units=km
+~ Rmatrix=[1.45621  |0.107983  1.45678  ]
+~ Xmatrix=[0.863504  |0.329337  0.862442  ]
+~ Cmatrix=[6.55859  |-1.59023  6.5644  ]
+
+New Linecode.1flv3/0aaac1/0aaac nphases=2  Units=km
+~ Rmatrix=[0.577488  |0.195894  0.605619  ]
+~ Xmatrix=[0.650763  |0.344104  0.603314  ]
+~ Cmatrix=[10.9688  |-4.71661  12.3171  ]
+
+New Linecode.1flv1/0aaac3/0aaac nphases=2  Units=km
+~ Rmatrix=[0.770755  |0.154789  0.792888  ]
+~ Xmatrix=[0.613344  |0.28363  0.554942  ]
+~ Cmatrix=[10.4319  |-4.2471  11.7157  ]
+
+New Linecode.1flv1/0cu3/0aaac nphases=2  Units=km
+~ Rmatrix=[0.485866  |0.154789  0.507998  ]
+~ Xmatrix=[0.614739  |0.28363  0.556337  ]
+~ Cmatrix=[10.2863  |-4.1396  11.5376  ]
+
+New Linecode.1flv6aaac6aaac nphases=2  Units=km
+~ Rmatrix=[2.6887  |0.173593  2.70943  ]
+~ Xmatrix=[0.923764  |0.564825  0.913472  ]
+~ Cmatrix=[8.99053  |-3.4166  9.82955  ]
+
+New Linecode.1flv1/0cu3/0cu nphases=2  Units=km
+~ Rmatrix=[0.468139  |0.134819  0.48696  ]
+~ Xmatrix=[0.614507  |0.278557  0.554916  ]
+~ Cmatrix=[10.2251  |-4.17494  11.3971  ]
+
+New Linecode.1flv3/0aaac6aaac nphases=2  Units=km
+~ Rmatrix=[0.558656  |0.173593  0.579384  ]
+~ Xmatrix=[0.853678  |0.564825  0.843386  ]
+~ Cmatrix=[10.9066  |-4.83446  12.0938  ]
+
+New Linecode.1flv3/0cu4cu nphases=2  Units=km
+~ Rmatrix=[0.407839  |0.205992  0.436813  ]
+~ Xmatrix=[0.705713  |0.397493  0.667506  ]
+~ Cmatrix=[10.7117  |-4.67648  11.8675  ]
+
+New Linecode.1flv3/0aaac4cu nphases=2  Units=km
+~ Rmatrix=[0.587163  |0.205992  0.616137  ]
+~ Xmatrix=[0.699728  |0.397493  0.66152  ]
+~ Cmatrix=[10.909  |-4.82976  12.1027  ]
+
+New Linecode.1flv1/0aaac4cu nphases=2  Units=km
+~ Rmatrix=[0.818641  |0.205992  0.847615  ]
+~ Xmatrix=[0.717551  |0.397493  0.679344  ]
+~ Cmatrix=[10.3492  |-4.39901  11.4364  ]
+
+New Linecode.3flv6aaac6aaac nphases=3  Units=km
+~ Rmatrix=[2.67742  |0.157891  2.68869  |0.167255  0.173584  2.70942  ]
+~ Xmatrix=[0.929472  |0.572723  0.92379  |0.515698  0.564852  0.913498  ]
+~ Cmatrix=[9.15832  |-3.20234  10.1032  |-1.56691  -2.87438  10.0931  ]
+
+New Linecode.1flv1/0acsr2acsr nphases=2  Units=km
+~ Rmatrix=[0.901881  |0.218212  0.932264  ]
+~ Xmatrix=[0.750692  |0.438325  0.719626  ]
+~ Cmatrix=[10.386  |-4.3314  11.5607  ]
+
+New Linecode.1flv6acsr6aac nphases=2  Units=km
+~ Rmatrix=[2.75433  |0.171493  2.77466  ]
+~ Xmatrix=[0.921006  |0.567104  0.911067  ]
+~ Cmatrix=[8.98529  |-3.42557  9.81419  ]
 
 New Linecode.1fmv1/0aaac1/0aaac_m nphases=1  Units=km
 ~ Rmatrix=[0.731601  ]
@@ -406,6 +861,11 @@ New Linecode.1fmv1/0cu4cu_m nphases=1  Units=km
 ~ Rmatrix=[0.45401  ]
 ~ Xmatrix=[0.834524  ]
 ~ Cmatrix=[6.71179  ]
+
+New Linecode.1fmv3/0cu1/0cu_m nphases=1  Units=km
+~ Rmatrix=[0.291517  ]
+~ Xmatrix=[0.768406  ]
+~ Cmatrix=[6.91939  ]
 
 New Linecode.1fmv6cu6cu_m nphases=1  Units=km
 ~ Rmatrix=[1.46485  ]
@@ -496,11 +956,6 @@ New Linecode.2fmv1/0acsr3/0acsr_b nphases=2  Units=km
 ~ Rmatrix=[0.793529  |0.0956197  0.794016  ]
 ~ Xmatrix=[0.777846  |0.310056  0.776614  ]
 ~ Cmatrix=[7.39751  |-1.98699  7.40502  ]
-
-New Linecode.3fmv1/0cu1/0cu_h nphases=3  Units=km
-~ Rmatrix=[0.419563  |0.077693  0.420247  |0.0776134  0.0779567  0.420086  ]
-~ Xmatrix=[0.780408  |0.354265  0.777837  |0.302302  0.353276  0.77844  ]
-~ Cmatrix=[7.95588  |-2.338  8.44054  |-1.30568  -2.33415  7.96429  ]
 
 New Linecode.3fmv3/0aaac3/0aaac_h nphases=3  Units=km
 ~ Rmatrix=[0.481504  |0.0869493  0.482331  |0.0868531  0.0872681  0.482137  ]
@@ -737,11 +1192,6 @@ New Linecode.3fmv477aac4aac_h nphases=3  Units=km
 ~ Xmatrix=[0.820537  |0.456257  0.819671  |0.404096  0.455924  0.819874  ]
 ~ Cmatrix=[9.06687  |-2.92505  9.75932  |-1.55004  -2.92069  9.07656  ]
 
-New Linecode.3flv4/0aac4/0aac nphases=3  Units=km
-~ Rmatrix=[0.436808  |0.119969  0.446886  |0.128276  0.134113  0.465789  ]
-~ Xmatrix=[0.610525  |0.313131  0.576797  |0.232779  0.266255  0.515101  ]
-~ Cmatrix=[11.2952  |-4.48636  12.8723  |-1.90151  -3.99075  12.8608  ]
-
 New Linecode.1fmv2aaac2aaac_m nphases=1  Units=km
 ~ Rmatrix=[1.11421  ]
 ~ Xmatrix=[0.858222  ]
@@ -881,6 +1331,21 @@ New Linecode.3fmv1/0cu_35epr nphases=3  Units=km
 ~ Rmatrix=[0.509614  |0.0768646  0.492364  |0.0527863  0.0768646  0.509614  ]
 ~ Xmatrix=[0.24429  |-0.0305148  0.234721  |-0.0381164  -0.0305148  0.24429  ]
 ~ Cmatrix=[169.108  |0  169.108  |0  0  169.108  ]
+
+New Linecode.3fmv250cu_35epr nphases=3  Units=km
+~ Rmatrix=[0.248335  |0.0149055  0.240623  |0.00576676  0.0149055  0.248335  ]
+~ Xmatrix=[0.143591  |-0.0182598  0.146899  |-0.0135143  -0.0182598  0.143591  ]
+~ Cmatrix=[223.102  |0  223.102  |0  0  223.102  ]
+
+New Linecode.3fmv250cu_35xlp nphases=3  Units=km
+~ Rmatrix=[0.248812  |0.0145431  0.241314  |0.0056497  0.0145431  0.248812  ]
+~ Xmatrix=[0.14104  |-0.0181834  0.144389  |-0.0134002  -0.0181834  0.14104  ]
+~ Cmatrix=[171.044  |0  171.044  |0  0  171.044  ]
+
+New Linecode.3fmv350cu_35xlp nphases=3  Units=km
+~ Rmatrix=[0.184517  |0.00661567  0.180591  |0.0020258  0.00661567  0.184517  ]
+~ Xmatrix=[0.117286  |-0.0117074  0.12057  |-0.00747758  -0.0117074  0.117286  ]
+~ Cmatrix=[190.378  |0  190.378  |0  0  190.378  ]
 
 New Linecode.3fmv500cu_35epr nphases=3  Units=km
 ~ Rmatrix=[0.133847  |0.00278057  0.131988  |0.000624419  0.00278057  0.133847  ]

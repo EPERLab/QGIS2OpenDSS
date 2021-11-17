@@ -1,5 +1,11 @@
 !Este archivo .dss es generado automáticamente por el script calculoDeMatricesQUADOpenDSS.py
 
+New Linecode.QDPX6AAC nphases=4 units=mile
+~ rmatrix=[ 2.767 0.0953 0.0953 0.0953 | 0.0953 2.767 0.0953 0.0953 | 0.0953 0.0953 2.767 0.0953 | 0.0953 0.0953 0.0953 2.767 ]
+~ xmatrix=[ 1.5648 1.4017 1.42 1.42 | 1.4017 1.5648 1.42 1.42 | 1.42 1.42 1.5648 1.42 | 1.42 1.42 1.42 1.5648 ]
+~ Normamps=100.0
+~ kron=y
+
 New Linecode.QDPX4AAC nphases=4 units=mile
 ~ rmatrix=[ 2.767 0.0953 0.0953 0.0953 | 0.0953 2.767 0.0953 0.0953 | 0.0953 0.0953 2.767 0.0953 | 0.0953 0.0953 0.0953 2.767 ]
 ~ xmatrix=[ 1.5648 1.4017 1.42 1.42 | 1.4017 1.5648 1.42 1.42 | 1.42 1.42 1.5648 1.42 | 1.42 1.42 1.42 1.5648 ]

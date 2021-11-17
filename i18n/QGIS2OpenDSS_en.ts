@@ -14,55 +14,137 @@
         <translation>Choose layers</translation>
     </message>
     <message>
-        <location filename="../qgis2opendss_dialog_base.ui" line="224"/>
         <source>Generación distribuida BT:</source>
-        <translation type="unfinished">Distributed Generation (LV):</translation>
+        <translation type="obsolete">Distributed Generation (LV):</translation>
     </message>
     <message>
-        <location filename="../qgis2opendss_dialog_base.ui" line="578"/>
         <source>Transformadores:</source>
-        <translation>Transformers:</translation>
+        <translation type="vanished">Transformers:</translation>
     </message>
     <message>
-        <location filename="../qgis2opendss_dialog_base.ui" line="272"/>
-        <location filename="../qgis2opendss_dialog_base.ui" line="285"/>
-        <location filename="../qgis2opendss_dialog_base.ui" line="308"/>
-        <location filename="../qgis2opendss_dialog_base.ui" line="367"/>
-        <location filename="../qgis2opendss_dialog_base.ui" line="481"/>
-        <location filename="../qgis2opendss_dialog_base.ui" line="549"/>
+        <location filename="../qgis2opendss_dialog_base.ui" line="261"/>
+        <location filename="../qgis2opendss_dialog_base.ui" line="274"/>
+        <location filename="../qgis2opendss_dialog_base.ui" line="339"/>
+        <location filename="../qgis2opendss_dialog_base.ui" line="411"/>
+        <location filename="../qgis2opendss_dialog_base.ui" line="525"/>
+        <location filename="../qgis2opendss_dialog_base.ui" line="593"/>
         <source>Sub</source>
         <translation>UG</translation>
     </message>
     <message>
-        <location filename="../qgis2opendss_dialog_base.ui" line="510"/>
         <source>Acometidas:</source>
-        <translation>Service wire:</translation>
+        <translation type="vanished">Service wire:</translation>
     </message>
     <message>
         <location filename="../qgis2opendss_dialog_base.ui" line="87"/>
         <source>Modelar como Auto-transformador</source>
-        <translation>Substation as autotransformer</translation>
+        <translation>Model as autotransformer</translation>
     </message>
     <message>
-        <location filename="../qgis2opendss_dialog_base.ui" line="683"/>
-        <location filename="../qgis2opendss_dialog_base.ui" line="745"/>
+        <location filename="../qgis2opendss_dialog_base.ui" line="141"/>
+        <source>Subestación</source>
+        <translation>Substation</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="173"/>
+        <source>Generación distribuida
+pequeña escala</source>
+        <translation>Low Scale DG</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="212"/>
+        <source>Generación distribuida
+gran escala</source>
+        <translation>High Scale DG</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="323"/>
+        <source>Cargas de media tensión</source>
+        <translation>MV Loads</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="385"/>
+        <source>Líneas de media tensión</source>
+        <translation>MV Lines</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="437"/>
+        <source>Líneas de baja tensión</source>
+        <translation>LV Lines</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="538"/>
+        <source>Cargas de baja tensión</source>
+        <translation>LV Loads</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="554"/>
+        <source>Acometidas</source>
+        <translation>Service Wire</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="606"/>
+        <source>Alumbrado público</source>
+        <translation>Public Lightning</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="677"/>
+        <source>Transformadores</source>
+        <translation>Transformers</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="774"/>
+        <source>Planteles de buses</source>
+        <translation>Electric Bus Station</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="831"/>
+        <source>Vehículos eléctricos</source>
+        <translation>EV </translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="863"/>
+        <source>Fusibles</source>
+        <translation>Fuses</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="920"/>
+        <source>Seccionadores</source>
+        <translation>Sectionalizers</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="939"/>
+        <source>Reconectadores</source>
+        <translation>Reclosers</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="990"/>
+        <source>Capacitores</source>
+        <translation>Capacitors</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="1047"/>
+        <source>Reguladores</source>
+        <translation>Regulators</translation>
+    </message>
+    <message>
+        <location filename="../qgis2opendss_dialog_base.ui" line="1087"/>
+        <location filename="../qgis2opendss_dialog_base.ui" line="1149"/>
         <source>...</source>
-        <translation></translation>
+        <translation>...</translation>
     </message>
     <message>
-        <location filename="../qgis2opendss_dialog_base.ui" line="697"/>
+        <location filename="../qgis2opendss_dialog_base.ui" line="1101"/>
         <source>Ingrese el nombre del circuito</source>
         <translation>Enter the circuit name</translation>
     </message>
     <message>
-        <location filename="../qgis2opendss_dialog_base.ui" line="393"/>
         <source>Líneas de baja tensión:</source>
-        <translation>LV lines</translation>
+        <translation type="vanished">LV lines</translation>
     </message>
     <message>
-        <location filename="../qgis2opendss_dialog_base.ui" line="494"/>
         <source>Cargas de baja tensión:</source>
-        <translation>LV Loads</translation>
+        <translation type="vanished">LV Loads</translation>
     </message>
     <message>
         <location filename="../qgis2opendss_dialog_base.ui" line="65"/>
@@ -75,14 +157,12 @@
         <translation>Model substation</translation>
     </message>
     <message>
-        <location filename="../qgis2opendss_dialog_base.ui" line="141"/>
         <source>Subestación:</source>
-        <translation>Substation</translation>
+        <translation type="vanished">Substation</translation>
     </message>
     <message>
-        <location filename="../qgis2opendss_dialog_base.ui" line="192"/>
         <source>Vehículos eléctricos:</source>
-        <translation>Electric Vehicles</translation>
+        <translation type="vanished">Electric Vehicles</translation>
     </message>
     <message>
         <source>Generación distribuida MV:</source>
@@ -97,22 +177,21 @@
         <translation type="vanished">MV Loads</translation>
     </message>
     <message>
-        <location filename="../qgis2opendss_dialog_base.ui" line="341"/>
         <source>Líneas de media tensión:</source>
-        <translation>MV lines</translation>
+        <translation type="vanished">MV lines</translation>
     </message>
     <message>
-        <location filename="../qgis2opendss_dialog_base.ui" line="640"/>
+        <location filename="../qgis2opendss_dialog_base.ui" line="739"/>
         <source>Calcular ruta más larga</source>
         <translation>Largest route</translation>
     </message>
     <message>
-        <location filename="../qgis2opendss_dialog_base.ui" line="661"/>
+        <location filename="../qgis2opendss_dialog_base.ui" line="1065"/>
         <source>Seleccione la ubicación de los archivos de salida</source>
         <translation>Select the location of output files</translation>
     </message>
     <message>
-        <location filename="../qgis2opendss_dialog_base.ui" line="723"/>
+        <location filename="../qgis2opendss_dialog_base.ui" line="1127"/>
         <source>Seleccione la ubicación de los perfiles de carga</source>
         <translation>Select the location of load profiles</translation>
     </message>

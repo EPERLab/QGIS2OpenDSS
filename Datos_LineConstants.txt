@@ -27,6 +27,52 @@ C MATRIX, nF per km
 -2.51366, 7.90438, 
 
 --------------------------------------------------
+Geometry Code = 1flv8cu8cu
+
+R MATRIX, ohms per km
+2.31559, 
+0.184035, 2.33839, 
+
+jX MATRIX, ohms per km
+0.934076, 
+0.546075, 0.920767, 
+
+Susceptance (jB) MATRIX, S per km
+3.12976E-006, 
+-1.13651E-006, 3.38631E-006, 
+
+L MATRIX, mH per km
+2.47771, 
+1.44851, 2.44241, 
+
+C MATRIX, nF per km
+8.30194, 
+-3.01468, 8.98247, 
+
+--------------------------------------------------
+Geometry Code = 1flv8aac8cu
+
+R MATRIX, ohms per km
+2.76248, 
+0.184035, 2.78529, 
+
+jX MATRIX, ohms per km
+0.91234, 
+0.546075, 0.899031, 
+
+Susceptance (jB) MATRIX, S per km
+3.33314E-006, 
+-1.27527E-006, 3.62102E-006, 
+
+L MATRIX, mH per km
+2.42006, 
+1.44851, 2.38475, 
+
+C MATRIX, nF per km
+8.84143, 
+-3.38277, 9.60506, 
+
+--------------------------------------------------
 Geometry Code = 1flv6aac6aac
 
 R MATRIX, ohms per km
@@ -48,6 +94,29 @@ L MATRIX, mH per km
 C MATRIX, nF per km
 8.8652, 
 -3.3423, 9.67395, 
+
+--------------------------------------------------
+Geometry Code = 1flv6aac6cu
+
+R MATRIX, ohms per km
+2.78443, 
+0.208483, 2.81249, 
+
+jX MATRIX, ohms per km
+0.850717, 
+0.479189, 0.826438, 
+
+Susceptance (jB) MATRIX, S per km
+3.33881E-006, 
+-1.26562E-006, 3.63745E-006, 
+
+L MATRIX, mH per km
+2.2566, 
+1.27109, 2.19219, 
+
+C MATRIX, nF per km
+8.85646, 
+-3.35717, 9.64863, 
 
 --------------------------------------------------
 Geometry Code = 1flv4cu4cu
@@ -280,6 +349,52 @@ C MATRIX, nF per km
 -4.5355, 12.1318, 
 
 --------------------------------------------------
+Geometry Code = 1flv3/0acsr3/0cu
+
+R MATRIX, ohms per km
+0.55335, 
+0.0958488, 0.566017, 
+
+jX MATRIX, ohms per km
+0.560574, 
+0.249828, 0.495462, 
+
+Susceptance (jB) MATRIX, S per km
+4.14112E-006, 
+-1.76675E-006, 4.66498E-006, 
+
+L MATRIX, mH per km
+1.48697, 
+0.662689, 1.31425, 
+
+C MATRIX, nF per km
+10.9847, 
+-4.68644, 12.3743, 
+
+--------------------------------------------------
+Geometry Code = 1flv3/0cu4aac
+
+R MATRIX, ohms per km
+0.406447, 
+0.203559, 0.433166, 
+
+jX MATRIX, ohms per km
+0.809099, 
+0.510023, 0.789981, 
+
+Susceptance (jB) MATRIX, S per km
+4.04211E-006, 
+-1.75572E-006, 4.48756E-006, 
+
+L MATRIX, mH per km
+2.1462, 
+1.35288, 2.09549, 
+
+C MATRIX, nF per km
+10.722, 
+-4.6572, 11.9036, 
+
+--------------------------------------------------
 Geometry Code = 1flv4/0aac4/0aac
 
 R MATRIX, ohms per km
@@ -349,6 +464,29 @@ C MATRIX, nF per km
 -4.76037, 12.5872, 
 
 --------------------------------------------------
+Geometry Code = 1flv4/0cu6cu
+
+R MATRIX, ohms per km
+0.366361, 
+0.208483, 0.394421, 
+
+jX MATRIX, ohms per km
+0.767748, 
+0.479189, 0.743469, 
+
+Susceptance (jB) MATRIX, S per km
+4.15525E-006, 
+-1.87227E-006, 4.59704E-006, 
+
+L MATRIX, mH per km
+2.03651, 
+1.27109, 1.97211, 
+
+C MATRIX, nF per km
+11.0222, 
+-4.96636, 12.194, 
+
+--------------------------------------------------
 Geometry Code = 1flv1/0cu14cu
 
 R MATRIX, ohms per km
@@ -370,6 +508,29 @@ L MATRIX, mH per km
 C MATRIX, nF per km
 10.0989, 
 -4.40492, 10.9783, 
+
+--------------------------------------------------
+Geometry Code = 1flv3/0cu14cu
+
+R MATRIX, ohms per km
+0.31152, 
+0.0992934, 0.31866, 
+
+jX MATRIX, ohms per km
+0.913958, 
+0.623326, 0.912394, 
+
+Susceptance (jB) MATRIX, S per km
+4.00924E-006, 
+-1.81733E-006, 4.37206E-006, 
+
+L MATRIX, mH per km
+2.42435, 
+1.65342, 2.4202, 
+
+C MATRIX, nF per km
+10.6348, 
+-4.82063, 11.5972, 
 
 --------------------------------------------------
 Geometry Code = 1flv1/0cu4cu
@@ -418,6 +579,52 @@ C MATRIX, nF per km
 -4.3301, 11.7982, 
 
 --------------------------------------------------
+Geometry Code = 1flv3/0aac1/0aac
+
+R MATRIX, ohms per km
+0.588856, 
+0.196683, 0.617041, 
+
+jX MATRIX, ohms per km
+0.661448, 
+0.348993, 0.614843, 
+
+Susceptance (jB) MATRIX, S per km
+4.0577E-006, 
+-1.72649E-006, 4.54235E-006, 
+
+L MATRIX, mH per km
+1.75455, 
+0.925733, 1.63092, 
+
+C MATRIX, nF per km
+10.7634, 
+-4.57967, 12.049, 
+
+--------------------------------------------------
+Geometry Code = 1flv1/0aac1/0aac
+
+R MATRIX, ohms per km
+0.82677, 
+0.196683, 0.854955, 
+
+jX MATRIX, ohms per km
+0.678949, 
+0.348993, 0.632344, 
+
+Susceptance (jB) MATRIX, S per km
+3.85478E-006, 
+-1.57392E-006, 4.29661E-006, 
+
+L MATRIX, mH per km
+1.80097, 
+0.925733, 1.67734, 
+
+C MATRIX, nF per km
+10.2251, 
+-4.17494, 11.3971, 
+
+--------------------------------------------------
 Geometry Code = 1flv3/0aac4aac
 
 R MATRIX, ohms per km
@@ -464,6 +671,52 @@ C MATRIX, nF per km
 -4.7875, 12.5354, 
 
 --------------------------------------------------
+Geometry Code = 1flv3/0cu3/0aac
+
+R MATRIX, ohms per km
+0.361204, 
+0.156117, 0.383494, 
+
+jX MATRIX, ohms per km
+0.605289, 
+0.28776, 0.547611, 
+
+Susceptance (jB) MATRIX, S per km
+4.06658E-006, 
+-1.70984E-006, 4.57357E-006, 
+
+L MATRIX, mH per km
+1.60558, 
+0.763306, 1.45258, 
+
+C MATRIX, nF per km
+10.7869, 
+-4.5355, 12.1318, 
+
+--------------------------------------------------
+Geometry Code = 1flv8cu8aac
+
+R MATRIX, ohms per km
+2.30422, 
+0.171493, 2.32456, 
+
+jX MATRIX, ohms per km
+0.953486, 
+0.567104, 0.943547, 
+
+Susceptance (jB) MATRIX, S per km
+3.13835E-006, 
+-1.12227E-006, 3.40991E-006, 
+
+L MATRIX, mH per km
+2.5292, 
+1.50429, 2.50284, 
+
+C MATRIX, nF per km
+8.32473, 
+-2.9769, 9.04506, 
+
+--------------------------------------------------
 Geometry Code = 1flv4acsr4cu
 
 R MATRIX, ohms per km
@@ -508,6 +761,29 @@ L MATRIX, mH per km
 C MATRIX, nF per km
 9.073, 
 -3.40151, 9.97954, 
+
+--------------------------------------------------
+Geometry Code = 1flv8aac8aac
+
+R MATRIX, ohms per km
+2.75111, 
+0.171493, 2.77145, 
+
+jX MATRIX, ohms per km
+0.93175, 
+0.567104, 0.921811, 
+
+Susceptance (jB) MATRIX, S per km
+3.3421E-006, 
+-1.26002E-006, 3.64699E-006, 
+
+L MATRIX, mH per km
+2.47154, 
+1.50429, 2.44518, 
+
+C MATRIX, nF per km
+8.8652, 
+-3.3423, 9.67395, 
 
 --------------------------------------------------
 Geometry Code = 1flv6cu6cu
@@ -795,6 +1071,202 @@ Propagation Velocity (Percent of speed of light):
 
 
 --------------------------------------------------
+Geometry Code = 3flv8cu8cu
+
+R MATRIX, ohms per km
+2.30319, 
+0.166764, 2.31558, 
+0.17706, 0.184028, 2.33839, 
+
+jX MATRIX, ohms per km
+0.941438, 
+0.556267, 0.934101, 
+0.497864, 0.5461, 0.920792, 
+
+Susceptance (jB) MATRIX, S per km
+3.18847E-006, 
+-1.06196E-006, 3.48095E-006, 
+-5.43778E-007, -9.57433E-007, 3.47739E-006, 
+
+L MATRIX, mH per km
+2.49724, 
+1.47554, 2.47778, 
+1.32062, 1.44858, 2.44248, 
+
+C MATRIX, nF per km
+8.45768, 
+-2.81695, 9.23351, 
+-1.44242, -2.53967, 9.22406, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 2.1431 + j 0.3987 (L1 = 1.05758 mH) 
+Z0, ohms per km = 2.67095 + j 1.99893 (L0 = 5.30233 mH) 
+
+C1, nF per km = 11.2381
+C0, nF per km = 4.43906
+
+Surge Impedance:
+  Positive sequence = 306.769 ohms
+  Zero sequence     = 1092.92 ohms
+  Common Mode       = 364.333 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 96.7554 
+  Zero sequence     = 68.7544 
+
+
+--------------------------------------------------
+Geometry Code = 3flv8aac8cu
+
+R MATRIX, ohms per km
+2.75008, 
+0.166764, 2.76247, 
+0.17706, 0.184028, 2.78528, 
+
+jX MATRIX, ohms per km
+0.919702, 
+0.556267, 0.912365, 
+0.497864, 0.5461, 0.899056, 
+
+Susceptance (jB) MATRIX, S per km
+3.40114E-006, 
+-1.18469E-006, 3.74309E-006, 
+-5.91213E-007, -1.07154E-006, 3.72201E-006, 
+
+L MATRIX, mH per km
+2.43958, 
+1.47554, 2.42012, 
+1.32062, 1.44858, 2.38482, 
+
+C MATRIX, nF per km
+9.02182, 
+-3.1425, 9.92885, 
+-1.56824, -2.84234, 9.87294, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 2.58999 + j 0.376964 (L1 = 0.999928 mH) 
+Z0, ohms per km = 3.11784 + j 1.9772 (L0 = 5.24467 mH) 
+
+C1, nF per km = 12.1256
+C0, nF per km = 4.57248
+
+Surge Impedance:
+  Positive sequence = 287.166 ohms
+  Zero sequence     = 1070.98 ohms
+  Common Mode       = 357.018 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 95.7953 
+  Zero sequence     = 68.1152 
+
+
+--------------------------------------------------
+Geometry Code = 3flv6cu6cu
+
+R MATRIX, ohms per km
+1.52839, 
+0.187268, 1.54361, 
+0.199898, 0.208481, 1.57167, 
+
+jX MATRIX, ohms per km
+0.868127, 
+0.49772, 0.854785, 
+0.434312, 0.47921, 0.830505, 
+
+Susceptance (jB) MATRIX, S per km
+3.32444E-006, 
+-1.13591E-006, 3.64885E-006, 
+-5.68244E-007, -1.02167E-006, 3.64517E-006, 
+
+L MATRIX, mH per km
+2.30278, 
+1.32024, 2.26739, 
+1.15205, 1.27114, 2.20298, 
+
+C MATRIX, nF per km
+8.81835, 
+-3.01309, 9.67887, 
+-1.50731, -2.71007, 9.6691, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 1.34934 + j 0.380725 (L1 = 1.0099 mH) 
+Z0, ohms per km = 1.94499 + j 1.79197 (L0 = 4.75334 mH) 
+
+C1, nF per km = 11.7989
+C0, nF per km = 4.56846
+
+Surge Impedance:
+  Positive sequence = 292.563 ohms
+  Zero sequence     = 1020.03 ohms
+  Common Mode       = 340.094 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 96.6313 
+  Zero sequence     = 71.5805 
+
+
+--------------------------------------------------
+Geometry Code = 3flv4aac4aac
+
+R MATRIX, ohms per km
+1.80393, 
+0.183343, 1.81843, 
+0.195388, 0.203555, 1.84515, 
+
+jX MATRIX, ohms per km
+0.872121, 
+0.524635, 0.8616, 
+0.463576, 0.510046, 0.842482, 
+
+Susceptance (jB) MATRIX, S per km
+3.5615E-006, 
+-1.26912E-006, 3.94602E-006, 
+-6.09324E-007, -1.13732E-006, 3.94214E-006, 
+
+L MATRIX, mH per km
+2.31337, 
+1.39164, 2.28546, 
+1.22967, 1.35294, 2.23475, 
+
+C MATRIX, nF per km
+9.44718, 
+-3.36645, 10.4671, 
+-1.61628, -3.01682, 10.4568, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 1.62841 + j 0.359315 (L1 = 0.953113 mH) 
+Z0, ohms per km = 2.21069 + j 1.85757 (L0 = 4.92736 mH) 
+
+C1, nF per km = 12.7902
+C0, nF per km = 4.79069
+
+Surge Impedance:
+  Positive sequence = 272.981 ohms
+  Zero sequence     = 1014.16 ohms
+  Common Mode       = 338.11 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 95.5362 
+  Zero sequence     = 68.6551 
+
+
+--------------------------------------------------
 Geometry Code = 1flv1/0aaac2aaac
 
 R MATRIX, ohms per km
@@ -939,6 +1411,1023 @@ Propagation Velocity (Percent of speed of light):
 
 
 --------------------------------------------------
+Geometry Code = 3flv3/0aac1/0aac
+
+R MATRIX, ohms per km
+0.573658, 
+0.175448, 0.588857, 
+0.188037, 0.196685, 0.617043, 
+
+jX MATRIX, ohms per km
+0.686988, 
+0.384459, 0.661461, 
+0.310916, 0.349005, 0.614855, 
+
+Susceptance (jB) MATRIX, S per km
+4.13613E-006, 
+-1.62017E-006, 4.68918E-006, 
+-7.09428E-007, -1.45102E-006, 4.66218E-006, 
+
+L MATRIX, mH per km
+1.82229, 
+1.01981, 1.75458, 
+0.82473, 0.925766, 1.63095, 
+
+C MATRIX, nF per km
+10.9714, 
+-4.29764, 12.4384, 
+-1.88182, -3.84895, 12.3668, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.406463 + j 0.306308 (L1 = 0.812506 mH) 
+Z0, ohms per km = 0.966633 + j 1.35069 (L0 = 3.58281 mH) 
+
+C1, nF per km = 15.2684
+C0, nF per km = 5.23995
+
+Surge Impedance:
+  Positive sequence = 230.684 ohms
+  Zero sequence     = 826.891 ohms
+  Common Mode       = 275.752 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 94.7043 
+  Zero sequence     = 76.9846 
+
+
+--------------------------------------------------
+Geometry Code = 3flv4/0aac4/0aac
+
+R MATRIX, ohms per km
+0.436808, 
+0.119969, 0.446886, 
+0.128276, 0.134113, 0.465789, 
+
+jX MATRIX, ohms per km
+0.610525, 
+0.313131, 0.576797, 
+0.232779, 0.266255, 0.515101, 
+
+Susceptance (jB) MATRIX, S per km
+4.25817E-006, 
+-1.69132E-006, 4.85275E-006, 
+-7.16854E-007, -1.50448E-006, 4.84842E-006, 
+
+L MATRIX, mH per km
+1.61947, 
+0.830607, 1.53, 
+0.617465, 0.706264, 1.36635, 
+
+C MATRIX, nF per km
+11.2952, 
+-4.48636, 12.8723, 
+-1.90151, -3.99075, 12.8608, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.322375 + j 0.296753 (L1 = 0.787161 mH) 
+Z0, ohms per km = 0.704733 + j 1.10892 (L0 = 2.9415 mH) 
+
+C1, nF per km = 15.8023
+C0, nF per km = 5.42368
+
+Surge Impedance:
+  Positive sequence = 223.188 ohms
+  Zero sequence     = 736.439 ohms
+  Common Mode       = 245.148 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 94.5774 
+  Zero sequence     = 83.5118 
+
+
+--------------------------------------------------
+Geometry Code = 1flv3/0aac4/0aac
+
+R MATRIX, ohms per km
+0.530761, 
+0.134112, 0.549663, 
+
+jX MATRIX, ohms per km
+0.58591, 
+0.266249, 0.524215, 
+
+Susceptance (jB) MATRIX, S per km
+4.0714E-006, 
+-1.7008E-006, 4.59052E-006, 
+
+L MATRIX, mH per km
+1.55417, 
+0.706247, 1.39052, 
+
+C MATRIX, nF per km
+10.7997, 
+-4.51151, 12.1767, 
+
+--------------------------------------------------
+Geometry Code = 3flv350aac6aac
+
+R MATRIX, ohms per km
+0.345925, 
+0.156089, 0.356975, 
+0.165275, 0.171484, 0.377309, 
+
+jX MATRIX, ohms per km
+0.835508, 
+0.574732, 0.830019, 
+0.517869, 0.56713, 0.82008, 
+
+Susceptance (jB) MATRIX, S per km
+4.53515E-006, 
+-1.90463E-006, 5.22241E-006, 
+-8.0989E-007, -1.74206E-006, 5.07171E-006, 
+
+L MATRIX, mH per km
+2.21625, 
+1.52452, 2.2017, 
+1.37369, 1.50436, 2.17533, 
+
+C MATRIX, nF per km
+12.0299, 
+-5.05219, 13.8529, 
+-2.1483, -4.62096, 13.4531, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.195787 + j 0.275292 (L1 = 0.730236 mH) 
+Z0, ohms per km = 0.688635 + j 1.93502 (L0 = 5.13281 mH) 
+
+C1, nF per km = 17.0524
+C0, nF per km = 5.23099
+
+Surge Impedance:
+  Positive sequence = 206.937 ohms
+  Zero sequence     = 990.57 ohms
+  Common Mode       = 330.172 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 94.5267 
+  Zero sequence     = 64.3739 
+
+
+--------------------------------------------------
+Geometry Code = 3flv14cu14cu
+
+R MATRIX, ohms per km
+8.70748, 
+0.0938665, 8.71136, 
+0.0970998, 0.0992746, 8.7185, 
+
+jX MATRIX, ohms per km
+1.05883, 
+0.624555, 1.05796, 
+0.571553, 0.623352, 1.0564, 
+
+Susceptance (jB) MATRIX, S per km
+2.8427E-006, 
+-8.82194E-007, 3.0622E-006, 
+-4.78917E-007, -8.00893E-007, 3.05899E-006, 
+
+L MATRIX, mH per km
+2.80863, 
+1.65668, 2.80632, 
+1.51609, 1.65349, 2.80218, 
+
+C MATRIX, nF per km
+7.5405, 
+-2.34009, 8.12274, 
+-1.27037, -2.12443, 8.11421, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 8.6157 + j 0.451241 (L1 = 1.19695 mH) 
+Z0, ohms per km = 8.90594 + j 2.2707 (L0 = 6.02322 mH) 
+
+C1, nF per km = 9.83745
+C0, nF per km = 4.10256
+
+Surge Impedance:
+  Positive sequence = 348.817 ohms
+  Zero sequence     = 1211.68 ohms
+  Common Mode       = 403.893 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 97.2074 
+  Zero sequence     = 67.1023 
+
+
+--------------------------------------------------
+Geometry Code = 1flv3/0aac3/0cu
+
+R MATRIX, ohms per km
+0.49549, 
+0.0958488, 0.508156, 
+
+jX MATRIX, ohms per km
+0.571112, 
+0.249828, 0.506, 
+
+Susceptance (jB) MATRIX, S per km
+4.06658E-006, 
+-1.70984E-006, 4.57357E-006, 
+
+L MATRIX, mH per km
+1.51492, 
+0.662689, 1.34221, 
+
+C MATRIX, nF per km
+10.7869, 
+-4.5355, 12.1318, 
+
+--------------------------------------------------
+Geometry Code = 1flv2cu2aac
+
+R MATRIX, ohms per km
+0.73668, 
+0.216047, 0.766823, 
+
+jX MATRIX, ohms per km
+0.775045, 
+0.430497, 0.742613, 
+
+Susceptance (jB) MATRIX, S per km
+3.57533E-006, 
+-1.39086E-006, 3.94601E-006, 
+
+L MATRIX, mH per km
+2.05587, 
+1.14193, 1.96984, 
+
+C MATRIX, nF per km
+9.48385, 
+-3.68936, 10.4671, 
+
+--------------------------------------------------
+Geometry Code = 1flv14aac14aac
+
+R MATRIX, ohms per km
+2.75111, 
+0.171493, 2.77145, 
+
+jX MATRIX, ohms per km
+0.93175, 
+0.567104, 0.921811, 
+
+Susceptance (jB) MATRIX, S per km
+3.3421E-006, 
+-1.26002E-006, 3.64699E-006, 
+
+L MATRIX, mH per km
+2.47154, 
+1.50429, 2.44518, 
+
+C MATRIX, nF per km
+8.8652, 
+-3.3423, 9.67395, 
+
+--------------------------------------------------
+Geometry Code = 1flv1/0cu1/0aac
+
+R MATRIX, ohms per km
+0.525494, 
+0.196683, 0.553679, 
+
+jX MATRIX, ohms per km
+0.678745, 
+0.348993, 0.632141, 
+
+Susceptance (jB) MATRIX, S per km
+3.85478E-006, 
+-1.57392E-006, 4.29661E-006, 
+
+L MATRIX, mH per km
+1.80043, 
+0.925733, 1.6768, 
+
+C MATRIX, nF per km
+10.2251, 
+-4.17494, 11.3971, 
+
+--------------------------------------------------
+Geometry Code = 1flv14aac14cu
+
+R MATRIX, ohms per km
+2.68521, 
+0.0992934, 2.69235, 
+
+jX MATRIX, ohms per km
+0.983936, 
+0.623326, 0.982372, 
+
+Susceptance (jB) MATRIX, S per km
+3.31826E-006, 
+-1.3006E-006, 3.57792E-006, 
+
+L MATRIX, mH per km
+2.60997, 
+1.65342, 2.60582, 
+
+C MATRIX, nF per km
+8.80197, 
+-3.44994, 9.49073, 
+
+--------------------------------------------------
+Geometry Code = 1flv2cu3/0aac
+
+R MATRIX, ohms per km
+0.68056, 
+0.156117, 0.702851, 
+
+jX MATRIX, ohms per km
+0.644379, 
+0.28776, 0.586701, 
+
+Susceptance (jB) MATRIX, S per km
+3.5914E-006, 
+-1.36266E-006, 3.99545E-006, 
+
+L MATRIX, mH per km
+1.70927, 
+0.763306, 1.55627, 
+
+C MATRIX, nF per km
+9.52649, 
+-3.61458, 10.5983, 
+
+--------------------------------------------------
+Geometry Code = 1flv2/0aac2/0aac
+
+R MATRIX, ohms per km
+0.677504, 
+0.177975, 0.703059, 
+
+jX MATRIX, ohms per km
+0.639229, 
+0.315349, 0.586598, 
+
+Susceptance (jB) MATRIX, S per km
+3.95935E-006, 
+-1.64058E-006, 4.43271E-006, 
+
+L MATRIX, mH per km
+1.69561, 
+0.83649, 1.556, 
+
+C MATRIX, nF per km
+10.5025, 
+-4.35177, 11.7581, 
+
+--------------------------------------------------
+Geometry Code = 1flv2aac3/0cu
+
+R MATRIX, ohms per km
+1.11288, 
+0.0958488, 1.12555, 
+
+jX MATRIX, ohms per km
+0.605863, 
+0.249828, 0.540751, 
+
+Susceptance (jB) MATRIX, S per km
+3.68206E-006, 
+-1.42672E-006, 4.1051E-006, 
+
+L MATRIX, mH per km
+1.6071, 
+0.662689, 1.43439, 
+
+C MATRIX, nF per km
+9.76696, 
+-3.78449, 10.8891, 
+
+--------------------------------------------------
+Geometry Code = 1flv2/0cu2cu
+
+R MATRIX, ohms per km
+0.43495, 
+0.175096, 0.459832, 
+
+jX MATRIX, ohms per km
+0.649428, 
+0.326561, 0.598656, 
+
+Susceptance (jB) MATRIX, S per km
+3.94281E-006, 
+-1.67112E-006, 4.37628E-006, 
+
+L MATRIX, mH per km
+1.72266, 
+0.866229, 1.58799, 
+
+C MATRIX, nF per km
+10.4586, 
+-4.4328, 11.6084, 
+
+--------------------------------------------------
+Geometry Code = 1flv4/0aac6aac
+
+R MATRIX, ohms per km
+0.483476, 
+0.171493, 0.50381, 
+
+jX MATRIX, ohms per km
+0.852868, 
+0.567104, 0.842929, 
+
+Susceptance (jB) MATRIX, S per km
+4.14759E-006, 
+-1.85648E-006, 4.59681E-006, 
+
+L MATRIX, mH per km
+2.2623, 
+1.50429, 2.23594, 
+
+C MATRIX, nF per km
+11.0018, 
+-4.92446, 12.1934, 
+
+--------------------------------------------------
+Geometry Code = 1flv6aac4/0aac
+
+R MATRIX, ohms per km
+2.71452, 
+0.134112, 2.73343, 
+
+jX MATRIX, ohms per km
+0.655673, 
+0.266249, 0.593978, 
+
+Susceptance (jB) MATRIX, S per km
+3.37507E-006, 
+-1.2039E-006, 3.74253E-006, 
+
+L MATRIX, mH per km
+1.73923, 
+0.706247, 1.57558, 
+
+C MATRIX, nF per km
+8.95265, 
+-3.19344, 9.92736, 
+
+--------------------------------------------------
+Geometry Code = 1flv14cu3/0aac
+
+R MATRIX, ohms per km
+8.76106, 
+0.156117, 8.78335, 
+
+jX MATRIX, ohms per km
+0.749265, 
+0.28776, 0.691587, 
+
+Susceptance (jB) MATRIX, S per km
+2.83669E-006, 
+-8.74548E-007, 3.096E-006, 
+
+L MATRIX, mH per km
+1.98749, 
+0.763306, 1.83449, 
+
+C MATRIX, nF per km
+7.52454, 
+-2.31981, 8.21239, 
+
+--------------------------------------------------
+Geometry Code = 1flv6cu6aac
+
+R MATRIX, ohms per km
+1.51029, 
+0.171493, 1.53063, 
+
+jX MATRIX, ohms per km
+0.935797, 
+0.567104, 0.925857, 
+
+Susceptance (jB) MATRIX, S per km
+3.26657E-006, 
+-1.20827E-006, 3.55894E-006, 
+
+L MATRIX, mH per km
+2.48228, 
+1.50429, 2.45591, 
+
+C MATRIX, nF per km
+8.66485, 
+-3.20504, 9.44038, 
+
+--------------------------------------------------
+Geometry Code = 3flv6aac2aac
+
+R MATRIX, ohms per km
+2.7747, 
+0.193279, 2.79102, 
+0.20682, 0.216048, 2.82116, 
+
+jX MATRIX, ohms per km
+0.823751, 
+0.455219, 0.805951, 
+0.388101, 0.430515, 0.773518, 
+
+Susceptance (jB) MATRIX, S per km
+3.4096E-006, 
+-1.1739E-006, 3.75685E-006, 
+-5.6934E-007, -1.04363E-006, 3.77858E-006, 
+
+L MATRIX, mH per km
+2.18507, 
+1.20751, 2.13785, 
+1.02947, 1.14198, 2.05182, 
+
+C MATRIX, nF per km
+9.04425, 
+-3.11388, 9.96536, 
+-1.51022, -2.76832, 10.023, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 2.59024 + j 0.376462 (L1 = 0.998596 mH) 
+Z0, ohms per km = 3.20639 + j 1.6503 (L0 = 4.37755 mH) 
+
+C1, nF per km = 12.1417
+C0, nF per km = 4.74925
+
+Surge Impedance:
+  Positive sequence = 286.785 ohms
+  Zero sequence     = 960.07 ohms
+  Common Mode       = 320.091 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 95.7955 
+  Zero sequence     = 73.1562 
+
+
+--------------------------------------------------
+Geometry Code = 3flv3/0aac4/0aac
+
+R MATRIX, ohms per km
+0.520683, 
+0.119969, 0.53076, 
+0.128276, 0.134113, 0.549663, 
+
+jX MATRIX, ohms per km
+0.619644, 
+0.313131, 0.585917, 
+0.232779, 0.266255, 0.524221, 
+
+Susceptance (jB) MATRIX, S per km
+4.14102E-006, 
+-1.61387E-006, 4.6973E-006, 
+-6.94897E-007, -1.43229E-006, 4.7054E-006, 
+
+L MATRIX, mH per km
+1.64366, 
+0.830607, 1.55419, 
+0.617465, 0.706264, 1.39054, 
+
+C MATRIX, nF per km
+10.9844, 
+-4.28093, 12.46, 
+-1.84327, -3.79925, 12.4815, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.40625 + j 0.305872 (L1 = 0.811351 mH) 
+Z0, ohms per km = 0.788607 + j 1.11804 (L0 = 2.96569 mH) 
+
+C1, nF per km = 15.2831
+C0, nF per km = 5.35963
+
+Surge Impedance:
+  Positive sequence = 230.409 ohms
+  Zero sequence     = 743.867 ohms
+  Common Mode       = 247.768 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 94.726 
+  Zero sequence     = 83.666 
+
+
+--------------------------------------------------
+Geometry Code = 3fmv2aac2aac_h
+
+R MATRIX, ohms per km
+1.14315, 
+0.120791, 1.14437, 
+0.120649, 0.12126, 1.14408, 
+
+jX MATRIX, ohms per km
+0.862751, 
+0.419717, 0.861312, 
+0.367622, 0.419164, 0.861649, 
+
+Susceptance (jB) MATRIX, S per km
+2.89211E-006, 
+-8.29571E-007, 3.05779E-006, 
+-4.69956E-007, -8.28234E-007, 2.89501E-006, 
+
+L MATRIX, mH per km
+2.28852, 
+1.11333, 2.2847, 
+0.975149, 1.11187, 2.28559, 
+
+C MATRIX, nF per km
+7.67155, 
+-2.2005, 8.11105, 
+-1.2466, -2.19696, 7.67927, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 1.02297 + j 0.459736 (L1 = 1.21949 mH) 
+Z0, ohms per km = 1.38567 + j 1.66624 (L0 = 4.41984 mH) 
+
+C1, nF per km = 9.70197
+C0, nF per km = 4.05791
+
+Surge Impedance:
+  Positive sequence = 354.535 ohms
+  Zero sequence     = 1043.64 ohms
+  Common Mode       = 347.858 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 96.9752 
+  Zero sequence     = 78.7635 
+
+
+--------------------------------------------------
+Geometry Code = 2fmv6cu3/0aac_b
+
+R MATRIX, ohms per km
+1.43595, 
+0.0876504, 1.43638, 
+
+jX MATRIX, ohms per km
+0.839777, 
+0.305503, 0.838499, 
+
+Susceptance (jB) MATRIX, S per km
+2.47343E-006, 
+-5.98581E-007, 2.47566E-006, 
+
+L MATRIX, mH per km
+2.22758, 
+0.810371, 2.22419, 
+
+C MATRIX, nF per km
+6.56097, 
+-1.58779, 6.5669, 
+
+--------------------------------------------------
+Geometry Code = 3fmv4cu6cu_h
+
+R MATRIX, ohms per km
+0.965411, 
+0.119385, 0.966557, 
+0.119251, 0.119826, 0.966288, 
+
+jX MATRIX, ohms per km
+0.906551, 
+0.442086, 0.905462, 
+0.389951, 0.441668, 0.905717, 
+
+Susceptance (jB) MATRIX, S per km
+2.7409E-006, 
+-7.59349E-007, 2.88441E-006, 
+-4.3914E-007, -7.58198E-007, 2.74339E-006, 
+
+L MATRIX, mH per km
+2.4047, 
+1.17267, 2.40181, 
+1.03438, 1.17156, 2.40249, 
+
+C MATRIX, nF per km
+7.27047, 
+-2.01424, 7.65114, 
+-1.16486, -2.01118, 7.27707, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.846598 + j 0.481342 (L1 = 1.2768 mH) 
+Z0, ohms per km = 1.20506 + j 1.75505 (L0 = 4.65541 mH) 
+
+C1, nF per km = 9.12965
+C0, nF per km = 3.93938
+
+Surge Impedance:
+  Positive sequence = 373.968 ohms
+  Zero sequence     = 1087.09 ohms
+  Common Mode       = 362.331 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 97.6992 
+  Zero sequence     = 77.8909 
+
+
+--------------------------------------------------
+Geometry Code = 1fmv3/0cu4aac_m
+
+R MATRIX, ohms per km
+0.33115, 
+
+jX MATRIX, ohms per km
+0.865953, 
+
+Susceptance (jB) MATRIX, S per km
+2.6042E-006, 
+
+L MATRIX, mH per km
+2.29701, 
+
+C MATRIX, nF per km
+6.90785, 
+
+--------------------------------------------------
+Geometry Code = 2fmv2aac2aac_b
+
+R MATRIX, ohms per km
+1.14334, 
+0.120686, 1.14396, 
+
+jX MATRIX, ohms per km
+0.862525, 
+0.367579, 0.861788, 
+
+Susceptance (jB) MATRIX, S per km
+2.66772E-006, 
+-6.94561E-007, 2.67015E-006, 
+
+L MATRIX, mH per km
+2.28792, 
+0.975033, 2.28596, 
+
+C MATRIX, nF per km
+7.07635, 
+-1.84238, 7.0828, 
+
+--------------------------------------------------
+Geometry Code = 2fmv4cu2aac_b
+
+R MATRIX, ohms per km
+0.966971, 
+0.120686, 0.967595, 
+
+jX MATRIX, ohms per km
+0.884131, 
+0.367579, 0.883394, 
+
+Susceptance (jB) MATRIX, S per km
+2.5446E-006, 
+-6.35561E-007, 2.54682E-006, 
+
+L MATRIX, mH per km
+2.34523, 
+0.975033, 2.34327, 
+
+C MATRIX, nF per km
+6.74975, 
+-1.68588, 6.75566, 
+
+--------------------------------------------------
+Geometry Code = 1fmv1/0cu3/0aac_m
+
+R MATRIX, ohms per km
+0.427719, 
+
+jX MATRIX, ohms per km
+0.789011, 
+
+Susceptance (jB) MATRIX, S per km
+2.5377E-006, 
+
+L MATRIX, mH per km
+2.09292, 
+
+C MATRIX, nF per km
+6.73146, 
+
+--------------------------------------------------
+Geometry Code = 1fmv2/0aac2/0aac_m
+
+R MATRIX, ohms per km
+0.60782, 
+
+jX MATRIX, ohms per km
+0.791307, 
+
+Susceptance (jB) MATRIX, S per km
+2.57323E-006, 
+
+L MATRIX, mH per km
+2.09901, 
+
+C MATRIX, nF per km
+6.82571, 
+
+--------------------------------------------------
+Geometry Code = 3fmv3/0aac4cu_h
+
+R MATRIX, ohms per km
+0.519863, 
+0.114866, 0.52102, 
+0.114732, 0.115312, 0.520749, 
+
+jX MATRIX, ohms per km
+0.813588, 
+0.405185, 0.811906, 
+0.353119, 0.404538, 0.8123, 
+
+Susceptance (jB) MATRIX, S per km
+3.11221E-006, 
+-9.41911E-007, 3.31494E-006, 
+-5.19615E-007, -9.40492E-007, 3.11533E-006, 
+
+L MATRIX, mH per km
+2.15811, 
+1.07479, 2.15365, 
+0.936676, 1.07307, 2.15469, 
+
+C MATRIX, nF per km
+8.2554, 
+-2.4985, 8.79315, 
+-1.37832, -2.49473, 8.26367, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.405574 + j 0.424984 (L1 = 1.12731 mH) 
+Z0, ohms per km = 0.750484 + j 1.58783 (L0 = 4.21184 mH) 
+
+C1, nF per km = 10.5613
+C0, nF per km = 4.18971
+
+Surge Impedance:
+  Positive sequence = 326.711 ohms
+  Zero sequence     = 1002.64 ohms
+  Common Mode       = 334.135 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 96.672 
+  Zero sequence     = 79.4057 
+
+
+--------------------------------------------------
+Geometry Code = 1fmv250aac3/0aac_m
+
+R MATRIX, ohms per km
+0.35806, 
+
+jX MATRIX, ohms per km
+0.756633, 
+
+Susceptance (jB) MATRIX, S per km
+2.67776E-006, 
+
+L MATRIX, mH per km
+2.00703, 
+
+C MATRIX, nF per km
+7.10299, 
+
+--------------------------------------------------
+Geometry Code = 3fmv336aac3/0aac_h
+
+R MATRIX, ohms per km
+0.29053, 
+0.087722, 0.291365, 
+0.0876249, 0.088044, 0.291169, 
+
+jX MATRIX, ohms per km
+0.735788, 
+0.35755, 0.733291, 
+0.305578, 0.35659, 0.733876, 
+
+Susceptance (jB) MATRIX, S per km
+3.31447E-006, 
+-1.0426E-006, 3.55369E-006, 
+-5.58628E-007, -1.04088E-006, 3.31828E-006, 
+
+L MATRIX, mH per km
+1.95174, 
+0.948431, 1.94511, 
+0.810572, 0.945883, 1.94667, 
+
+C MATRIX, nF per km
+8.7919, 
+-2.76559, 9.42646, 
+-1.48181, -2.76102, 8.80202, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.203225 + j 0.394412 (L1 = 1.04621 mH) 
+Z0, ohms per km = 0.466615 + j 1.41413 (L0 = 3.7511 mH) 
+
+C1, nF per km = 11.3429
+C0, nF per km = 4.33451
+
+Surge Impedance:
+  Positive sequence = 303.701 ohms
+  Zero sequence     = 930.27 ohms
+  Common Mode       = 309.959 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 96.8294 
+  Zero sequence     = 82.7237 
+
+
+--------------------------------------------------
+Geometry Code = 2fmv2aac3/0aac_b
+
+R MATRIX, ohms per km
+1.1104, 
+0.0876504, 1.11083, 
+
+jX MATRIX, ohms per km
+0.800719, 
+0.305503, 0.799441, 
+
+Susceptance (jB) MATRIX, S per km
+2.67062E-006, 
+-6.91586E-007, 2.6732E-006, 
+
+L MATRIX, mH per km
+2.12397, 
+0.810371, 2.12058, 
+
+C MATRIX, nF per km
+7.08404, 
+-1.83449, 7.09089, 
+
+--------------------------------------------------
+Geometry Code = 1fmv266aac3/0aac_m
+
+R MATRIX, ohms per km
+0.341042, 
+
+jX MATRIX, ohms per km
+0.754032, 
+
+Susceptance (jB) MATRIX, S per km
+2.68908E-006, 
+
+L MATRIX, mH per km
+2.00013, 
+
+C MATRIX, nF per km
+7.13301, 
+
+--------------------------------------------------
+Geometry Code = 2fmv4cu6cu_b
+
+R MATRIX, ohms per km
+0.96559, 
+0.119286, 0.966177, 
+
+jX MATRIX, ohms per km
+0.90638, 
+0.389918, 0.905823, 
+
+Susceptance (jB) MATRIX, S per km
+2.54157E-006, 
+-6.38663E-007, 2.54364E-006, 
+
+L MATRIX, mH per km
+2.40425, 
+1.03429, 2.40277, 
+
+C MATRIX, nF per km
+6.74173, 
+-1.69411, 6.74722, 
+
+--------------------------------------------------
 Geometry Code = 1fmv4cu3/0aac_m
 
 R MATRIX, ohms per km
@@ -1045,6 +2534,24 @@ L MATRIX, mH per km
 
 C MATRIX, nF per km
 6.54817, 
+
+--------------------------------------------------
+Geometry Code = 1fmv1/0acsr3/0acsr_m
+
+R MATRIX, ohms per km
+0.791337, 
+
+jX MATRIX, ohms per km
+0.783389, 
+
+Susceptance (jB) MATRIX, S per km
+2.56281E-006, 
+
+L MATRIX, mH per km
+2.078, 
+
+C MATRIX, nF per km
+6.79806, 
 
 --------------------------------------------------
 Geometry Code = 3fmv336aaac1/0aaac_t
@@ -1792,6 +3299,526 @@ Propagation Velocity (Percent of speed of light):
 
 
 --------------------------------------------------
+Geometry Code = 1fmv3/0aac2aac_m
+
+R MATRIX, ohms per km
+0.523134, 
+
+jX MATRIX, ohms per km
+0.831125, 
+
+Susceptance (jB) MATRIX, S per km
+2.6063E-006, 
+
+L MATRIX, mH per km
+2.20463, 
+
+C MATRIX, nF per km
+6.91343, 
+
+--------------------------------------------------
+Geometry Code = 1fmv3/0aac6cu_m
+
+R MATRIX, ohms per km
+0.521913, 
+
+jX MATRIX, ohms per km
+0.852578, 
+
+Susceptance (jB) MATRIX, S per km
+2.60113E-006, 
+
+L MATRIX, mH per km
+2.26153, 
+
+C MATRIX, nF per km
+6.89972, 
+
+--------------------------------------------------
+Geometry Code = 1fmv477aac3/0aac_m
+
+R MATRIX, ohms per km
+0.229467, 
+
+jX MATRIX, ohms per km
+0.727997, 
+
+Susceptance (jB) MATRIX, S per km
+2.79712E-006, 
+
+L MATRIX, mH per km
+1.93107, 
+
+C MATRIX, nF per km
+7.41959, 
+
+--------------------------------------------------
+Geometry Code = 1fmv4aac1/0cu_m
+
+R MATRIX, ohms per km
+1.7035, 
+
+jX MATRIX, ohms per km
+0.820884, 
+
+Susceptance (jB) MATRIX, S per km
+2.40151E-006, 
+
+L MATRIX, mH per km
+2.17746, 
+
+C MATRIX, nF per km
+6.37019, 
+
+--------------------------------------------------
+Geometry Code = 3fmv2/0aac2aac_h
+
+R MATRIX, ohms per km
+0.631841, 
+0.120791, 0.633059, 
+0.120649, 0.12126, 0.632774, 
+
+jX MATRIX, ohms per km
+0.836544, 
+0.419717, 0.835105, 
+0.367622, 0.419164, 0.835442, 
+
+Susceptance (jB) MATRIX, S per km
+3.05576E-006, 
+-9.11176E-007, 3.24826E-006, 
+-5.05667E-007, -9.0973E-007, 3.05893E-006, 
+
+L MATRIX, mH per km
+2.219, 
+1.11333, 2.21519, 
+0.975149, 1.11187, 2.21608, 
+
+C MATRIX, nF per km
+8.10564, 
+-2.41697, 8.61626, 
+-1.34132, -2.41313, 8.11405, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.511658 + j 0.433529 (L1 = 1.14997 mH) 
+Z0, ohms per km = 0.874357 + j 1.64003 (L0 = 4.35032 mH) 
+
+C1, nF per km = 10.3358
+C0, nF per km = 4.16437
+
+Surge Impedance:
+  Positive sequence = 333.558 ohms
+  Zero sequence     = 1022.08 ohms
+  Common Mode       = 340.634 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 96.7528 
+  Zero sequence     = 78.3689 
+
+
+--------------------------------------------------
+Geometry Code = 3fm6cu3/0aac_h
+
+R MATRIX, ohms per km
+1.43582, 
+0.087722, 1.43666, 
+0.0876249, 0.088044, 1.43646, 
+
+jX MATRIX, ohms per km
+0.840168, 
+0.35755, 0.837672, 
+0.305578, 0.35659, 0.838256, 
+
+Susceptance (jB) MATRIX, S per km
+2.65592E-006, 
+-7.14356E-007, 2.78673E-006, 
+-4.15871E-007, -7.13102E-007, 2.65862E-006, 
+
+L MATRIX, mH per km
+2.22862, 
+0.948431, 2.22199, 
+0.810572, 0.945883, 2.22354, 
+
+C MATRIX, nF per km
+7.04506, 
+-1.89489, 7.39203, 
+-1.10313, -1.89156, 7.05222, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 1.34851 + j 0.498793 (L1 = 1.32309 mH) 
+Z0, ohms per km = 1.61191 + j 1.51851 (L0 = 4.02797 mH) 
+
+C1, nF per km = 8.79296
+C0, nF per km = 3.90338
+
+Surge Impedance:
+  Positive sequence = 387.906 ohms
+  Zero sequence     = 1015.83 ohms
+  Common Mode       = 338.596 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 97.7951 
+  Zero sequence     = 84.1232 
+
+
+--------------------------------------------------
+Geometry Code = 3fmv1/0cu1/0cu_h
+
+R MATRIX, ohms per km
+0.419563, 
+0.077693, 0.420247, 
+0.0776134, 0.0779567, 0.420086, 
+
+jX MATRIX, ohms per km
+0.780408, 
+0.354265, 0.777837, 
+0.302302, 0.353276, 0.77844, 
+
+Susceptance (jB) MATRIX, S per km
+2.99929E-006, 
+-8.81404E-007, 3.18201E-006, 
+-4.92231E-007, -8.79953E-007, 3.00247E-006, 
+
+L MATRIX, mH per km
+2.0701, 
+0.939717, 2.06328, 
+0.801881, 0.937094, 2.06488, 
+
+C MATRIX, nF per km
+7.95588, 
+-2.338, 8.44054, 
+-1.30568, -2.33415, 7.96429, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.342211 + j 0.442281 (L1 = 1.17319 mH) 
+Z0, ohms per km = 0.575474 + j 1.45212 (L0 = 3.85188 mH) 
+
+C1, nF per km = 10.1128
+C0, nF per km = 4.13502
+
+Surge Impedance:
+  Positive sequence = 340.602 ohms
+  Zero sequence     = 965.156 ohms
+  Common Mode       = 321.629 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 96.841 
+  Zero sequence     = 83.5804 
+
+
+--------------------------------------------------
+Geometry Code = 3fmv6cu3/0aac_h
+
+R MATRIX, ohms per km
+1.43582, 
+0.087722, 1.43666, 
+0.0876249, 0.088044, 1.43646, 
+
+jX MATRIX, ohms per km
+0.840168, 
+0.35755, 0.837672, 
+0.305578, 0.35659, 0.838256, 
+
+Susceptance (jB) MATRIX, S per km
+2.65592E-006, 
+-7.14356E-007, 2.78673E-006, 
+-4.15871E-007, -7.13102E-007, 2.65862E-006, 
+
+L MATRIX, mH per km
+2.22862, 
+0.948431, 2.22199, 
+0.810572, 0.945883, 2.22354, 
+
+C MATRIX, nF per km
+7.04506, 
+-1.89489, 7.39203, 
+-1.10313, -1.89156, 7.05222, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 1.34851 + j 0.498793 (L1 = 1.32309 mH) 
+Z0, ohms per km = 1.61191 + j 1.51851 (L0 = 4.02797 mH) 
+
+C1, nF per km = 8.79296
+C0, nF per km = 3.90338
+
+Surge Impedance:
+  Positive sequence = 387.906 ohms
+  Zero sequence     = 1015.83 ohms
+  Common Mode       = 338.596 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 97.7951 
+  Zero sequence     = 84.1232 
+
+
+--------------------------------------------------
+Geometry Code = 3fmv1/0cu3/0aac_h
+
+R MATRIX, ohms per km
+0.429516, 
+0.087722, 0.430352, 
+0.0876249, 0.088044, 0.430156, 
+
+jX MATRIX, ohms per km
+0.783656, 
+0.35755, 0.78116, 
+0.305578, 0.35659, 0.781745, 
+
+Susceptance (jB) MATRIX, S per km
+3.00026E-006, 
+-8.80494E-007, 3.18286E-006, 
+-4.91212E-007, -8.78997E-007, 3.00354E-006, 
+
+L MATRIX, mH per km
+2.07871, 
+0.948431, 2.07209, 
+0.810572, 0.945883, 2.07364, 
+
+C MATRIX, nF per km
+7.95845, 
+-2.33558, 8.4428, 
+-1.30298, -2.33161, 7.96713, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.342211 + j 0.442281 (L1 = 1.17319 mH) 
+Z0, ohms per km = 0.605602 + j 1.462 (L0 = 3.87807 mH) 
+
+C1, nF per km = 10.1129
+C0, nF per km = 4.14268
+
+Surge Impedance:
+  Positive sequence = 340.602 ohms
+  Zero sequence     = 967.537 ohms
+  Common Mode       = 322.422 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 96.8409 
+  Zero sequence     = 83.2206 
+
+
+--------------------------------------------------
+Geometry Code = 2fmv1/0cu_35xlp
+
+R MATRIX, ohms per km
+0.532049, 
+0.105563, 0.532049, 
+
+jX MATRIX, ohms per km
+0.229319, 
+-0.0404853, 0.229319, 
+
+Susceptance (jB) MATRIX, S per km
+4.88767E-005, 
+0, 4.88767E-005, 
+
+L MATRIX, mH per km
+0.608286, 
+-0.107391, 0.608286, 
+
+C MATRIX, nF per km
+129.649, 
+0, 129.649, 
+
+--------------------------------------------------
+Geometry Code = 2fmv1/0cu_35epr
+
+R MATRIX, ohms per km
+0.528703, 
+0.104124, 0.528703, 
+
+jX MATRIX, ohms per km
+0.232235, 
+-0.0394206, 0.232235, 
+
+Susceptance (jB) MATRIX, S per km
+6.37522E-005, 
+0, 6.37522E-005, 
+
+L MATRIX, mH per km
+0.616023, 
+-0.104566, 0.616023, 
+
+C MATRIX, nF per km
+169.108, 
+0, 169.108, 
+
+--------------------------------------------------
+Geometry Code = 3fmv1/0aac_35epr
+
+R MATRIX, ohms per km
+0.969239, 
+0.295557, 0.974504, 
+0.276697, 0.295557, 0.969239, 
+
+jX MATRIX, ohms per km
+0.481501, 
+0.137821, 0.458958, 
+0.101024, 0.137821, 0.481501, 
+
+Susceptance (jB) MATRIX, S per km
+6.37522E-005, 
+0, 6.37522E-005, 
+0, 0, 6.37522E-005, 
+
+L MATRIX, mH per km
+1.27722, 
+0.365581, 1.21742, 
+0.267974, 0.365581, 1.27722, 
+
+C MATRIX, nF per km
+169.108, 
+0, 169.108, 
+0, 0, 169.108, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.681723 + j 0.348431 (L1 = 0.924243 mH) 
+Z0, ohms per km = 1.54953 + j 0.725097 (L0 = 1.92338 mH) 
+
+C1, nF per km = 169.108
+C0, nF per km = 169.108
+
+Surge Impedance:
+  Positive sequence = 73.9284 ohms
+  Zero sequence     = 106.647 ohms
+  Common Mode       = 35.5458 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 26.6811 
+  Zero sequence     = 18.4955 
+
+
+--------------------------------------------------
+Geometry Code = 3fmv3/0cu3/0aaac_h
+
+R MATRIX, ohms per km
+0.302179, 
+0.0869493, 0.303007, 
+0.0868531, 0.0872681, 0.302813, 
+
+jX MATRIX, ohms per km
+0.764344, 
+0.355735, 0.761817, 
+0.303767, 0.354763, 0.762409, 
+
+Susceptance (jB) MATRIX, S per km
+3.11587E-006, 
+-9.38493E-007, 3.31813E-006, 
+-5.15765E-007, -9.36897E-007, 3.11938E-006, 
+
+L MATRIX, mH per km
+2.02748, 
+0.943616, 2.02078, 
+0.805766, 0.941037, 2.02235, 
+
+C MATRIX, nF per km
+8.26511, 
+-2.48943, 8.80162, 
+-1.36811, -2.4852, 8.27441, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.215643 + j 0.424768 (L1 = 1.12673 mH) 
+Z0, ohms per km = 0.476713 + j 1.43903 (L0 = 3.81715 mH) 
+
+C1, nF per km = 10.5613
+C0, nF per km = 4.21856
+
+Surge Impedance:
+  Positive sequence = 326.627 ohms
+  Zero sequence     = 951.235 ohms
+  Common Mode       = 316.956 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 96.6964 
+  Zero sequence     = 83.1242 
+
+
+--------------------------------------------------
+Geometry Code = 2fmv1/0aaac3/0aaac_b
+
+R MATRIX, ohms per km
+0.713111, 
+0.0868783, 0.713534, 
+
+jX MATRIX, ohms per km
+0.775786, 
+0.30369, 0.774492, 
+
+Susceptance (jB) MATRIX, S per km
+2.7888E-006, 
+-7.49077E-007, 2.79163E-006, 
+
+L MATRIX, mH per km
+2.05784, 
+0.805562, 2.0544, 
+
+C MATRIX, nF per km
+7.39751, 
+-1.98699, 7.40502, 
+
+--------------------------------------------------
+Geometry Code = 1flv1/0cu1/0cu_xlp
+
+R MATRIX, ohms per km
+0.607711, 
+
+jX MATRIX, ohms per km
+0.227852, 
+
+Susceptance (jB) MATRIX, S per km
+4.88767E-005, 
+
+L MATRIX, mH per km
+0.604396, 
+
+C MATRIX, nF per km
+129.649, 
+
+--------------------------------------------------
+Geometry Code = 1flv350cu350cu_xlp
+
+R MATRIX, ohms per km
+0.192049, 
+
+jX MATRIX, ohms per km
+0.104036, 
+
+Susceptance (jB) MATRIX, S per km
+7.17709E-005, 
+
+L MATRIX, mH per km
+0.275963, 
+
+C MATRIX, nF per km
+190.378, 
+
+--------------------------------------------------
 Geometry Code = 1fmv3/0aac3/0aac_m
 
 R MATRIX, ohms per km
@@ -1898,6 +3925,684 @@ L MATRIX, mH per km
 
 C MATRIX, nF per km
 7.03225, 
+
+--------------------------------------------------
+Geometry Code = 1fmv4/0aac4aac_m
+
+R MATRIX, ohms per km
+0.396746, 
+
+jX MATRIX, ohms per km
+0.75419, 
+
+Susceptance (jB) MATRIX, S per km
+2.65109E-006, 
+
+L MATRIX, mH per km
+2.00055, 
+
+C MATRIX, nF per km
+7.03225, 
+
+--------------------------------------------------
+Geometry Code = 1fmv3/0aaac4cu_m
+
+R MATRIX, ohms per km
+0.506766, 
+
+jX MATRIX, ohms per km
+0.811026, 
+
+Susceptance (jB) MATRIX, S per km
+2.62877E-006, 
+
+L MATRIX, mH per km
+2.15131, 
+
+C MATRIX, nF per km
+6.97302, 
+
+--------------------------------------------------
+Geometry Code = 1fmv394aaac3/0aaac_m
+
+R MATRIX, ohms per km
+0.252082, 
+
+jX MATRIX, ohms per km
+0.727171, 
+
+Susceptance (jB) MATRIX, S per km
+2.79383E-006, 
+
+L MATRIX, mH per km
+1.92888, 
+
+C MATRIX, nF per km
+7.41086, 
+
+--------------------------------------------------
+Geometry Code = 3fmv3/0aaac4cu_h
+
+R MATRIX, ohms per km
+0.509256, 
+0.114866, 0.510414, 
+0.114732, 0.115312, 0.510142, 
+
+jX MATRIX, ohms per km
+0.807388, 
+0.405185, 0.805706, 
+0.353119, 0.404538, 0.8061, 
+
+Susceptance (jB) MATRIX, S per km
+3.15348E-006, 
+-9.63177E-007, 3.36359E-006, 
+-5.28545E-007, -9.61732E-007, 3.15667E-006, 
+
+L MATRIX, mH per km
+2.14166, 
+1.07479, 2.1372, 
+0.936676, 1.07307, 2.13825, 
+
+C MATRIX, nF per km
+8.36488, 
+-2.55491, 8.9222, 
+-1.40201, -2.55107, 8.37332, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.394967 + j 0.418784 (L1 = 1.11086 mH) 
+Z0, ohms per km = 0.739877 + j 1.58163 (L0 = 4.19539 mH) 
+
+C1, nF per km = 10.7228
+C0, nF per km = 4.21481
+
+Surge Impedance:
+  Positive sequence = 321.866 ohms
+  Zero sequence     = 997.694 ohms
+  Common Mode       = 332.486 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 96.6487 
+  Zero sequence     = 79.3239 
+
+
+--------------------------------------------------
+Geometry Code = 3fmv3/0aaac2aaac_h
+
+R MATRIX, ohms per km
+0.515217, 
+0.120861, 0.516442, 
+0.120718, 0.121332, 0.516155, 
+
+jX MATRIX, ohms per km
+0.819584, 
+0.417485, 0.81811, 
+0.365394, 0.416918, 0.818455, 
+
+Susceptance (jB) MATRIX, S per km
+3.15517E-006, 
+-9.61602E-007, 3.36506E-006, 
+-5.26767E-007, -9.60074E-007, 3.15854E-006, 
+
+L MATRIX, mH per km
+2.17401, 
+1.10741, 2.1701, 
+0.969238, 1.10591, 2.17102, 
+
+C MATRIX, nF per km
+8.36936, 
+-2.55073, 8.9261, 
+-1.39729, -2.54667, 8.37828, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.394967 + j 0.418784 (L1 = 1.11086 mH) 
+Z0, ohms per km = 0.757879 + j 1.61858 (L0 = 4.29342 mH) 
+
+C1, nF per km = 10.7228
+C0, nF per km = 4.22812
+
+Surge Impedance:
+  Positive sequence = 321.866 ohms
+  Zero sequence     = 1007.69 ohms
+  Common Mode       = 335.819 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 96.6486 
+  Zero sequence     = 78.2896 
+
+
+--------------------------------------------------
+Geometry Code = 3fmv4aaac4cu_h
+
+R MATRIX, ohms per km
+1.69946, 
+0.114866, 1.70062, 
+0.114732, 0.115312, 1.70035, 
+
+jX MATRIX, ohms per km
+0.85965, 
+0.405185, 0.857968, 
+0.353119, 0.404538, 0.858362, 
+
+Susceptance (jB) MATRIX, S per km
+2.8239E-006, 
+-7.98124E-007, 2.97944E-006, 
+-4.56542E-007, -7.96889E-007, 2.82658E-006, 
+
+L MATRIX, mH per km
+2.28029, 
+1.07479, 2.27583, 
+0.936676, 1.07307, 2.27688, 
+
+C MATRIX, nF per km
+7.49062, 
+-2.11709, 7.9032, 
+-1.21101, -2.11381, 7.49773, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 1.58517 + j 0.471046 (L1 = 1.24949 mH) 
+Z0, ohms per km = 1.93008 + j 1.63389 (L0 = 4.33402 mH) 
+
+C1, nF per km = 9.44449
+C0, nF per km = 4.00257
+
+Surge Impedance:
+  Positive sequence = 363.728 ohms
+  Zero sequence     = 1040.58 ohms
+  Common Mode       = 346.849 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 97.1011 
+  Zero sequence     = 80.0874 
+
+
+--------------------------------------------------
+Geometry Code = 1fmv3/0aaac3/0aaac_h
+
+R MATRIX, ohms per km
+0.479724, 
+
+jX MATRIX, ohms per km
+0.763777, 
+
+Susceptance (jB) MATRIX, S per km
+2.63763E-006, 
+
+L MATRIX, mH per km
+2.02598, 
+
+C MATRIX, nF per km
+6.99654, 
+
+--------------------------------------------------
+Geometry Code = 3fmv336aaac3/0aaac_h
+
+R MATRIX, ohms per km
+0.283347, 
+0.0869493, 0.284175, 
+0.0868531, 0.0872681, 0.28398, 
+
+jX MATRIX, ohms per km
+0.728118, 
+0.355735, 0.725591, 
+0.303767, 0.354763, 0.726183, 
+
+Susceptance (jB) MATRIX, S per km
+3.3625E-006, 
+-1.06767E-006, 3.61106E-006, 
+-5.68278E-007, -1.06589E-006, 3.36644E-006, 
+
+L MATRIX, mH per km
+1.93139, 
+0.943616, 1.92469, 
+0.805766, 0.941037, 1.92626, 
+
+C MATRIX, nF per km
+8.9193, 
+-2.83207, 9.57864, 
+-1.50741, -2.82737, 8.92975, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.196811 + j 0.388543 (L1 = 1.03064 mH) 
+Z0, ohms per km = 0.457881 + j 1.40281 (L0 = 3.72106 mH) 
+
+C1, nF per km = 11.5315
+C0, nF per km = 4.36466
+
+Surge Impedance:
+  Positive sequence = 298.958 ohms
+  Zero sequence     = 923.332 ohms
+  Common Mode       = 307.644 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 96.7569 
+  Zero sequence     = 82.7695 
+
+
+--------------------------------------------------
+Geometry Code = 1fmv1/0acsr1/0aaac_m
+
+R MATRIX, ohms per km
+0.80331, 
+
+jX MATRIX, ohms per km
+0.801832, 
+
+Susceptance (jB) MATRIX, S per km
+2.56046E-006, 
+
+L MATRIX, mH per km
+2.12692, 
+
+C MATRIX, nF per km
+6.79183, 
+
+--------------------------------------------------
+Geometry Code = 3fmv336aaac1/0acsr_h
+
+R MATRIX, ohms per km
+0.309278, 
+0.113049, 0.310444, 
+0.112913, 0.113498, 0.310171, 
+
+jX MATRIX, ohms per km
+0.760759, 
+0.388664, 0.758812, 
+0.336629, 0.387915, 0.759268, 
+
+Susceptance (jB) MATRIX, S per km
+3.36139E-006, 
+-1.06869E-006, 3.61012E-006, 
+-5.69446E-007, -1.06697E-006, 3.36521E-006, 
+
+L MATRIX, mH per km
+2.01798, 
+1.03096, 2.01281, 
+0.892935, 1.02898, 2.01402, 
+
+C MATRIX, nF per km
+8.91636, 
+-2.83479, 9.57613, 
+-1.5105, -2.83023, 8.92649, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.196811 + j 0.388544 (L1 = 1.03064 mH) 
+Z0, ohms per km = 0.536272 + j 1.50175 (L0 = 3.98352 mH) 
+
+C1, nF per km = 11.5315
+C0, nF per km = 4.35598
+
+Surge Impedance:
+  Positive sequence = 298.959 ohms
+  Zero sequence     = 956.292 ohms
+  Common Mode       = 318.631 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 96.7569 
+  Zero sequence     = 80.0761 
+
+
+--------------------------------------------------
+Geometry Code = 1fmv6cu1/0aaac_m
+
+R MATRIX, ohms per km
+1.45367, 
+
+jX MATRIX, ohms per km
+0.868293, 
+
+Susceptance (jB) MATRIX, S per km
+2.30726E-006, 
+
+L MATRIX, mH per km
+2.30322, 
+
+C MATRIX, nF per km
+6.12021, 
+
+--------------------------------------------------
+Geometry Code = 2fmv6cu1/0aaac_b
+
+R MATRIX, ohms per km
+1.45621, 
+0.107983, 1.45678, 
+
+jX MATRIX, ohms per km
+0.863504, 
+0.329337, 0.862442, 
+
+Susceptance (jB) MATRIX, S per km
+2.47253E-006, 
+-5.99502E-007, 2.47472E-006, 
+
+L MATRIX, mH per km
+2.29052, 
+0.873595, 2.2877, 
+
+C MATRIX, nF per km
+6.55859, 
+-1.59023, 6.5644, 
+
+--------------------------------------------------
+Geometry Code = 1flv3/0aaac1/0aaac
+
+R MATRIX, ohms per km
+0.577488, 
+0.195894, 0.605619, 
+
+jX MATRIX, ohms per km
+0.650763, 
+0.344104, 0.603314, 
+
+Susceptance (jB) MATRIX, S per km
+4.13512E-006, 
+-1.77812E-006, 4.64343E-006, 
+
+L MATRIX, mH per km
+1.7262, 
+0.912765, 1.60034, 
+
+C MATRIX, nF per km
+10.9688, 
+-4.71661, 12.3171, 
+
+--------------------------------------------------
+Geometry Code = 1flv1/0aaac3/0aaac
+
+R MATRIX, ohms per km
+0.770755, 
+0.154789, 0.792888, 
+
+jX MATRIX, ohms per km
+0.613344, 
+0.28363, 0.554942, 
+
+Susceptance (jB) MATRIX, S per km
+3.93273E-006, 
+-1.60112E-006, 4.41671E-006, 
+
+L MATRIX, mH per km
+1.62694, 
+0.752353, 1.47203, 
+
+C MATRIX, nF per km
+10.4319, 
+-4.2471, 11.7157, 
+
+--------------------------------------------------
+Geometry Code = 1flv1/0cu3/0aaac
+
+R MATRIX, ohms per km
+0.485866, 
+0.154789, 0.507998, 
+
+jX MATRIX, ohms per km
+0.614739, 
+0.28363, 0.556337, 
+
+Susceptance (jB) MATRIX, S per km
+3.87783E-006, 
+-1.56059E-006, 4.34956E-006, 
+
+L MATRIX, mH per km
+1.63065, 
+0.752353, 1.47573, 
+
+C MATRIX, nF per km
+10.2863, 
+-4.1396, 11.5376, 
+
+--------------------------------------------------
+Geometry Code = 1flv6aaac6aaac
+
+R MATRIX, ohms per km
+2.6887, 
+0.173593, 2.70943, 
+
+jX MATRIX, ohms per km
+0.923764, 
+0.564825, 0.913472, 
+
+Susceptance (jB) MATRIX, S per km
+3.38935E-006, 
+-1.28803E-006, 3.70565E-006, 
+
+L MATRIX, mH per km
+2.45036, 
+1.49825, 2.42306, 
+
+C MATRIX, nF per km
+8.99053, 
+-3.4166, 9.82955, 
+
+--------------------------------------------------
+Geometry Code = 1flv1/0cu3/0cu
+
+R MATRIX, ohms per km
+0.468139, 
+0.134819, 0.48696, 
+
+jX MATRIX, ohms per km
+0.614507, 
+0.278557, 0.554916, 
+
+Susceptance (jB) MATRIX, S per km
+3.85478E-006, 
+-1.57392E-006, 4.29661E-006, 
+
+L MATRIX, mH per km
+1.63003, 
+0.738894, 1.47196, 
+
+C MATRIX, nF per km
+10.2251, 
+-4.17494, 11.3971, 
+
+--------------------------------------------------
+Geometry Code = 1flv3/0aaac6aaac
+
+R MATRIX, ohms per km
+0.558656, 
+0.173593, 0.579384, 
+
+jX MATRIX, ohms per km
+0.853678, 
+0.564825, 0.843386, 
+
+Susceptance (jB) MATRIX, S per km
+4.11168E-006, 
+-1.82255E-006, 4.55924E-006, 
+
+L MATRIX, mH per km
+2.26445, 
+1.49825, 2.23715, 
+
+C MATRIX, nF per km
+10.9066, 
+-4.83446, 12.0938, 
+
+--------------------------------------------------
+Geometry Code = 1flv3/0cu4cu
+
+R MATRIX, ohms per km
+0.407839, 
+0.205992, 0.436813, 
+
+jX MATRIX, ohms per km
+0.705713, 
+0.397493, 0.667506, 
+
+Susceptance (jB) MATRIX, S per km
+4.03823E-006, 
+-1.76299E-006, 4.47393E-006, 
+
+L MATRIX, mH per km
+1.87196, 
+1.05438, 1.77061, 
+
+C MATRIX, nF per km
+10.7117, 
+-4.67648, 11.8675, 
+
+--------------------------------------------------
+Geometry Code = 1flv3/0aaac4cu
+
+R MATRIX, ohms per km
+0.587163, 
+0.205992, 0.616137, 
+
+jX MATRIX, ohms per km
+0.699728, 
+0.397493, 0.66152, 
+
+Susceptance (jB) MATRIX, S per km
+4.11261E-006, 
+-1.82078E-006, 4.5626E-006, 
+
+L MATRIX, mH per km
+1.85609, 
+1.05438, 1.75474, 
+
+C MATRIX, nF per km
+10.909, 
+-4.82976, 12.1027, 
+
+--------------------------------------------------
+Geometry Code = 1flv1/0aaac4cu
+
+R MATRIX, ohms per km
+0.818641, 
+0.205992, 0.847615, 
+
+jX MATRIX, ohms per km
+0.717551, 
+0.397493, 0.679344, 
+
+Susceptance (jB) MATRIX, S per km
+3.90157E-006, 
+-1.65839E-006, 4.31143E-006, 
+
+L MATRIX, mH per km
+1.90336, 
+1.05438, 1.80201, 
+
+C MATRIX, nF per km
+10.3492, 
+-4.39901, 11.4364, 
+
+--------------------------------------------------
+Geometry Code = 3flv6aaac6aaac
+
+R MATRIX, ohms per km
+2.67742, 
+0.157891, 2.68869, 
+0.167255, 0.173584, 2.70942, 
+
+jX MATRIX, ohms per km
+0.929472, 
+0.572723, 0.92379, 
+0.515698, 0.564852, 0.913498, 
+
+Susceptance (jB) MATRIX, S per km
+3.4526E-006, 
+-1.20725E-006, 3.8088E-006, 
+-5.90711E-007, -1.08362E-006, 3.80501E-006, 
+
+L MATRIX, mH per km
+2.4655, 
+1.51919, 2.45043, 
+1.36793, 1.49832, 2.42313, 
+
+C MATRIX, nF per km
+9.15832, 
+-3.20234, 10.1032, 
+-1.56691, -2.87438, 10.0931, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 2.5256 + j 0.371163 (L1 = 0.984539 mH) 
+Z0, ohms per km = 3.02433 + j 2.02443 (L0 = 5.36998 mH) 
+
+C1, nF per km = 12.3327
+C0, nF per km = 4.68911
+
+Surge Impedance:
+  Positive sequence = 282.544 ohms
+  Zero sequence     = 1070.14 ohms
+  Common Mode       = 356.731 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 95.7267 
+  Zero sequence     = 66.4734 
+
+
+--------------------------------------------------
+Geometry Code = 1flv1/0acsr2acsr
+
+R MATRIX, ohms per km
+0.901881, 
+0.218212, 0.932264, 
+
+jX MATRIX, ohms per km
+0.750692, 
+0.438325, 0.719626, 
+
+Susceptance (jB) MATRIX, S per km
+3.91544E-006, 
+-1.6329E-006, 4.35829E-006, 
+
+L MATRIX, mH per km
+1.99127, 
+1.16269, 1.90887, 
+
+C MATRIX, nF per km
+10.386, 
+-4.3314, 11.5607, 
+
+--------------------------------------------------
+Geometry Code = 1flv6acsr6aac
+
+R MATRIX, ohms per km
+2.75433, 
+0.171493, 2.77466, 
+
+jX MATRIX, ohms per km
+0.921006, 
+0.567104, 0.911067, 
+
+Susceptance (jB) MATRIX, S per km
+3.38738E-006, 
+-1.29141E-006, 3.69986E-006, 
+
+L MATRIX, mH per km
+2.44304, 
+1.50429, 2.41668, 
+
+C MATRIX, nF per km
+8.98529, 
+-3.42557, 9.81419, 
 
 --------------------------------------------------
 Geometry Code = 1fmv1/0aaac1/0aaac_m
@@ -2299,6 +5004,24 @@ C MATRIX, nF per km
 6.71179, 
 
 --------------------------------------------------
+Geometry Code = 1fmv3/0cu1/0cu_m
+
+R MATRIX, ohms per km
+0.291517, 
+
+jX MATRIX, ohms per km
+0.768406, 
+
+Susceptance (jB) MATRIX, S per km
+2.60855E-006, 
+
+L MATRIX, mH per km
+2.03826, 
+
+C MATRIX, nF per km
+6.91939, 
+
+--------------------------------------------------
 Geometry Code = 1fmv6cu6cu_m
 
 R MATRIX, ohms per km
@@ -2666,55 +5389,6 @@ L MATRIX, mH per km
 C MATRIX, nF per km
 7.39751, 
 -1.98699, 7.40502, 
-
---------------------------------------------------
-Geometry Code = 3fmv1/0cu1/0cu_h
-
-R MATRIX, ohms per km
-0.419563, 
-0.077693, 0.420247, 
-0.0776134, 0.0779567, 0.420086, 
-
-jX MATRIX, ohms per km
-0.780408, 
-0.354265, 0.777837, 
-0.302302, 0.353276, 0.77844, 
-
-Susceptance (jB) MATRIX, S per km
-2.99929E-006, 
--8.81404E-007, 3.18201E-006, 
--4.92231E-007, -8.79953E-007, 3.00247E-006, 
-
-L MATRIX, mH per km
-2.0701, 
-0.939717, 2.06328, 
-0.801881, 0.937094, 2.06488, 
-
-C MATRIX, nF per km
-7.95588, 
--2.338, 8.44054, 
--1.30568, -2.33415, 7.96429, 
-
--------------------------------------------------------------------
--------------------Equiv Symmetrical Component --------------------
--------------------------------------------------------------------
-
-
-Z1, ohms per km = 0.342211 + j 0.442281 (L1 = 1.17319 mH) 
-Z0, ohms per km = 0.575474 + j 1.45212 (L0 = 3.85188 mH) 
-
-C1, nF per km = 10.1128
-C0, nF per km = 4.13502
-
-Surge Impedance:
-  Positive sequence = 340.602 ohms
-  Zero sequence     = 965.156 ohms
-  Common Mode       = 321.629 ohms
-
-Propagation Velocity (Percent of speed of light):
-  Positive sequence = 96.841 
-  Zero sequence     = 83.5804 
-
 
 --------------------------------------------------
 Geometry Code = 3fmv3/0aaac3/0aaac_h
@@ -4734,55 +7408,6 @@ Propagation Velocity (Percent of speed of light):
 
 
 --------------------------------------------------
-Geometry Code = 3flv4/0aac4/0aac
-
-R MATRIX, ohms per km
-0.436808, 
-0.119969, 0.446886, 
-0.128276, 0.134113, 0.465789, 
-
-jX MATRIX, ohms per km
-0.610525, 
-0.313131, 0.576797, 
-0.232779, 0.266255, 0.515101, 
-
-Susceptance (jB) MATRIX, S per km
-4.25817E-006, 
--1.69132E-006, 4.85275E-006, 
--7.16854E-007, -1.50448E-006, 4.84842E-006, 
-
-L MATRIX, mH per km
-1.61947, 
-0.830607, 1.53, 
-0.617465, 0.706264, 1.36635, 
-
-C MATRIX, nF per km
-11.2952, 
--4.48636, 12.8723, 
--1.90151, -3.99075, 12.8608, 
-
--------------------------------------------------------------------
--------------------Equiv Symmetrical Component --------------------
--------------------------------------------------------------------
-
-
-Z1, ohms per km = 0.322375 + j 0.296753 (L1 = 0.787161 mH) 
-Z0, ohms per km = 0.704733 + j 1.10892 (L0 = 2.9415 mH) 
-
-C1, nF per km = 15.8023
-C0, nF per km = 5.42368
-
-Surge Impedance:
-  Positive sequence = 223.188 ohms
-  Zero sequence     = 736.439 ohms
-  Common Mode       = 245.148 ohms
-
-Propagation Velocity (Percent of speed of light):
-  Positive sequence = 94.5774 
-  Zero sequence     = 83.5118 
-
-
---------------------------------------------------
 Geometry Code = 1fmv2aaac2aaac_m
 
 R MATRIX, ohms per km
@@ -5831,6 +8456,153 @@ Surge Impedance:
 Propagation Velocity (Percent of speed of light):
   Positive sequence = 30.0794 
   Zero sequence     = 37.6478 
+
+
+--------------------------------------------------
+Geometry Code = 3fmv250cu_35epr
+
+R MATRIX, ohms per km
+0.248335, 
+0.0149055, 0.240623, 
+0.00576676, 0.0149055, 0.248335, 
+
+jX MATRIX, ohms per km
+0.143591, 
+-0.0182598, 0.146899, 
+-0.0135143, -0.0182598, 0.143591, 
+
+Susceptance (jB) MATRIX, S per km
+8.41073E-005, 
+0, 8.41073E-005, 
+0, 0, 8.41073E-005, 
+
+L MATRIX, mH per km
+0.380886, 
+-0.0484356, 0.389662, 
+-0.0358478, -0.0484356, 0.380886, 
+
+C MATRIX, nF per km
+223.102, 
+0, 223.102, 
+0, 0, 223.102, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.233905 + j 0.161371 (L1 = 0.428051 mH) 
+Z0, ohms per km = 0.269483 + j 0.111338 (L0 = 0.295332 mH) 
+
+C1, nF per km = 223.102
+C0, nF per km = 223.102
+
+Surge Impedance:
+  Positive sequence = 43.8023 ohms
+  Zero sequence     = 36.3835 ohms
+  Common Mode       = 12.128 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 34.1335 
+  Zero sequence     = 41.0935 
+
+
+--------------------------------------------------
+Geometry Code = 3fmv250cu_35xlp
+
+R MATRIX, ohms per km
+0.248812, 
+0.0145431, 0.241314, 
+0.0056497, 0.0145431, 0.248812, 
+
+jX MATRIX, ohms per km
+0.14104, 
+-0.0181834, 0.144389, 
+-0.0134002, -0.0181834, 0.14104, 
+
+Susceptance (jB) MATRIX, S per km
+6.44823E-005, 
+0, 6.44823E-005, 
+0, 0, 6.44823E-005, 
+
+L MATRIX, mH per km
+0.37412, 
+-0.048233, 0.383005, 
+-0.0355451, -0.048233, 0.37412, 
+
+C MATRIX, nF per km
+171.044, 
+0, 171.044, 
+0, 0, 171.044, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.234734 + j 0.158745 (L1 = 0.421085 mH) 
+Z0, ohms per km = 0.26947 + j 0.108978 (L0 = 0.289074 mH) 
+
+C1, nF per km = 171.044
+C0, nF per km = 171.044
+
+Surge Impedance:
+  Positive sequence = 49.617 ohms
+  Zero sequence     = 41.1102 ohms
+  Common Mode       = 13.7036 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 39.3043 
+  Zero sequence     = 47.4373 
+
+
+--------------------------------------------------
+Geometry Code = 3fmv350cu_35xlp
+
+R MATRIX, ohms per km
+0.184517, 
+0.00661567, 0.180591, 
+0.0020258, 0.00661567, 0.184517, 
+
+jX MATRIX, ohms per km
+0.117286, 
+-0.0117074, 0.12057, 
+-0.00747758, -0.0117074, 0.117286, 
+
+Susceptance (jB) MATRIX, S per km
+7.17709E-005, 
+0, 7.17709E-005, 
+0, 0, 7.17709E-005, 
+
+L MATRIX, mH per km
+0.311111, 
+-0.0310548, 0.319821, 
+-0.0198349, -0.0310548, 0.311111, 
+
+C MATRIX, nF per km
+190.378, 
+0, 190.378, 
+0, 0, 190.378, 
+
+-------------------------------------------------------------------
+-------------------Equiv Symmetrical Component --------------------
+-------------------------------------------------------------------
+
+
+Z1, ohms per km = 0.178123 + j 0.128678 (L1 = 0.341329 mH) 
+Z0, ohms per km = 0.19338 + j 0.0977857 (L0 = 0.259385 mH) 
+
+C1, nF per km = 190.378
+C0, nF per km = 190.378
+
+Surge Impedance:
+  Positive sequence = 42.3427 ohms
+  Zero sequence     = 36.9117 ohms
+  Common Mode       = 12.3039 ohms
+
+Propagation Velocity (Percent of speed of light):
+  Positive sequence = 41.3794 
+  Zero sequence     = 47.4677 
 
 
 --------------------------------------------------

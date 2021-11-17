@@ -9,52 +9,53 @@
 from builtins import str
 def renamePhase(phaseCode):
     phaseCode = str(phaseCode).upper()
-    if phaseCode =="7" or phaseCode =='ABC' or phaseCode =='RST':
+    if phaseCode == "7" or phaseCode == 'ABC' or phaseCode == 'RST':
         phaseCode = 'ABC'
         phaseCodeODSS = '.1.2.3'
-        phaseNumber ='3'
+        phaseNumber = '3'
         phaseNumberTraf = '3'
-    elif phaseCode =="6" or phaseCode =='AB'or phaseCode =='RS':
+    elif phaseCode == "6" or phaseCode == 'AB' or phaseCode == 'RS':
         phaseCode = 'AB'
         phaseCodeODSS = '.1.2'
-        phaseNumber ='2'
+        phaseNumber = '2'
         phaseNumberTraf = '3'
-    elif phaseCode =="5" or phaseCode =='AC'or phaseCode =='RT':
+    elif phaseCode == "5" or phaseCode == 'AC' or phaseCode == 'RT':
         phaseCode = 'AC'
         phaseCodeODSS = '.1.3'
-        phaseNumber ='2'
+        phaseNumber = '2'
         phaseNumberTraf = '3'
-    elif phaseCode =="4" or phaseCode =='A'or phaseCode =='R':
+    elif phaseCode == "4" or phaseCode == 'A' or phaseCode == 'R':
         phaseCode = 'A'
         phaseCodeODSS = '.1'
-        phaseNumber ='1'
+        phaseNumber = '1'
         phaseNumberTraf = '1'
-    elif phaseCode =="3" or phaseCode =='BC'or phaseCode =='ST':
+    elif phaseCode == "3" or phaseCode == 'BC' or phaseCode == 'ST':
         phaseCode = 'BC'
         phaseCodeODSS = '.2.3'
-        phaseNumber ='2'
+        phaseNumber = '2'
         phaseNumberTraf = '3'
-    elif phaseCode =="2" or phaseCode =='B'or phaseCode =='S':
+    elif phaseCode == "2" or phaseCode == 'B' or phaseCode == 'S':
         phaseCode = 'B'
         phaseCodeODSS = '.2'
-        phaseNumber ='1'
+        phaseNumber = '1'
         phaseNumberTraf = '1'
-    elif phaseCode =="1" or phaseCode =='C'or phaseCode =='T':
+    elif phaseCode == "1" or phaseCode == 'C' or phaseCode == 'T':
         phaseCode = 'C'
         phaseCodeODSS = '.3'
-        phaseNumber ='1'
+        phaseNumber = '1'
         phaseNumberTraf = '1'
-    elif phaseCode =="0":
+    elif phaseCode == "0":
         phaseCode = 'NONE'
         phaseCodeODSS='NONE'
-        phaseNumber ='NONE'
+        phaseNumber = 'NONE'
         phaseNumberTraf = 'NONE'
     else:
         phaseCode = 'NONE'
         phaseCodeODSS='NONE'
-        phaseNumber ='NONE'
+        phaseNumber = 'NONE'
         phaseNumberTraf = 'NONE'
-    phaseCodes = {'phaseCode': phaseCode, 'phaseCodeODSS': phaseCodeODSS, 'phaseNumber': phaseNumber, 'phaseNumberTraf': phaseNumberTraf}
+    phaseCodes = {'phaseCode': phaseCode, 'phaseCodeODSS': phaseCodeODSS,
+				  'phaseNumber': phaseNumber, 'phaseNumberTraf': phaseNumberTraf}
     return phaseCodes
 
 def linePhaseMT(ph1,ph2): #Verifica coherencia de fase entre líneas MT

@@ -1,0 +1,171 @@
+
+new LineSpacing.3F_MTPP nconds=3 nphases=3 units=m x=[-1.1 0 1.1] h=[10.55 11]
+new LineSpacing.3F_MTHPP nconds=3 nphases=3 units=m x=[1.45 0.50 -0.45] h=[11.1 11.1 11.1]
+new LineSpacing.3F_MTTPP nconds=3 nphases=3 units=m x=[-1.1 0 1.1] h=[10.55 11 10.55]
+new LineSpacing.3F_MTVPP nconds=3 nphases=3 units=m x=[0 0 0] h=[10.85 9.65 8.45]
+
+!!!!!!!!!!!!!!! CAAI MT
+
+New Linecode.3FMV6CAAINN0_P nphases=3 units=mile
+~ rmatrix=[ 3.1691 0.0953 0.0953 | 0.0953 3.1691 0.0953 | 0.0953 0.0953 3.1691 ]
+~ xmatrix=[ 1.0692 1.4315 1.4315 | 1.4315 1.0692 1.4315 | 1.4315 1.4315 1.0692 ]
+~ Normamps=85.0 
+~ kron=n
+
+New Linecode.3FMV4CAAINN0_P nphases=3 units=mile
+~ rmatrix=[ 2.0265 0.0953 0.0953 | 0.0953 2.0265 0.0953 | 0.0953 0.0953 2.0265 ]
+~ xmatrix=[ 1.0524 1.4127 1.4127 | 1.4127 1.0524 1.4127 | 1.4127 1.4127 1.0524 ]
+~ Normamps=114.0 
+~ kron=n
+
+New Linecode.3FMV2CAAINN0_P nphases=3 units=mile
+~ rmatrix=[ 1.4922 0.0953 0.0953 | 0.0953 1.4922 0.0953 | 0.0953 0.0953 1.4922 ]
+~ xmatrix=[ 1.0457 1.3925 1.3925 | 1.3925 1.0457 1.3925 | 1.3925 1.3925 1.0457 ]
+~ Normamps=141.0 
+~ kron=n
+
+New Linecode.3FMV1/0CAAINN0_P nphases=3 units=mile
+~ rmatrix=[ 1.1269 0.0953 0.0953 | 0.0953 1.1269 0.0953 | 0.0953 0.0953 1.1269 ]
+~ xmatrix=[ 1.0251 1.3625 1.3625 | 1.3625 1.0251 1.3625 | 1.3625 1.3625 1.0251 ]
+~ Normamps=171.0 
+~ kron=n
+
+New Linecode.3FMV2/0CAAINN0_P nphases=3 units=mile
+~ rmatrix=[ 0.8082 0.0953 0.0953 | 0.0953 0.8082 0.0953 | 0.0953 0.0953 0.8082 ]
+~ xmatrix=[ 1.0019 1.3521 1.3521 | 1.3521 1.0019 1.3521 | 1.3521 1.3521 1.0019 ]
+~ Normamps=215.0 
+~ kron=n
+
+New Linecode.3FMV3/0CAAINN0_P nphases=3 units=mile
+~ rmatrix=[ 0.6103 0.0953 0.0953 | 0.0953 0.6103 0.0953 | 0.0953 0.0953 0.6103 ]
+~ xmatrix=[ 0.983 1.3414 1.3414 | 1.3414 0.983 1.3414 | 1.3414 1.3414 0.983 ]
+~ Normamps=265.0 
+~ kron=n
+
+New Linecode.3FMV4/0CAAINN0_P nphases=3 units=mile
+~ rmatrix=[ 0.5025 0.0953 0.0953 | 0.0953 0.5025 0.0953 | 0.0953 0.0953 0.5025 ]
+~ xmatrix=[ 0.9749 1.3222 1.3222 | 1.3222 0.9749 1.3222 | 1.3222 1.3222 0.9749 ]
+~ Normamps=305.0 
+~ kron=n
+
+!!!!!!!!!!!!!!!! N2XSY MT -> son de AAC
+
+New TSData.N2SXY_4	Rdc=0.2215896	Runits=kft	diam=0.2381885	InsLayer=0.133858	DiaIns=0.562991	TapLayer=0.062992	DiaCable=0.7874	radunits=in	normamps=172
+New TSData.N2SXY_2	Rdc=0.1597152	Runits=kft	diam=0.279527	InsLayer=0.133858	DiaIns=0.602361	TapLayer=0.062992	DiaCable=0.82677	radunits=in	normamps=204
+New TSData.N2SXY_1/0	Rdc=0.1179576	Runits=kft	diam=0.3248025	InsLayer=0.133858	DiaIns=0.649605	TapLayer=0.066929	DiaCable=0.90551	radunits=in	normamps=239
+New TSData.N2SXY_2/0	Rdc=0.0816864	Runits=kft	diam=0.389763	InsLayer=0.133858	DiaIns=0.712597	TapLayer=0.066929	DiaCable=0.94488	radunits=in	normamps=290
+New TSData.N2SXY_3/0	Rdc=0.0588264	Runits=kft	diam=0.460629	InsLayer=0.133858	DiaIns=0.783463	TapLayer=0.070866	DiaCable=1.02362	radunits=in	normamps=344
+New TSData.N2SXY_4/0	Rdc=0.0466344	Runits=kft	diam=0.515747	InsLayer=0.133858	DiaIns=0.838581	TapLayer=0.070866	DiaCable=1.10236	radunits=in	normamps=388
+New TSData.N2SXY_300	Rdc=0.0377952	Runits=kft	diam=0.562991	InsLayer=0.133858	DiaIns=0.885825	TapLayer=0.074803	DiaCable=1.14173	radunits=in	normamps=423
+
+New Linegeometry.3FMV4N2SXY_25XLPE  nconds=3 nphases=3   units=m
+~ cond=1 tscable=N2SXY_4  x=-0.3   h=-1
+~ cond=2 tscable=N2SXY_4  x=0      h=-1
+~ cond=3 tscable=N2SXY_4  x=0.3    h=-1
+
+New Linegeometry.3FMV2N2SXY_25XLPE    nconds=3 nphases=3   units=m
+~ cond=1 tscable=N2SXY_2  x=-0.3   h=-1
+~ cond=2 tscable=N2SXY_2  x=0      h=-1
+~ cond=3 tscable=N2SXY_2  x=0.3    h=-1
+
+New Linegeometry.3FMV1/0N2SXY_25XLPE    nconds=3 nphases=3   units=m
+~ cond=1 tscable=N2SXY_1/0  x=-0.3   h=-1
+~ cond=2 tscable=N2SXY_1/0  x=0      h=-1
+~ cond=3 tscable=N2SXY_1/0  x=0.3    h=-1
+
+New Linegeometry.3FMV2/0N2SXY_25XLPE    nconds=3 nphases=3   units=m
+~ cond=1 tscable=N2SXY_2/0  x=-0.3   h=-1
+~ cond=2 tscable=N2SXY_2/0  x=0      h=-1
+~ cond=3 tscable=N2SXY_2/0  x=0.3    h=-1
+
+New Linegeometry.3FMV3/0N2SXY_25XLPE    nconds=3 nphases=3   units=m
+~ cond=1 tscable=N2SXY_3/0  x=-0.3   h=-1
+~ cond=2 tscable=N2SXY_3/0  x=0      h=-1
+~ cond=3 tscable=N2SXY_3/0  x=0.3    h=-1
+
+New Linegeometry.3FMV4/0N2SXY_25XLPE    nconds=3 nphases=3   units=m
+~ cond=1 tscable=N2SXY_4/0  x=-0.3   h=-1
+~ cond=2 tscable=N2SXY_4/0  x=0      h=-1
+~ cond=3 tscable=N2SXY_4/0  x=0.3    h=-1
+
+New Linegeometry.3FMV300N2SXY_25XLPE    nconds=3 nphases=3   units=m
+~ cond=1 tscable=N2SXY_300  x=-0.3   h=-1
+~ cond=2 tscable=N2SXY_300  x=0      h=-1
+~ cond=3 tscable=N2SXY_300  x=0.3    h=-1
+
+!NKY -> Son de cobre
+
+New TSData.NKY_6	Rdc=0.35052	Runits=kft	diam=0.177697151234201	InsLayer=0.240157	DiaIns=0.181102	TapLayer=0.074803	DiaCable=1.37795	radunits=in	CapRadius=0.337576592941622	normamps=90
+New TSData.NKY_4	Rdc=0.2215896	Runits=kft	diam=0.222121439042752	InsLayer=0.240157	DiaIns=0.181102	TapLayer=0.07874	DiaCable=1.53543	radunits=in	CapRadius=0.379831609519942	normamps=120
+New TSData.NKY_2	Rdc=0.1597152	Runits=kft	diam=0.262817630982763	InsLayer=0.240157	DiaIns=0.181102	TapLayer=0.082677	DiaCable=1.5748	radunits=in	CapRadius=0.417111341129376	normamps=140
+New TSData.NKY_1/0	Rdc=0.1179576	Runits=kft	diam=0.314127151588088	InsLayer=0.240157	DiaIns=0.181102	TapLayer=0.086614	DiaCable=1.61417	radunits=in	CapRadius=0.462806711537956	normamps=170
+New TSData.NKY_2/0	Rdc=0.0816864	Runits=kft	diam=0.371680258166591	InsLayer=0.240157	DiaIns=0.181102	TapLayer=0.090551	DiaCable=1.77165	radunits=in	CapRadius=0.512866436067588	normamps=210
+New TSData.NKY_3/0	Rdc=0.0588264	Runits=kft	diam=0.432994397184544	InsLayer=0.240157	DiaIns=0.181102	TapLayer=0.098425	DiaCable=1.92913	radunits=in	CapRadius=0.565235019252319	normamps=250
+New TSData.NKY_3/0	Rdc=0.0466344	Runits=kft	diam=0.486643690676895	InsLayer=0.240157	DiaIns=0.181102	TapLayer=0.102362	DiaCable=2.00787	radunits=in	CapRadius=0.610471436473329	normamps=290
+New TSData.NKY_300	Rdc=0.0377952	Runits=kft	diam=0.544084186587459	InsLayer=0.240157	DiaIns=0.181102	TapLayer=0.106299	DiaCable=2.16535	radunits=in	CapRadius=0.658452680515813	normamps=330
+
+New Linegeometry.3FMV6NKYNN0_25XLPE  nconds=1 nphases=3   units=m
+~ cond=1 tscable=NKY_6  x=0   h=-1
+
+New Linegeometry.3FMV4NKYNN0_25XLPE  nconds=1 nphases=3   units=m
+~ cond=1 tscable=NKY_4  x=0   h=-1
+
+New Linegeometry.3FMV2NKYNN0_25XLPE  nconds=1 nphases=3   units=m
+~ cond=1 tscable=NKY_2  x=0   h=-1
+
+New Linegeometry.3FMV1/0NKYNN0_25XLPE  nconds=1 nphases=3   units=m
+~ cond=1 tscable=NKY_1/0  x=0   h=-1
+
+New Linegeometry.3FMV2/0NKYNN0_25XLPE  nconds=1 nphases=3   units=m
+~ cond=1 tscable=NKY_2/0  x=0   h=-1
+
+New Linegeometry.3FMV3/0NKYNN0_25XLPE  nconds=1 nphases=3   units=m
+~ cond=1 tscable=NKY_3/0  x=0   h=-1
+
+New Linegeometry.3FMV4/0NKYNN0_25XLPE  nconds=1 nphases=3   units=m
+~ cond=1 tscable=NKY_4/0  x=0   h=-1
+
+New Linegeometry.3FMV300NKYNN0_25XLPE  nconds=1 nphases=3   units=m
+~ cond=1 tscable=NKY_300  x=0   h=-1
+
+!!!!
+New Linegeometry.3FMV350AAACNN0_H    nconds=3 nphases=3 spacing=3F_MTHP  wires= [AAAC_336_19STR     AAAC_336_19STR      AAAC_336_19STR]  Reduce=N
+New Linegeometry.3FMV350AAACNN0_T    nconds=3 nphases=3 spacing=3F_MTTP  wires= [AAAC_336_19STR     AAAC_336_19STR      AAAC_336_19STR]  Reduce=N
+New Linegeometry.3FMV350AAACNN0_V    nconds=3 nphases=3 spacing=3F_MTVP  wires= [AAAC_336_19STR     AAAC_336_19STR      AAAC_336_19STR]  Reduce=N
+New Linegeometry.3FMV4/0AAACNN0_H    nconds=3 nphases=3 spacing=3F_MTHP  wires= [AAAC_4/0_7STR     AAAC_4/0_7STR     AAAC_4/0_7STR]  Reduce=N
+New Linegeometry.3FMV4/0AAACNN0_T    nconds=3 nphases=3 spacing=3F_MTTP  wires= [AAAC_4/0_7STR     AAAC_4/0_7STR     AAAC_4/0_7STR]  Reduce=N
+New Linegeometry.3FMV4/0AAACNN0_V    nconds=3 nphases=3 spacing=3F_MTVP  wires= [AAAC_4/0_7STR     AAAC_4/0_7STR     AAAC_4/0_7STR]  Reduce=N
+New Linegeometry.3FMV3/0AAACNN0_H    nconds=3 nphases=3 spacing=3F_MTHP  wires= [AAAC_3/0_7STR     AAAC_3/0_7STR     AAAC_3/0_7STR]  Reduce=N
+New Linegeometry.3FMV3/0AAACNN0_T    nconds=3 nphases=3 spacing=3F_MTTP  wires= [AAAC_3/0_7STR     AAAC_3/0_7STR     AAAC_3/0_7STR]  Reduce=N
+New Linegeometry.3FMV3/0AAACNN0_V    nconds=3 nphases=3 spacing=3F_MTVP  wires= [AAAC_3/0_7STR     AAAC_3/0_7STR     AAAC_3/0_7STR]  Reduce=N
+New Linegeometry.3FMV2/0AAACNN0_H    nconds=3 nphases=3 spacing=3F_MTHP  wires= [AAAC_2/0_7STR     AAAC_2/0_7STR     AAAC_2/0_7STR]  Reduce=N
+New Linegeometry.3FMV2/0AAACNN0_T    nconds=3 nphases=3 spacing=3F_MTTP  wires= [AAAC_2/0_7STR     AAAC_2/0_7STR     AAAC_2/0_7STR]  Reduce=N
+New Linegeometry.3FMV2/0AAACNN0_V    nconds=3 nphases=3 spacing=3F_MTVP  wires= [AAAC_2/0_7STR     AAAC_2/0_7STR     AAAC_2/0_7STR]  Reduce=N
+New Linegeometry.3FMV1/0AAACNN0_H    nconds=3 nphases=3 spacing=3F_MTHP  wires= [AAAC_1/0_7STR     AAAC_1/0_7STR     AAAC_1/0_7STR]  Reduce=N
+New Linegeometry.3FMV1/0AAACNN0_T    nconds=3 nphases=3 spacing=3F_MTTP  wires= [AAAC_1/0_7STR     AAAC_1/0_7STR     AAAC_1/0_7STR]  Reduce=N
+New Linegeometry.3FMV1/0AAACNN0_V    nconds=3 nphases=3 spacing=3F_MTVP  wires= [AAAC_1/0_7STR     AAAC_1/0_7STR     AAAC_1/0_7STR]  Reduce=N
+New Linegeometry.3FMV2AAACNN0_H    nconds=3 nphases=3 spacing=3F_MTHP  wires= [AAAC_2_7STR     AAAC_2_7STR     AAAC_2_7STR]  Reduce=N
+New Linegeometry.3FMV2AAACNN0_T    nconds=3 nphases=3 spacing=3F_MTTP  wires= [AAAC_2_7STR     AAAC_2_7STR     AAAC_2_7STR]  Reduce=N
+New Linegeometry.3FMV2AAACNN0_V    nconds=3 nphases=3 spacing=3F_MTTP  wires= [AAAC_2_7STR     AAAC_2_7STR     AAAC_2_7STR]  Reduce=N
+New Linegeometry.3FMV4AAACNN0_H    nconds=3 nphases=3 spacing=3F_MTHP  wires= [AAAC_4_7STR     AAAC_4_7STR     AAAC_4_7STR]  Reduce=N
+New Linegeometry.3FMV4AAACNN0_T    nconds=3 nphases=3 spacing=3F_MTTP  wires= [AAAC_4_7STR     AAAC_4_7STR     AAAC_4_7STR]  Reduce=N
+New Linegeometry.3FMV4AAACNN0_V    nconds=3 nphases=3 spacing=3F_MTTP  wires= [AAAC_4_7STR     AAAC_4_7STR     AAAC_4_7STR]  Reduce=N
+New Linegeometry.3FMV6AAACNN0_H    nconds=3 nphases=3 spacing=3F_MTHP  wires= [AAAC_6_7STR     AAAC_6_7STR     AAAC_6_7STR]  Reduce=N
+New Linegeometry.3FMV6AAACNN0_T    nconds=3 nphases=3 spacing=3F_MTTP  wires= [AAAC_6_7STR     AAAC_6_7STR     AAAC_6_7STR]  Reduce=N
+New Linegeometry.3FMV6AAACNN0_V    nconds=3 nphases=3 spacing=3F_MTTP  wires= [AAAC_6_7STR     AAAC_6_7STR     AAAC_6_7STR]  Reduce=N
+
+New Linegeometry.3FMV2/0CUNN0_H   nconds=3 nphases=3 spacing=3F_MTHP  wires= [CU_2/0_7STR  CU_2/0_7STR  CU_2/0_7STR] Reduce=N
+New Linegeometry.3FMV2/0CUNN0_T   nconds=3 nphases=3 spacing=3F_MTTP  wires= [CU_2/0_7STR  CU_2/0_7STR  CU_2/0_7STR] Reduce=N
+New Linegeometry.3FMV2/0CUNN0_V   nconds=3 nphases=3 spacing=3F_MTVP  wires= [CU_2/0_7STR  CU_2/0_7STR  CU_2/0_7STR] Reduce=N
+New Linegeometry.3FMV1/0CUNN0_H   nconds=3 nphases=3 spacing=3F_MTHP  wires= [CU_1/0_7STR  CU_1/0_7STR  CU_1/0_7STR] Reduce=N
+New Linegeometry.3FMV1/0CUNN0_T   nconds=3 nphases=3 spacing=3F_MTTP  wires= [CU_1/0_7STR  CU_1/0_7STR  CU_1/0_7STR] Reduce=N
+New Linegeometry.3FMV1/0CUNN0_V   nconds=3 nphases=3 spacing=3F_MTVP  wires= [CU_1/0_7STR  CU_1/0_7STR  CU_1/0_7STR] Reduce=N
+New Linegeometry.3FMV2CUNN0_H   nconds=3 nphases=3 spacing=3F_MTHP  wires= [CU_2_7STR  CU_2_7STR  CU_2_7STR] Reduce=N
+New Linegeometry.3FMV2CUNN0_T   nconds=3 nphases=3 spacing=3F_MTTP  wires= [CU_2_7STR  CU_2_7STR  CU_2_7STR] Reduce=N
+New Linegeometry.3FMV2CUNN0_V   nconds=3 nphases=3 spacing=3F_MTVP  wires= [CU_2_7STR  CU_2_7STR  CU_2_7STR] Reduce=N
+New Linegeometry.3FMV4CUNN0_H   nconds=3 nphases=3 spacing=3F_MTHP  wires= [CU_4_SLD  CU_4_SLD CU_4_SLD] Reduce=N
+New Linegeometry.3FMV4CUNN0_T   nconds=3 nphases=3 spacing=3F_MTTP  wires= [CU_4_SLD  CU_4_SLD CU_4_SLD] Reduce=N
+New Linegeometry.3FMV4CUNN0_V   nconds=3 nphases=3 spacing=3F_MTVP  wires= [CU_4_SLD  CU_4_SLD CU_4_SLD] Reduce=N
+New Linegeometry.3FMV6CUNN0_H   nconds=3 nphases=3 spacing=3F_MTHP  wires= [CU_4_SLD  CU_4_SLD CU_4_SLD] Reduce=N
+New Linegeometry.3FMV6CUNN0_T   nconds=3 nphases=3 spacing=3F_MTTP  wires= [CU_4_SLD  CU_4_SLD CU_4_SLD] Reduce=N
+New Linegeometry.3FMV6CUNN0_V   nconds=3 nphases=3 spacing=3F_MTVP  wires= [CU_4_SLD  CU_4_SLD CU_4_SLD] Reduce=N

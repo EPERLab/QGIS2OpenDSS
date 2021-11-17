@@ -38,11 +38,11 @@
 </phrase>
 <phrase>
     <source>Líneas de baja tensión:</source>
-    <target>LV lines</target>
+    <target>LV lines:</target>
 </phrase>
 <phrase>
     <source>Cargas de baja tensión:</source>
-    <target>LV Loads</target>
+    <target>LV Loads:</target>
 </phrase>
 <phrase>
     <source>No modelar subestación</source>
@@ -54,27 +54,27 @@
 </phrase>
 <phrase>
     <source>Subestación:</source>
-    <target>Substation</target>
+    <target>Substation:</target>
 </phrase>
 <phrase>
     <source>Vehículos eléctricos:</source>
-    <target>Electric Vehicles</target>
+    <target>Electric Vehicles:</target>
 </phrase>
 <phrase>
     <source>Generación distribuida MV:</source>
-    <target>MV Distributed Generation</target>
+    <target>MV Distributed Generation:</target>
 </phrase>
 <phrase>
     <source>Generación distribuida LV:</source>
-    <target>LV Distributed Generation</target>
+    <target>LV Distributed Generation:</target>
 </phrase>
 <phrase>
     <source>Cargas de media tensión:</source>
-    <target>MV Loads</target>
+    <target>MV Loads:</target>
 </phrase>
 <phrase>
     <source>Líneas de media tensión:</source>
-    <target>MV lines</target>
+    <target>MV lines:</target>
 </phrase>
 <phrase>
     <source>Calcular ruta más larga</source>
