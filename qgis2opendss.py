@@ -33,8 +33,6 @@ import timeit
 import inspect
 from math import sqrt
 import math
-import subprocess
-import sys
 
 import networkx as nx  # Para trabajar con teoria de grafos
 import numpy as np
@@ -71,6 +69,7 @@ from . optimizacion_buses import excel_to_dict #funciones necesarias para buses
 from .qgis2opendss_dialog import QGIS2OpenDSSDialog
 from .qgis2opendss_progress import Ui_Progress
 
+import sys
 from decimal import Decimal
 import pandas as pd
 
@@ -1185,7 +1184,7 @@ class QGIS2OpenDSS(object):
     """
     # ********************************************************
     # ********************************************************
-    def CableAnalysis(self, carga, point, grafoBT, conns, toler,
+    def CableAnalysis(self, carga, point, grafoBT, grafoACO, conns, toler,
                       tipo_analisis = "BT"):
         
         # Se determina a qué línea está conectada la carga para averi-
@@ -1210,30 +1209,47 @@ class QGIS2OpenDSS(object):
         # Analiza los nodos vecinos
         try:
             # por la topología de la red sólo tendrá un nodo vecino
+            
+            #Revisa primero en capa BT
             nodo2 = nx.neighbors(grafoBT, nodo1)
-        except Exception:
-            if index_carga != None:
-                aviso = message + str(index_carga)
-                aviso += " no posee nodos vecinos. Verifique que "
-                aviso += "se encuentre conectada."
-            else:
-                aviso = message + ext + "en (" + str(x1)+ ","
-                aviso += str(y1)+ ")no posee nodos vecinos. "
-                aviso += "Verifique que se encuentre conectada."
-            aviso = str(aviso + "\n")
-            self.mensaje_log_gral += aviso
-            return 0
+        
+        except: #Si no funciona, hacer el intento con ACOMETIDA
+        
+            try:
+                nodo2 = nx.neighbors(grafoACO, nodo1)
+                
+            except Exception: #Ya si no funciona, entonces mandar al archivo de error
+                
+                if index_carga != None:
+                    aviso = message + str(index_carga)
+                    aviso += " no posee nodos vecinos. Verifique que "
+                    aviso += "se encuentre conectada."
+                else:
+                    aviso = message + ext + "en (" + str(x1)+ ","
+                    aviso += str(y1)+ ")no posee nodos vecinos. "
+                    aviso += "Verifique que se encuentre conectada."
+                aviso = str(aviso + "\n")
+                self.mensaje_log_gral += aviso
+                return 0
             
         # Recupera datos del grafo de BT (línea asociada a la carga)
         # las cargas (nodos)sólo tendrán un arista (un vecino)
         for nodo_ in nodo2:
-                nodo2 = nodo_
-        line_type = grafoBT.get_edge_data(nodo1, nodo2)['AIR_UGND']
+            nodo2 = nodo_
+        
+        try:
+            line_type = grafoBT.get_edge_data(nodo1, nodo2)['AIR_UGND']
+        except:
+            line_type = "air" #Acometidas
         
         # Lìnea aérea
         if line_type.lower()!= "air":
             return 1
-        cable_type = grafoBT.get_edge_data(nodo1, nodo2)['TIPO']
+        
+        try:
+            cable_type = grafoBT.get_edge_data(nodo1, nodo2)['TIPO']
+        except:
+            cable_type = grafoACO.get_edge_data(nodo1, nodo2)['TIPO']
             
         #Verifica que el tipo de cable y la conexión tengan sentido
         error_carga = 0
@@ -1329,7 +1345,7 @@ class QGIS2OpenDSS(object):
     # *****************************************************************
     # *****************************************************************
     def ReaderDataLoadBT(self, layer, datosCAR, grafoCAR, kWhLVload,
-                         toler, indexDSS, grafoBTTotal, grafoBT):
+                         toler, indexDSS, grafoBTTotal, grafoBT, grafoACO):
         try:
             # Recibe las caracteristicas de la capa de cargas.
             idx_bus1 = auxiliary_functions.getAttributeIndex(self, layer, "bus1")
@@ -1444,9 +1460,10 @@ class QGIS2OpenDSS(object):
                     
                 # Se llama a la función encargada de determinar si
                 # el SERVICE tiene un tipo de cable correcto
+             
                 sucessfull = self.CableAnalysis(carga, point,
-                                                grafoBT, conns, toler)
-                
+                                                grafoBT, grafoACO, conns, toler)
+                                                
                 # Para mostrar el mensaje de errores en
                 # CableAnalysis sólo una vez
                 if sucessfull == 0:
@@ -4195,7 +4212,7 @@ class QGIS2OpenDSS(object):
             
             
             #Se llama a la función encargada de determinar si SERVICE tiene un tipo de cable correcto asociado
-            self.CableAnalysis(ev, point, grafoBT, conns, toler)
+            self.CableAnalysis(ev, point, grafoBT, grafoACO, conns, toler)
             
             #Lectura de datos de capa
             
@@ -5386,49 +5403,62 @@ class QGIS2OpenDSS(object):
     
     def install_libraries(self, library_name):
         try:
-            # Se obtiene el path de QGIS
+            import subprocess
+            import sys
+            #Se obtiene el path de QGIS
             directorio = str(os.path)
             fin_dir = directorio.find("\\apps")
             first_letter_in = directorio.find(":\\") - 1
             first_letter = directorio[first_letter_in:first_letter_in+1]
             first_letter += ":\\"
             inic_dir = directorio.find(first_letter)
-            path = directorio[inic_dir:fin_dir]
-            # Se obtiene version de Python en QGIS
+            path = directorio[inic_dir : fin_dir]
+            #Se obtiene version de Python en QGIS
             info = sys.version_info
             verspy1 = str(info[0])
             verspy2 = str(info[1])
             carp_python = verspy1 + verspy2
             carp_python = "Python" + carp_python
-            # Se copia los archivos
+            
+            #Se copia los archivos
             dir_origen = path + "/bin/"
             name_file_or = "python" + verspy1 + ".dll"
             archivo_origen = str(dir_origen + name_file_or)
             dir_destino = path + "/apps/" + carp_python
-            name_dest = dir_destino + "/" + name_file_or
-            if os.path.exists(name_dest) is False:
-                # Copia python3.dll
-                self.copy(archivo_origen, dir_destino)
-            # Copia python37.dll
+            name_dest = dir_destino + "/" +  name_file_or
+            
+            if os.path.exists(name_dest) is False:            
+                #Copia python3.dll
+                self.copy(archivo_origen, dir_destino)       
+            
+            #Copia python37.dll
             name_file_or = "python" + verspy1 + verspy2 + ".dll"
             archivo_origen = dir_origen + name_file_or
-            name_dest = dir_destino + "/" + name_file_or
+            name_dest = dir_destino + "/" +  name_file_or
+            
             if os.path.exists(name_dest) is False:
-                # Copia python37.dll
+                #Copia python37.dll
                 self.copy(archivo_origen, dir_destino)
-            # Instalación de librerías
-            # Actualización de pip
-            sentencia = dir_origen + 'python.exe -m pip install –upgrade pip'
+            
+            #Instalación de librerías
+            
+            #Actualización de pip
+            
+            subprocess.call('python.exe -m pip install –upgrade pip',
+                             cwd=dir_destino, shell=True)
+            
+            #Instalación libreria
+            sentencia = "python.exe -m pip install " + library_name
             subprocess.call(sentencia, cwd=dir_destino, shell=True)
-            # Instalación libreria
-            sentencia = dir_origen + "python.exe -m pip install " + library_name
-            x = subprocess.call(sentencia, cwd=dir_destino, shell=True)
+        
+            
             print("Instalación de librería ", library_name, " finalizada.")
             return 1
-        except Exception:
+        
+        except:
             self.print_error()
             return 0
-     
+            
             
     """
     Función que se encarga de crear y asignar los loadshapes
@@ -6861,7 +6891,7 @@ class QGIS2OpenDSS(object):
                     self.nombres_capas += str(selectedLayerCA1) + ","
                     layerCA1 = QgsProject.instance().mapLayersByName(selectedLayerCA1)[0]
                     indexDSS = auxiliary_functions.getAttributeIndex(self, layerCA1, "DSSName")
-                    datosCAR, grafoCAR, kWhLVload, grafoBTTotal = self.ReaderDataLoadBT(layerCA1, datosCAR, grafoCAR, kWhLVload, toler, indexDSS, grafoBTTotal, grafoBT)
+                    datosCAR, grafoCAR, kWhLVload, grafoBTTotal = self.ReaderDataLoadBT(layerCA1, datosCAR, grafoCAR, kWhLVload, toler, indexDSS, grafoBTTotal, grafoBT, grafoACO)
                     if datosCAR == 0:
                         self.progress.close()
                         return 0
@@ -6879,7 +6909,7 @@ class QGIS2OpenDSS(object):
                     self.nombres_capas += str(selectedLayerCA2) + ","
                     layerCA2 = QgsProject.instance().mapLayersByName(selectedLayerCA2)[0]
                     indexDSS = auxiliary_functions.getAttributeIndex(self, layerCA2, "DSSName")
-                    datosCAR, grafoCAR, kWhLVload, grafoBTTotal = self.ReaderDataLoadBT(layerCA2, datosCAR, grafoCAR, kWhLVload, toler, indexDSS, grafoBTTotal, grafoBT)
+                    datosCAR, grafoCAR, kWhLVload, grafoBTTotal = self.ReaderDataLoadBT(layerCA2, datosCAR, grafoCAR, kWhLVload, toler, indexDSS, grafoBTTotal, grafoBT, grafoACO)
                     if datosCAR == 0:
                         self.progress.close()
                         return 0
@@ -6897,7 +6927,7 @@ class QGIS2OpenDSS(object):
                     self.nombres_capas += str(selectedLayerCA3)
                     layerCA3 = QgsProject.instance().mapLayersByName(selectedLayerCA3)[0]
                     indexDSS = auxiliary_functions.getAttributeIndex(self, layerCA3, "DSSName")
-                    datosCAR, grafoCAR, kWhLVload, grafoBTTotal = self.ReaderDataLoadBT(layerCA3, datosCAR, grafoCAR,  kWhLVload, toler, indexDSS, grafoBTTotal, grafoBT)
+                    datosCAR, grafoCAR, kWhLVload, grafoBTTotal = self.ReaderDataLoadBT(layerCA3, datosCAR, grafoCAR,  kWhLVload, toler, indexDSS, grafoBTTotal, grafoBT, grafoACO)
                     if datosCAR == 0:
                         self.progress.close()
                         return 0
