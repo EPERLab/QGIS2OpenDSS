@@ -33,6 +33,7 @@ import timeit
 import inspect
 from math import sqrt
 import math
+import subprocess
 
 import networkx as nx  # Para trabajar con teoria de grafos
 import numpy as np
@@ -5402,60 +5403,68 @@ class QGIS2OpenDSS(object):
     """
     
     def install_libraries(self, library_name):
+    
+        """
+        Función que se encarga de instalar una librería en
+        la versión de python de QGIS
+        -Parámetros de entrada:
+        *library_name (string): nombre de la librería a instalar
+        (tal como se le debe pasar a pip)
+
+        -Valores retornados:
+        *1 en caso de finalizar exitosamente
+        *0 en caso de ocurrir algún error
+        """
+        
         try:
-            import subprocess
-            import sys
-            #Se obtiene el path de QGIS
+            # Se obtiene el path de QGIS
             directorio = str(os.path)
             fin_dir = directorio.find("\\apps")
             first_letter_in = directorio.find(":\\") - 1
             first_letter = directorio[first_letter_in:first_letter_in+1]
             first_letter += ":\\"
             inic_dir = directorio.find(first_letter)
-            path = directorio[inic_dir : fin_dir]
-            #Se obtiene version de Python en QGIS
+            path = directorio[inic_dir:fin_dir]
+            # Se obtiene version de Python en QGIS
             info = sys.version_info
             verspy1 = str(info[0])
             verspy2 = str(info[1])
             carp_python = verspy1 + verspy2
             carp_python = "Python" + carp_python
-            
-            #Se copia los archivos
+
+            # Se copia los archivos
             dir_origen = path + "/bin/"
             name_file_or = "python" + verspy1 + ".dll"
             archivo_origen = str(dir_origen + name_file_or)
             dir_destino = path + "/apps/" + carp_python
-            name_dest = dir_destino + "/" +  name_file_or
-            
-            if os.path.exists(name_dest) is False:            
-                #Copia python3.dll
-                self.copy(archivo_origen, dir_destino)       
-            
-            #Copia python37.dll
+            name_dest = dir_destino + "/" + name_file_or
+
+            if os.path.exists(name_dest) is False:
+                # Copia python3.dll
+                self.copy(archivo_origen, dir_destino)
+
+            # Copia python37.dll
             name_file_or = "python" + verspy1 + verspy2 + ".dll"
             archivo_origen = dir_origen + name_file_or
-            name_dest = dir_destino + "/" +  name_file_or
-            
+            name_dest = dir_destino + "/" + name_file_or
+
             if os.path.exists(name_dest) is False:
-                #Copia python37.dll
+                # Copia python37.dll
                 self.copy(archivo_origen, dir_destino)
-            
-            #Instalación de librerías
-            
-            #Actualización de pip
-            
-            subprocess.call('python.exe -m pip install –upgrade pip',
-                             cwd=dir_destino, shell=True)
-            
-            #Instalación libreria
-            sentencia = "python.exe -m pip install " + library_name
+
+            # Instalación de librerías
+            # Actualización de pip
+            sentencia = dir_origen + 'python.exe -m pip install –upgrade pip'
             subprocess.call(sentencia, cwd=dir_destino, shell=True)
-        
-            
+
+            # Instalación libreria
+            sentencia = dir_origen + "python.exe -m pip install " + library_name
+            x = subprocess.call(sentencia, cwd=dir_destino, shell=True)
+
             print("Instalación de librería ", library_name, " finalizada.")
             return 1
-        
-        except:
+
+        except Exception:
             self.print_error()
             return 0
             
