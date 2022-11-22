@@ -229,6 +229,7 @@ react_list1F3W={ # List of reactances for single phase three winding transformer
                             '250': 'Xhl=6.08 Xht=6.08 Xlt=4.05', 
                             '333': 'Xhl=6.10 Xht=6.10 Xlt=4.07',   
                             '500': 'Xhl=6.12 Xht=6.12 Xlt=4.08',
+                            '667': 'Xhl=6.12 Xht=6.12 Xlt=4.08',
                             '833': 'Xhl=6.12 Xht=6.12 Xlt=4.08'},
                     '0.24':{
                             '3': 'Xhl=4.92 Xht=4.92 Xlt=3.28',
@@ -244,7 +245,8 @@ react_list1F3W={ # List of reactances for single phase three winding transformer
                             '250': 'Xhl=6.07 Xht=6.07 Xlt=4.05',
                             '333': 'Xhl=6.1 Xht=6.1 Xlt=4.06',
                             '500': 'Xhl=6.12 Xht=6.12 Xlt=4.08',
-                            '667': 'Xhl=6.12 Xht=6.12 Xlt=4.08'}}}
+                            '667': 'Xhl=6.12 Xht=6.12 Xlt=4.08',
+                            '833': 'Xhl=6.12 Xht=6.12 Xlt=4.08'}}}
                             
 res_list1F3W={ # List of resistances for single phase three winding transformers
 
@@ -262,7 +264,8 @@ res_list1F3W={ # List of resistances for single phase three winding transformers
                             '167': '%Rs=[0.54 1.07 1.07]', 
                             '250': '%Rs=[0.52 1.04 1.04]', 
                             '333': '%Rs=[0.50 1.00 1.00]',
-                            '500': '%Rs=[0.50 1.00 1.00]'},
+                            '500': '%Rs=[0.50 1.00 1.00]',
+                            '667': '%Rs=[0.50 1.00 1.00]'},
                     '0.24':{
                              '3': '%Rs=[0.95 1.90 1.90]',
                             '5': '%Rs=[0.95 1.90 1.90]',
@@ -276,7 +279,8 @@ res_list1F3W={ # List of resistances for single phase three winding transformers
                            '167': '%Rs=[0.54 1.07 1.07]', 
                            '250': '%Rs=[0.52 1.04 1.04]', 
                            '333': '%Rs=[0.50 1.00 1.00]',
-                           '500': '%Rs=[0.50 1.00 1.00]'}},
+                           '500': '%Rs=[0.50 1.00 1.00]',
+                           '667': '%Rs=[0.50 1.00 1.00]'}},
              
              '4.16':{
                     '0.12': {
@@ -292,7 +296,8 @@ res_list1F3W={ # List of resistances for single phase three winding transformers
                             '167': '%Rs=[0.54 1.07 1.07]', 
                             '250': '%Rs=[0.52 1.04 1.04]', 
                             '333': '%Rs=[0.50 1.00 1.00]',
-                            '500': '%Rs=[0.50 1.00 1.00]'},
+                            '500': '%Rs=[0.50 1.00 1.00]',
+                            '667': '%Rs=[0.50 1.00 1.00]'},
                     '0.24':{
                             '3': '%Rs=[0.95 1.90 1.90]',
                             '5': '%Rs=[0.95 1.90 1.90]',
@@ -306,7 +311,8 @@ res_list1F3W={ # List of resistances for single phase three winding transformers
                             '167': '%Rs=[0.54 1.07 1.07]', 
                             '250': '%Rs=[0.52 1.04 1.04]', 
                             '333': '%Rs=[0.50 1.00 1.00]',
-                            '500': '%Rs=[0.50 1.00 1.00]'}},
+                            '500': '%Rs=[0.50 1.00 1.00]',
+                            '667': '%Rs=[0.50 1.00 1.00]'}},
              '7.2':{
                     '0.12': {
                             '3': '%Rs=[0.95 1.90 1.90]',
@@ -321,7 +327,8 @@ res_list1F3W={ # List of resistances for single phase three winding transformers
                             '167': '%Rs=[0.54 1.07 1.07]', 
                             '250': '%Rs=[0.52 1.04 1.04]', 
                             '333': '%Rs=[0.50 1.00 1.00]',
-                            '500': '%Rs=[0.50 1.00 1.00]'},
+                            '500': '%Rs=[0.50 1.00 1.00]',
+                            '667': '%Rs=[0.50 1.00 1.00]'},
                     '0.24':{
                             '3': '%Rs=[0.95 1.90 1.90]',
                             '5': '%Rs=[0.95 1.90 1.90]',
@@ -335,7 +342,8 @@ res_list1F3W={ # List of resistances for single phase three winding transformers
                             '167': '%Rs=[0.54 1.07 1.07]', 
                             '250': '%Rs=[0.52 1.04 1.04]', 
                             '333': '%Rs=[0.50 1.00 1.00]',
-                            '500': '%Rs=[0.50 1.00 1.00]'}},
+                            '500': '%Rs=[0.50 1.00 1.00]',
+                            '667': '%Rs=[0.50 1.00 1.00]'}},
             '13.8':{
                     '0.12': {
                             '3' : '%Rs=[0.95 1.90 1.90]',
@@ -350,7 +358,8 @@ res_list1F3W={ # List of resistances for single phase three winding transformers
                             '167': '%Rs=[0.54 1.07 1.07]', 
                             '250': '%Rs=[0.52 1.04 1.04]', 
                             '333': '%Rs=[0.50 1.00 1.00]',
-                            '500': '%Rs=[0.50 1.00 1.00]'},
+                            '500': '%Rs=[0.50 1.00 1.00]',
+                            '667': '%Rs=[0.50 1.00 1.00]'},
                     '0.24':{
                             '3' : '%Rs=[0.95 1.90 1.90]',
                             '5' : '%Rs=[0.95 1.90 1.90]',
@@ -364,7 +373,8 @@ res_list1F3W={ # List of resistances for single phase three winding transformers
                             '167': '%Rs=[0.54 1.07 1.07]', 
                             '250': '%Rs=[0.52 1.04 1.04]', 
                             '333': '%Rs=[0.50 1.00 1.00]',
-                            '500': '%Rs=[0.50 1.00 1.00]'}},
+                            '500': '%Rs=[0.50 1.00 1.00]',
+                            '667': '%Rs=[0.50 1.00 1.00]'}},
                  
             '24.9':{
                     '0.12': {
@@ -380,6 +390,7 @@ res_list1F3W={ # List of resistances for single phase three winding transformers
                             '167': '%Rs=[0.50 1.00 1.00]', 
                             '250': '%Rs=[0.50 1.00 1.00]', 
                             '333': '%Rs=[0.50 1.00 1.00]',
+                            '667': '%Rs=[0.50 1.00 1.00]',
                             '500': '%Rs=[0.50 1.00 1.00]'},
                     '0.24':{
                              '3': '%Rs=[1.05 2.10 2.10]',
@@ -394,6 +405,7 @@ res_list1F3W={ # List of resistances for single phase three winding transformers
                             '167': '%Rs=[0.50 1.00 1.00]', 
                             '250': '%Rs=[0.50 1.00 1.00]', 
                             '333': '%Rs=[0.50 1.00 1.00]',
+                            '667': '%Rs=[0.50 1.00 1.00]',
                             '500': '%Rs=[0.50 1.00 1.00]'}},
             '34.5':{
                     '0.12': {
@@ -410,6 +422,7 @@ res_list1F3W={ # List of resistances for single phase three winding transformers
                             '250': '%Rs=[0.50 1.00 1.00]', 
                             '333': '%Rs=[0.50 1.00 1.00]',
                             '500': '%Rs=[0.50 1.00 1.00]',
+                            '667': '%Rs=[0.50 1.00 1.00]',
                             '833': '%Rs=[0.50 1.00 1.00]'},
                     '0.24':{
                              '3': '%Rs=[1.05 2.10 2.10]',
@@ -425,6 +438,7 @@ res_list1F3W={ # List of resistances for single phase three winding transformers
                             '250': '%Rs=[0.50 1.00 1.00]', 
                             '333': '%Rs=[0.50 1.00 1.00]',
                             '500': '%Rs=[0.50 1.00 1.00]',
+                            '667': '%Rs=[0.50 1.00 1.00]',
                             '833': '%Rs=[0.50 1.00 1.00]'},
                     
                     '0.48':{
@@ -441,6 +455,7 @@ res_list1F3W={ # List of resistances for single phase three winding transformers
                             '250': '%Rs=[0.50 1.00 1.00]', 
                             '333': '%Rs=[0.50 1.00 1.00]',
                             '500': '%Rs=[0.50 1.00 1.00]',
+                            '667': '%Rs=[0.50 1.00 1.00]',
                             '833': '%Rs=[0.50 1.00 1.00]'}}}
 
 imp_list1F2W={'13.8':{# List of impedances for single phase two winding transformers [MV][LV][Power]
