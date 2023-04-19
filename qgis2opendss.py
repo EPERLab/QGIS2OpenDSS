@@ -1057,17 +1057,80 @@ class QGIS2OpenDSS(object):
         finally:
             layer.commitChanges()
             
-        
     
-    def ReaderDataGD(self, toler, layer, grafoGD, indexDSS, Graph_T3F_multi, Graph_T3F_single, Graph_T2F, Graph_T1F,
-                     grafoCAR, circuitName, busBTid, busBT_List, busMT_List):
+    def GDcurves_dict(self, dir_name, type):
+        
+        if type == "ss":
+            curves_dir = dir_name+"\\DG"
+        elif type == "ls":
+            curves_dir = dir_name+"\\LSDG"
+            
+        all_files = os.listdir(curves_dir)
+        
+        csv_files = [f for f in all_files if f.endswith('.csv')]
+        dss_files = [f for f in all_files if f.endswith('.dss')]
+        txt_files = [f for f in all_files if f.endswith('.txt')]
+        
+        file_dict = {'CSV': csv_files, 'DSS': dss_files, 'TXT': txt_files}
+        
+        return file_dict
+    
+    def ReaderDataGD(self, toler, layer, Graph_T3F_multi, Graph_T3F_single, Graph_T2F, Graph_T1F,
+                     grafoCAR, busBTid, busBT_List, busMT_List):
         try:
+        
+            # Primero verificar que exista la carpeta de curvas DG
+            
+            dir_name = self.dlg.lineEdit_AC.text()
+            # List all files and directories in the folder
+            all_files_and_dirs = os.listdir(dir_name)
+
+            # Directorios/carpetas existentes en la carpeta de curvas
+            only_dirs = [d for d in all_files_and_dirs if os.path.isdir(os.path.join(dir_name, d))]
+            
+            try:
+                assert "DG" in only_dirs
+                file_ext_dict = self.GDcurves_dict(dir_name, "ss") # diccionario que guarda el nombre de las curvas de acuerdo a la extensión
+            
+            except AssertionError:
+                msg = self.print_error()
+                aviso = "No existe la carpeta 'DG' en el directorio de curvas. El formato solicita esta carpeta para contener los archivos de curvas de los generadores distribuidos. \n "
+                aviso += "Favor corrija y vuelva a ejecutar."
+                self.mensaje_log_gral += aviso + "\n"
+                title = "QGIS2OpenDSS error lectura GD pequeña escala"
+                QMessageBox.critical(None, title, aviso)
+                return 0, 0, 0
+            
+            # Continúa con la asignación de variables 
+            
+            grafoGD = nx.Graph()
+            datosGD = []
+            
+            indexDSS = auxiliary_functions.getAttributeIndex(self, layer, "DSSName")
+            indexBus1 = auxiliary_functions.getAttributeIndex(self, layer, "bus1")
+            xdp_ = auxiliary_functions.getAttributeIndex(self, layer, "XDP")
+            xdpp_ = auxiliary_functions.getAttributeIndex(self, layer, "XDPP")
+            
             GDs = layer.getFeatures() # Recibe las caracteristicas de la capa de cargas.
+            layer.startEditing() # Activa modo edición
+            
+            i = -1
+            linea_gd = ""
+            linea_lshp = ""
             mensaje_gd = ""
+            
             for GD in GDs:
-                point = GD.geometry().asPoint() # Lee la geometria de la linea
+                i += 1
+                dss_name = 'DER_ss_' + self.circuitName + '_' + str(i)
                 nodo = self.CoordPointProcees(GD, toler)
+                id_ = GD.id()
                 nodoInTraf = False
+                
+                # Coordenadas
+                point = GD.geometry().asPoint() # Lee la geometria de la linea
+                x1 = point[0]
+                y1 = point[1]
+                
                 if (nodo in grafoCAR.nodes()):
                     bus = grafoCAR.nodes[nodo]["BUS"]
                     if grafoCAR.nodes[nodo]["TRAFNPHAS"] != "NULL":
@@ -1118,7 +1181,7 @@ class QGIS2OpenDSS(object):
                     NPHAS = busMT_List[nodo]["NPHAS"]
                     conf = "wye"
                 else:
-                    bus = 'BUSLV' + circuitName + str(busBTid)
+                    bus = 'BUSLV' + self.circuitName + str(busBTid)
                     VOLTAGELL = "0.24"
                     VOLTAGELN = "0.12"
                     NPHAS = "1"
@@ -1129,16 +1192,165 @@ class QGIS2OpenDSS(object):
                         point[0])+ ',' + str(point[1])+ ')'
                     mensaje_gd += aviso +"\n"
                     #QMessageBox.warning(None, QCoreApplication.translate('dialog', 'Alerta Generador'), aviso)
-    
-                datos = {"CONF": conf, "NPHAS": NPHAS, "VOLTAGELN": VOLTAGELN, "VOLTAGELL": VOLTAGELL, "BUS": bus,
-                         "INDEXDSS": indexDSS, 'ID': GD.id(), "LAYER": layer, "nodo": nodo, 'X1': point[0], 'Y1': point[1],
-                         'KVA': GD['KVA'], "CURVE1": GD["CURVE1"], "CURVE2": GD["CURVE2"], "TECH": GD["TECH"]}
                 
+                # Verificación tecnología:
+                tech = str(GD['TECH']).upper()
+                try:
+                    assert tech in ["PV", "HYDRO", "HIDRO", "WIND", "GD"]
+                except AssertionError:
+                    msg = self.print_error()
+                    aviso = "El valor " + str(tech) + " suministrado en el "
+                    aviso += " atributo 'TECH' no es un valor aceptado. \n"
+                    aviso += "Favor corrija y vuelva a ejecutar."
+                    self.mensaje_log_gral += aviso + "\n"
+                    title = "QGIS2OpenDSS error lectura GD pequeña escala"
+                    QMessageBox.critical(None, title, aviso)
+                    return 0, 0, 0
+                
+                if tech not in ["PV", "WIND"]:
+                    # xdp
+                    try: 
+                        assert (GD['XDP'] not in [None, "", " ", "NULL", 0, "0"])
+                        xdp = GD['XDP']
+                    except AssertionError:
+                        msg = self.print_error()
+                        aviso += "Favor suministrar un valor válido de 'Xdp' para máquinas "
+                        aviso += "cuya tecnología no es PV o WIND."
+                        aviso += "Corrija y vuelva a ejecutar."
+                        self.mensaje_log_gral += aviso + "\n"
+                        title = "QGIS2OpenDSS error lectura GD gran escala"
+                        QMessageBox.critical(None, title, aviso)
+                    return 0, 0, 0
+                    
+                    # xdp
+                    try: 
+                        assert (GD['XDP'] not in [None, "", " ", "NULL", 0, "0"])
+                        xdpp = GD['XDPP']
+                    except AssertionError:
+                        msg = self.print_error()
+                        aviso += "Favor suministrar un valor válido de 'Xdpp' para máquinas "
+                        aviso += "cuya tecnología no es PV o WIND."
+                        aviso += "Corrija y vuelva a ejecutar."
+                        self.mensaje_log_gral += aviso + "\n"
+                        title = "QGIS2OpenDSS error lectura GD gran escala"
+                        QMessageBox.critical(None, title, aviso)
+                    return 0, 0, 0
+                else:
+                    xdp = ""
+                    xdpp = ""
+                
+                # Verificación existencia de nombres de curvas
+                curve1 = GD["CURVE1"]
+                curve2 = GD["CURVE2"]
+                
+                try:
+                    assert ((curve1 not in [None, "NULL", "", " "]) and (curve2 not in [None,"NULL", "", " "]))
+                except AssertionError:
+                    msg = self.print_error()
+                    aviso = "Existen generadores a los que no se les asignó una curva. \n"
+                    aviso += "Favor corrija y vuelva a ejecutar."
+                    self.mensaje_log_gral += aviso + "\n"
+                    title = "QGIS2OpenDSS error lectura GD pequeña escala"
+                    QMessageBox.critical(None, title, aviso)
+                    return 0, 0, 0
+                
+                # Verificación del formato de los archivos de curvas
+                try:
+                    file_format1 = curve1.split(".")[1].upper()
+                    file_format2 = curve2.split(".")[1].upper() 
+                    assert ((file_format1 in ["CSV", "TXT", "DSS"]) and (file_format2 in ["CSV", "TXT", "DSS"]))
+                
+                except AssertionError:
+                    msg = self.print_error()
+                    aviso = "El formato de algunos de los archivos de curvas de los generadores no posee el formato aceptado (CSV, TXT o DSS). \n "
+                    aviso += "Favor corrija y vuelva a ejecutar."
+                    self.mensaje_log_gral += aviso + "\n"
+                    title = "QGIS2OpenDSS error lectura GD pequeña escala"
+                    QMessageBox.critical(None, title, aviso)
+                    return 0, 0, 0
+                
+                # Verificación de que el nombre de las curvas no sea el mismo, al menos que sea un csv
+                if not ((file_format1 == file_format2) and (file_format1=="CSV")):
+                    try:
+                        assert (curve1 !=  curve2)
+                    except AssertionError:
+                        msg = self.print_error()
+                        aviso = "El nombre del archivo de las dos curvas de un generador posee el mismo nombre y formato. Esto solo se permite"
+                        aviso += " para archivos con formato .csv. \n"
+                        aviso += "Favor corrija y vuelva a ejecutar."
+                        self.mensaje_log_gral += aviso + "\n"
+                        title = "QGIS2OpenDSS error lectura GD pequeña escala"
+                        QMessageBox.critical(None, title, aviso)
+                        return 0, 0, 0
+                
+                # Verificación de la existencia de las curvas en el directorio establecido
+                
+                for c_name,c_format in zip([curve1, curve2], [file_format1, file_format2]):
+                    try:
+                        assert c_name in file_ext_dict[c_format]
+                    
+                    except AssertionError:
+                        msg = self.print_error()
+                        aviso = "El nombre de la curva "+c_name+" no existe dentro del directorio establecido. \n "
+                        aviso += "Favor corrija y vuelva a ejecutar."
+                        self.mensaje_log_gral += aviso + "\n"
+                        title = "QGIS2OpenDSS error lectura GD pequeña escala"
+                        QMessageBox.critical(None, title, aviso)
+                        return 0, 0, 0
+                
+                # Verificación tamaño del generador
+                kva = GD['KVA']
+                
+                try:
+                    assert (kva < 100)
+                except AssertionError:
+                    msg = self.print_error()
+                    aviso = "Existen generadores con capacidad correspondiente a uno de gran escala. \n"
+                    aviso += "Favor corrija y vuelva a ejecutar."
+                    self.mensaje_log_gral += aviso + "\n"
+                    title = "QGIS2OpenDSS error lectura GD pequeña escala"
+                    QMessageBox.critical(None, title, aviso)
+                    return 0, 0, 0
+                    
+                datos = {"CONF": conf, "NPHAS": NPHAS, "VOLTAGELN": VOLTAGELN, "VOLTAGELL": VOLTAGELL, "BUS": bus,
+                         "INDEXDSS": indexDSS, 'ID': GD.id(), "LAYER": layer, "nodo": nodo, 'X1': x1, 'Y1': y1,
+                         'KVA': kva, "CURVE1": curve1, "CURVE2": curve2, "TECH": tech, "XDP": xdp, "XDPP": xdpp, "DSSName": dss_name}
+                
+                datosGD.append(datos)
                 grafoGD.add_node(nodo)
                 grafoGD.nodes[nodo].update(datos)
                 
-            name_file_gd = "error_GD" + circuitName + ".log"
+                # Lineas DSS
+                temp = self.Write_GD_ss(datos)
+                linea_gd += temp[0]
+                linea_lshp += temp[1]
+                
+                # Cambios en capa
+                layer.changeAttributeValue(id_, indexDSS, dss_name)
+                layer.changeAttributeValue(id_, indexBus1, bus)
+            
+            # Escritura dss
+            # Loadshapes
+            filename_lshp = self.circuitName + '_LoadshapesDER_ss.dss'
+            name_lshp = self.foldername + '/' + filename_lshp
+            with open(name_lshp, 'w') as lshp_gd:
+                lshp_gd.write(linea_lshp)
+            
+            # Archivo gd
+            filename_gdss = self.circuitName + '_DERss.dss'
+            line_out = '\nredirect ' + filename_gdss
+            output_GDdss = self.foldername + '/' + filename_gdss
+            
+            linea_gd = "redirect " + filename_lshp + "\n" + linea_gd
+            with open(output_GDdss , 'w') as file_gd:
+                file_gd.write(linea_gd)
+            
+            
+            #Verificación de errores de conexión de generadores
+            
+            name_file_gd = "error_GD" + self.circuitName + ".log"
             dir_archivo_GD = self.dir_logs + "/" + name_file_gd
+            
             if mensaje_gd != "":
                 with open(dir_archivo_GD, 'w')as archivo_errgd:
                     archivo_errgd.write(mensaje_gd)
@@ -1151,14 +1363,16 @@ class QGIS2OpenDSS(object):
                 except Exception:
                     pass
                 
-            return grafoGD, busBTid, busBT_List
+            return datosGD, grafoGD, filename_gdss
+        
         except KeyError as e:
             cause = e.args[0]
             msg = self.print_error()
             aviso = "Favor verifique que su capa de GD tenga el atributo "
             aviso += cause + "."
             QMessageBox.critical(None, "QGIS2OpenDSS Error lectura GD", aviso)
-            return 0, 0, 0, 0
+            return 0, 0, 0
+        
         except Exception:
             msg = self.print_error()
             aviso = "Ocurrió un error en la lectura de las capas de generación distribuida."
@@ -2660,33 +2874,110 @@ class QGIS2OpenDSS(object):
     
             if tech == "PV" or tech == "WIND":
                 model = " model=7"
-            elif tech == "HYDRO" or tech== "HIDRO":
+                vmin_ = " Vminpu=0.833"
+                vmax_ = " Vmaxpu=1.5"
+            else:
                 model = " model=1"
                 xdp_ = " xdp=" + xdp
-            else:
-                model=""
-                xdp_ = ""
+                xdpp_ = " xdpp=" + xdpp
     
             # Sentencia del loadshape
             name_loadshape = "curve_" + dss_name
-            name_file = "DG/" + daily
+            folder_profile = self.dlg.lineEdit_AC.text()
+            name_file = folder_profile.split("/")[-1]+"/LSDG/"+daily # Tiene que ser un csv
             sent_p = "(file=" + name_file + ", col=1, header=no)"
             sent_q = "(file=" + name_file + ", col=2, header=no)"
             linea_lshp = "new Loadshape." + name_loadshape
             linea_lshp += ' npts=96 minterval=15 Pmult=' + sent_p
             linea_lshp +=  " Qmult=" + sent_q + " useactual=no\n"
-    
-            linea_gd = "new generator." + dss_name
-            linea_gd += " bus1=" + bus + ".1.2.3"
-            linea_gd += " kV=" + kv + " phases=3 MVA=" + mva
-            linea_gd += " kw=1 kVAr=1 daily=" + name_loadshape
-            linea_gd += " conn=wye status=variable" + xdp_
-            linea_gd +=  " xdpp=" + xdpp + model + "\n"
+            
+            if (tech != "PV") or (tech != "WIND"):
+                linea_gd = "new generator." + dss_name
+                linea_gd += " bus1=" + bus + ".1.2.3"
+                linea_gd += " kV=" + kv + " phases=3 MVA=" + mva
+                linea_gd += " kw=1 kVAr=1 daily=" + name_loadshape
+                linea_gd += " conn=wye status=variable" + xdp_
+                linea_gd +=  +xdpp + model + "\n"
+            else:
+                linea_gd = "new generator." + dss_name
+                linea_gd += " bus1=" + bus + ".1.2.3"
+                linea_gd += " kV=" + kv + " phases=3 MVA=" + mva
+                linea_gd += " kw=1 kVAr=1 daily=" + name_loadshape
+                linea_gd += " conn=wye status=variable" +vmin_+vmax_
+                linea_gd +=   model + "\n"
+            
             return linea_gd, linea_lshp
         except Exception:
             self.print_error()
             return "", ""
  
+ 
+    def Write_GD_ss(self, dataList):
+        try:
+            dss_name = str(dataList['DSSName'])
+            tech = str(dataList['TECH']).upper()
+            kva = str(dataList["KVA"])
+            kv = str(dataList["VOLTAGELL"])
+            xdpp = str(dataList["XDPP"])
+            xdp = str(dataList["XDP"])
+            bus = dataList["BUS"]
+            nphas = str(dataList["NPHAS"])
+            curve1 = str(dataList['CURVE1'])
+            curve2 = str(dataList['CURVE2'])
+            
+            if nphas == "1":
+                service = ".1.2"
+            else:
+                service=".1.2.3"
+    
+            if tech == "PV" or tech == "WIND":
+                model = " model=7"
+                vmin_ = " Vminpu=0.833"
+                vmax_ = " Vmaxpu=1.5"
+                xdp_ = ""
+                xdpp = ""
+            else:
+                model = " model=1"
+                vmin_ = ""
+                vmax_ = ""
+                xdp_ = " xdp=" + xdp
+                xdpp_ = " xdpp=" + xdpp
+                
+            # Sentencia del loadshape
+            name_loadshape = "curve_" + dss_name
+            folder_profile = self.dlg.lineEdit_AC.text()
+            name_file_curve1 = folder_profile.split("/")[-1]+"/DG/" + curve1
+            name_file_curve2 = folder_profile.split("/")[-1]+"/DG/" + curve2
+            if (curve1 == curve2): # Es un csv
+                sent_p = "(file=" + name_file_curve1 + ", col=1, header=no)"
+                sent_q = "(file=" + name_file_curve2 + ", col=2, header=no)"
+            else: #Es un txt o dss
+                sent_p = "(file=" + name_file_curve1 + ", header=no)"
+                sent_q = "(file=" + name_file_curve2 + ", header=no)"
+            
+            linea_lshp = "new Loadshape." + name_loadshape
+            linea_lshp += ' npts=96 minterval=15 Pmult=' + sent_p
+            linea_lshp +=  " Qmult=" + sent_q + " useactual=no\n"
+            
+            if (tech != "PV") or (tech != "WIND"):
+                linea_gd = "new generator." + dss_name
+                linea_gd += " bus1=" + bus + service
+                linea_gd += " kV=" + kv + " phases="+ nphas + " kVA=" + kva
+                linea_gd += " kw=1 kVAr=1 daily=" + name_loadshape
+                linea_gd += " conn=wye status=variable" + xdp_
+                linea_gd +=  xdpp + model + "\n"
+            else:
+                linea_gd = "new generator." + dss_name
+                linea_gd += " bus1=" + bus + service
+                linea_gd += " kV=" + kv + " phases=" + nphas + " kVA=" + kva
+                linea_gd += " kw=1 kVAr=1 daily=" + name_loadshape
+                linea_gd += " conn=wye status=variable" +vmin_+vmax_
+                linea_gd +=   model + "\n"
+            
+            return linea_gd, linea_lshp
+        except Exception:
+            self.print_error()
+            return "", ""
     
     
     """
@@ -3033,6 +3324,29 @@ class QGIS2OpenDSS(object):
  
     def ReaderDataGD_LargeScale(self, layer, toler, Graph_T3F_single):
         try:
+            
+            # Primero verificar que exista la carpeta de curvas LSDG
+            
+            dir_name = self.dlg.lineEdit_AC.text()
+            # List all files and directories in the folder
+            all_files_and_dirs = os.listdir(dir_name)
+
+            # Directorios/carpetas existentes en la carpeta de curvas
+            only_dirs = [d for d in all_files_and_dirs if os.path.isdir(os.path.join(dir_name, d))]
+            
+            try:
+                assert "LSDG" in only_dirs
+                file_ext_dict = self.GDcurves_dict(dir_name, "ls") # diccionario que guarda el nombre de las curvas de acuerdo a la extensión
+            
+            except AssertionError:
+                msg = self.print_error()
+                aviso = "No existe la carpeta 'LSDG' en el directorio de curvas. El formato solicita esta carpeta para contener los archivos de curvas de los generadores distribuidos. \n "
+                aviso += "Favor corrija y vuelva a ejecutar."
+                self.mensaje_log_gral += aviso + "\n"
+                title = "QGIS2OpenDSS error lectura GD gran escala"
+                QMessageBox.critical(None, title, aviso)
+                return 0, 0, 0
+                
             grafoGD = nx.Graph()
             datosGD = []
             
@@ -3048,7 +3362,7 @@ class QGIS2OpenDSS(object):
             linea_lshp = ""
             for gd in GDs:
                 i += 1
-                dss_name = 'gd_ls_' + self.circuitName + '_' + str(i)
+                dss_name = 'DER_ls_' + self.circuitName + '_' + str(i)
                 nodo = self.CoordPointProcees(gd, toler)
                 id_ = gd.id()
                 
@@ -3096,10 +3410,19 @@ class QGIS2OpenDSS(object):
                         group = 'N/A'
     
                 # Tecnología
-                tech = str(gd['TECH']).lower()
+                tech = str(gd['TECH']).upper()
+                try:
+                    assert tech in ["PV", "HYDRO", "HIDRO", "WIND", "GD"]
+                except AssertionError:
+                    msg = self.print_error()
+                    aviso = "El valor " + str(tech) + " suministrado en el "
+                    aviso += " atributo 'TECH' no es un valor aceptado. "
+                    aviso += "Favor corrija y vuelva a ejecutar."
+                    self.mensaje_log_gral += aviso + "\n"
+                    title = "QGIS2OpenDSS error lectura GD gran escala"
+                    QMessageBox.critical(None, title, aviso)
+                    return 0, 0, 0
                 
-                #Loadshape
-                daily = gd['DAILY']
                 
                 # Tensión 
                 nomvolt = gd['NOMVOLT']
@@ -3108,11 +3431,80 @@ class QGIS2OpenDSS(object):
                 # Capacidad nominal
                 mva = gd['MVA']
                 
-                # xdp
-                xdp = gd['XDP']
+                if tech not in ["PV", "WIND"]:
+                    # xdp
+                    try: 
+                        assert (gd['XDP'] not in [None, "", " ", "NULL", 0, "0"])
+                        xdp = gd['XDP']
+                    except AssertionError:
+                        msg = self.print_error()
+                        aviso += "Favor suministrar un valor válido de 'Xdp' para máquinas "
+                        aviso += "cuya tecnología no es PV o WIND."
+                        aviso += "Corrija y vuelva a ejecutar."
+                        self.mensaje_log_gral += aviso + "\n"
+                        title = "QGIS2OpenDSS error lectura GD gran escala"
+                        QMessageBox.critical(None, title, aviso)
+                    return 0, 0, 0
+                    
+                    # xdp
+                    try: 
+                        assert (gd['XDPP'] not in [None, "", " ", "NULL", 0, "0"])
+                        xdpp = gd['XDPP']
+                    except AssertionError:
+                        msg = self.print_error()
+                        aviso += "Favor suministrar un valor válido de 'Xdpp' para máquinas "
+                        aviso += "cuya tecnología no es PV o WIND."
+                        aviso += "Corrija y vuelva a ejecutar."
+                        self.mensaje_log_gral += aviso + "\n"
+                        title = "QGIS2OpenDSS error lectura GD gran escala"
+                        QMessageBox.critical(None, title, aviso)
+                    return 0, 0, 0
+                else:
+                    xdp = ""
+                    xdpp = ""
                 
-                # xdpp
-                xdpp = gd['XDPP']
+                #Loadshape
+                # Verificación existencia de nombres de curvas
+                daily = gd['DAILY']
+                
+                try:
+                    assert (daily not in [None, "", " ", "0", 0, "NULL"])
+                except AssertionError:
+                    msg = self.print_error()
+                    aviso = "Existen generadores a los que no se les asignó una curva"
+                    aviso += "Favor corrija y vuelva a ejecutar."
+                    self.mensaje_log_gral += aviso + "\n"
+                    title = "QGIS2OpenDSS error lectura GD gran escala"
+                    QMessageBox.critical(None, title, aviso)
+                    return 0, 0, 0
+                
+                # Verificación del formato de los archivos de curvas
+                try:
+                    file_format = daily.split(".")[1].upper() 
+                    assert (file_format == "CSV")
+                
+                except AssertionError:
+                    msg = self.print_error()
+                    aviso = "El formato de algunos de los archivos de curvas de los generadores no posee el formato aceptado (CSV)"
+                    aviso += "Favor corrija y vuelva a ejecutar."
+                    self.mensaje_log_gral += aviso + "\n"
+                    title = "QGIS2OpenDSS error lectura GD gran escala"
+                    QMessageBox.critical(None, title, aviso)
+                    return 0, 0, 0
+                
+                # Verificación de la existencia de las curvas en el directorio establecido
+                
+                try:
+                    assert daily in file_ext_dict[file_format]
+                
+                except AssertionError:
+                    msg = self.print_error()
+                    aviso = "El nombre de la curva "+daily+" no existe dentro del directorio establecido. \n "
+                    aviso += "Favor corrija y vuelva a ejecutar."
+                    self.mensaje_log_gral += aviso + "\n"
+                    title = "QGIS2OpenDSS error lectura GD pequeña escala"
+                    QMessageBox.critical(None, title, aviso)
+                    return 0, 0, 0
                 
                 datos = {"INDEXDSS": indexDSS, 'ID': id_,
                         "LAYER": layer, 'DSSName': dss_name,
@@ -3139,13 +3531,13 @@ class QGIS2OpenDSS(object):
             
             # Escritura dss
             # Loadshapes
-            filename_lshp = self.circuitName + '_LoadshapesGD_ls.dss'
+            filename_lshp = self.circuitName + '_LoadshapesDER_ls.dss'
             name_lshp = self.foldername + '/' + filename_lshp
             with open(name_lshp, 'w') as lshp_gd:
                 lshp_gd.write(linea_lshp)
 
             # Archivo gd
-            filename_gdls = self.circuitName + '_DGls.dss'
+            filename_gdls = self.circuitName + '_DERls.dss'
             line_out = '\nredirect ' + filename_gdls
             output_GDdss = self.foldername + '/' + filename_gdls
             
@@ -7855,27 +8247,39 @@ class QGIS2OpenDSS(object):
             # ##########################################################
             
             capa_gd_ls = False
-            # Recibe la capa de reclosers
             selectedLayerGD_ls = self.dlg.comboBox_GD_ls.currentText()
             if len(selectedLayerGD_ls)!= 0:
-                layerGD_ls = QgsProject.instance().mapLayersByName(selectedLayerGD_ls)[0]
-                datosGD_ls, grafoGD_ls, filename_gdls = self.ReaderDataGD_LargeScale(layerGD_ls, toler, Graph_T3F_single)
-                capa_gd_ls = True
-                if datosGD_ls == 0:
-                    self.progress.close()
-                    return 0
+                try:
+                    layerGD_ls = QgsProject.instance().mapLayersByName(selectedLayerGD_ls)[0]
+                    datosGD_ls, grafoGD_ls, filename_gdls = self.ReaderDataGD_LargeScale(layerGD_ls, toler, Graph_T3F_single)
+                    capa_gd_ls = True
+                    self.nombres_capas += "\n!Layers DERls: "
+                    self.nombres_capas += str(selectedLayerGD_ls) + ","
+                    
+                    if datosGD_ls == 0:
+                        self.progress.close()
+                        return 0
+                except Exception:
+                    self.print_error()  
             
-            ###LECTURA Y CONECTIVIDAD DE GD LV
+            # ##########################################################
+            # ############### Lectura GD pequeña escala ################
+            # ##########################################################
+            
+            capa_gd_ss = False
             selectedLayerGD = self.dlg.comboBox_GD_lv.currentText()
-
             if len(selectedLayerGD)!= 0:
                 try:
                     layerGD = QgsProject.instance().mapLayersByName(selectedLayerGD)[0]  # Se selecciona la capa de la base de datos "layers" según el índice de layer_list
-                    indexDSS = auxiliary_functions.getAttributeIndex(self, layerGD, "DSSName")
-                    grafoGD = nx.Graph()
-                    grafoGD, busBTid, busBT_List = self.ReaderDataGD(toler, layerGD, grafoGD, indexDSS, Graph_T3F_multi,
+                    # indexDSS = auxiliary_functions.getAttributeIndex(self, layerGD, "DSSName")
+                    
+                    datosGD, grafoGD, filename_gdss = self.ReaderDataGD(toler, layerGD, Graph_T3F_multi,
                                                                      Graph_T3F_single, Graph_T2F, Graph_T1F, grafoCAR,
-                                                                     circuitName, busBTid, busBT_List, busMT_List)
+                                                                     busBTid, busBT_List, busMT_List)
+                    capa_gd_ss = True
+                    self.nombres_capas += "\n!Layers DERss: "
+                    self.nombres_capas += str(selectedLayerGD) + ","
+                    
                     if grafoGD == 0:
                         self.progress.close()
                         return 0
@@ -9438,107 +9842,113 @@ class QGIS2OpenDSS(object):
             ### Escritura de GD
             ########################
             
+            # Escritura GD small scale
+            if capa_gd_ss is True:
+                line_out = '\nredirect ' + filename_gdss
+                self.output_filesQGIS2DSS.write(line_out)
             
-            if len(selectedLayerGD)!= 0:
-                try:
+            
+            # if len(selectedLayerGD)!= 0:
+                # try:
                     
-                    if LoadShapesFile is False: #bandera que especifica si el archivo de loadshapes ya se abrió
-                        filename = circuitName + '_Loadshapes.dss'
-                        output_shpdss = open(foldername + '/' + filename, 'a+')
-                        LoadShapesFile = True
-                    layerGD = QgsProject.instance().mapLayersByName(selectedLayerGD)[
-                        0]
-                    self.progress.progressBar.setValue(90)
-                    filename = circuitName + '_DG.dss'
-                    output_filesQGIS2DSS.write('\nredirect ' + filename)
-                    output_GDdss = open(foldername + '/' + filename, 'w')
-                    layerGD.startEditing() # Guarda
+                    # if LoadShapesFile is False: #bandera que especifica si el archivo de loadshapes ya se abrió
+                        # filename = circuitName + '_Loadshapes.dss'
+                        # output_shpdss = open(foldername + '/' + filename, 'a+')
+                        # LoadShapesFile = True
+                    # layerGD = QgsProject.instance().mapLayersByName(selectedLayerGD)[
+                        # 0]
+                    # self.progress.progressBar.setValue(90)
+                    # filename = circuitName + '_DG.dss'
+                    # output_filesQGIS2DSS.write('\nredirect ' + filename)
+                    # output_GDdss = open(foldername + '/' + filename, 'w')
+                    # layerGD.startEditing() # Guarda
                     
-                    if errorLoadShape or cargas == 0:
-                        output_shpdss.write('!' + folder_profile + '\n')
-                    n = 1
-                    i = 1
-                    shapewritten = {}
-                    for GD in grafoGD.nodes(data=True):
-                        dataList = GD[1]
-                        nodo = GD[0]
-                        bus = str(dataList['BUS'])
-                        kVA = str(dataList['KVA'])
-                        conf = str(dataList['CONF'])
-                        NPHAS = str(dataList["NPHAS"])
-                        CURVE1 = dataList["CURVE1"]
-                        CURVE2 = dataList["CURVE2"]
-                        kV = str(dataList["VOLTAGELL"])
-                        if NPHAS == "1":
-                            conn = ".1.2"
-                        else:
-                            conn = ".1.2.3"
-                        if dataList["TECH"] == "PV":
-                            if "MyPvsT" not in shapewritten:
-                                shapewritten["MyPvsT"] = 0
-                                out = 'New XYCurve.MyPvsT npts=4 xarray=[.001 25 75 100] '
-                                out += ' yarray=[1.2 1.0 0.8 0.6]\n'
-                                out += 'New XYCurve.MyEff npts=4 xarray=[.1 .2 .4 1.0] '
-                                out += 'yarray=[.86 .9 .93 .97]\n'
-                                output_shpdss.write(out)
+                    # if errorLoadShape or cargas == 0:
+                        # output_shpdss.write('!' + folder_profile + '\n')
+                    # n = 1
+                    # i = 1
+                    # shapewritten = {}
+                    # for GD in grafoGD.nodes(data=True):
+                        # dataList = GD[1]
+                        # nodo = GD[0]
+                        # bus = str(dataList['BUS'])
+                        # kVA = str(dataList['KVA'])
+                        # conf = str(dataList['CONF'])
+                        # NPHAS = str(dataList["NPHAS"])
+                        # CURVE1 = dataList["CURVE1"]
+                        # CURVE2 = dataList["CURVE2"]
+                        # tech = dataList["TECH"]
+                        # kV = str(dataList["VOLTAGELL"])
+                        # if NPHAS == "1":
+                            # conn = ".1.2"
+                        # else:
+                            # conn = ".1.2.3"
+                        # if tech == "PV2":
+                            # if "MyPvsT" not in shapewritten:
+                                # shapewritten["MyPvsT"] = 0
+                                # out = 'New XYCurve.MyPvsT npts=4 xarray=[.001 25 75 100] '
+                                # out += ' yarray=[1.2 1.0 0.8 0.6]\n'
+                                # out += 'New XYCurve.MyEff npts=4 xarray=[.1 .2 .4 1.0] '
+                                # out += 'yarray=[.86 .9 .93 .97]\n'
+                                # output_shpdss.write(out)
     
-                            if CURVE1 not in shapewritten:
-                                shapewritten[CURVE1] = 0
-                                name1 = CURVE1.replace('.txt', '')
-                                name1 = name1.replace('.dss', '')
-                                out = 'New Loadshape.' + name1 + ' npts=96 '
-                                out += 'minterval=15 csvfile=' + folder_profile
-                                out += '\\DG\\' + CURVE1 + '\n'
-                                output_shpdss.write(out)
-                            if CURVE2 not in shapewritten:
-                                shapewritten[CURVE2] = 0
-                                name2 = CURVE2.replace('.txt', '')
-                                name2 = name2.replace('.dss', '')
-                                out = 'New Tshape.' + name2 + ' npts=96 '
-                                out += 'minterval=15 csvfile=' + folder_profile
-                                out += '\\DG\\' + CURVE2 + '\n'
-                                output_shpdss.write(out)
-                            pvname = "PV" + NPHAS + "F" 
-                            pvname += circuitName + str(n)
-                            pvSentence = "New PVSystem." + pvname
-                            pvSentence += " bus1=" + bus + conn
-                            pvSentence += " kV=" + kV + " phases="
-                            pvSentence += NPHAS + " kVA=" + kVA
-                            pvSentence += " PF=1 conn=" + conf
-                            pvSentence += " irrad=0.90 Pmpp=" + kVA
-                            pvSentence += " temperature=25 effcurve="
-                            pvSentence += "Myeff P-TCurve=MyPvsT Daily="
-                            pvSentence += name1 + " TDaily=" + name2 
-                            pvSentence +=" %cutin=0.01 %cutout=0.01 "
-                            pvSentence += "enabled=yes \n"
-                            dataList["LAYER"].changeAttributeValue(dataList["ID"], dataList["INDEXDSS"], pvname)
-                            output_GDdss.write(pvSentence)
-                            n += 1
-                        else:
-                            if (CURVE1, CURVE2)not in shapewritten:
-                                shapewritten[(CURVE1, CURVE2)] = "curveDG" + str(i)
-                                out = "New Loadshape.curveDG" + str(i) 
-                                out += " npts=96 minterval=15 mult=(file="
-                                out += folder_profile + '\\DG\\' + CURVE1
-                                out += ")Qmult=(file=" + folder_profile
-                                out += '\\DG\\' + CURVE2 + ")useactual=no \n"
-                                output_shpdss.write(out)
-                                i += 1
-                            GDName = "DG" + NPHAS + "F" + circuitName + str(n)
-                            DGsentence = "New Generator." + GDName
-                            DGsentence += " Bus1=" + bus + conn + " phases="
-                            DGsentence += NPHAS + " conn=" + conf
-                            DGsentence +=  " kVA=" + kVA + " kV=" + kV
-                            DGsentence += " kW=1 kVAR=1 Model=1 daily="
-                            DGsentence += shapewritten[(CURVE1, CURVE2)] 
-                            DGsentence += " status=variable\n"
-                            dataList["LAYER"].changeAttributeValue(dataList["ID"], dataList["INDEXDSS"], GDName)
-                            output_GDdss.write(DGsentence)
-                            n += 1
-                    output_GDdss.close()
-                    layerGD.commitChanges()
-                except Exception:
-                    self.print_error()
+                            # if CURVE1 not in shapewritten:
+                                # shapewritten[CURVE1] = 0
+                                # name1 = CURVE1.replace('.txt', '')
+                                # name1 = name1.replace('.dss', '')
+                                # out = 'New Loadshape.' + name1 + ' npts=96 '
+                                # out += 'minterval=15 csvfile=' + folder_profile
+                                # out += '\\DG\\' + CURVE1 + '\n'
+                                # output_shpdss.write(out)
+                            # if CURVE2 not in shapewritten:
+                                # shapewritten[CURVE2] = 0
+                                # name2 = CURVE2.replace('.txt', '')
+                                # name2 = name2.replace('.dss', '')
+                                # out = 'New Tshape.' + name2 + ' npts=96 '
+                                # out += 'minterval=15 csvfile=' + folder_profile
+                                # out += '\\DG\\' + CURVE2 + '\n'
+                                # output_shpdss.write(out)
+                            # pvname = "PV" + NPHAS + "F" 
+                            # pvname += circuitName + str(n)
+                            # pvSentence = "New PVSystem." + pvname
+                            # pvSentence += " bus1=" + bus + conn
+                            # pvSentence += " kV=" + kV + " phases="
+                            # pvSentence += NPHAS + " kVA=" + kVA
+                            # pvSentence += " PF=1 conn=" + conf
+                            # pvSentence += " irrad=0.90 Pmpp=" + kVA
+                            # pvSentence += " temperature=25 effcurve="
+                            # pvSentence += "Myeff P-TCurve=MyPvsT Daily="
+                            # pvSentence += name1 + " TDaily=" + name2 
+                            # pvSentence +=" %cutin=0.01 %cutout=0.01 "
+                            # pvSentence += "enabled=yes \n"
+                            # dataList["LAYER"].changeAttributeValue(dataList["ID"], dataList["INDEXDSS"], pvname)
+                            # output_GDdss.write(pvSentence)
+                            # n += 1
+                        # else:
+                            # if (CURVE1, CURVE2)not in shapewritten:
+                                # shapewritten[(CURVE1, CURVE2)] = "curveDG" + str(i)
+                                # out = "New Loadshape.curveDG" + str(i) 
+                                # out += " npts=96 minterval=15 mult=(file="
+                                # out += folder_profile + '\\DG\\' + CURVE1
+                                # out += ")Qmult=(file=" + folder_profile
+                                # out += '\\DG\\' + CURVE2 + ")useactual=no \n"
+                                # output_shpdss.write(out)
+                                # i += 1
+                            # GDName = "DG" + NPHAS + "F" + circuitName + str(n)
+                            # DGsentence = "New Generator." + GDName
+                            # DGsentence += " Bus1=" + bus + conn + " phases="
+                            # DGsentence += NPHAS + " conn=" + conf
+                            # DGsentence +=  " kVA=" + kVA + " kV=" + kV
+                            # DGsentence += " kW=1 kVAR=1 Model=1 daily="
+                            # DGsentence += shapewritten[(CURVE1, CURVE2)] 
+                            # DGsentence += " status=variable\n"
+                            # dataList["LAYER"].changeAttributeValue(dataList["ID"], dataList["INDEXDSS"], GDName)
+                            # output_GDdss.write(DGsentence)
+                            # n += 1
+                    # output_GDdss.close()
+                    # layerGD.commitChanges()
+                # except Exception:
+                    # self.print_error()
                     
                     
             ########################
