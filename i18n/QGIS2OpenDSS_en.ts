@@ -49,13 +49,13 @@
         <location filename="../qgis2opendss_dialog_base.ui" line="173"/>
         <source>Generación distribuida
 pequeña escala</source>
-        <translation>Low Scale DG</translation>
+        <translation>Small Scale DG</translation>
     </message>
     <message>
         <location filename="../qgis2opendss_dialog_base.ui" line="212"/>
         <source>Generación distribuida
 gran escala</source>
-        <translation>High Scale DG</translation>
+        <translation>Large Scale DG</translation>
     </message>
     <message>
         <location filename="../qgis2opendss_dialog_base.ui" line="323"/>
