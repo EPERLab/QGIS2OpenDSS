@@ -584,8 +584,7 @@ class QGIS2OpenDSS(object):
                 nodo = self.CoordPointProcees(trafo1, toler)
                 point = trafo1.geometry().asPoint() # Lee la geometria de la linea
                 fase = phaseOperations.renamePhase(trafo1['PHASEDESIG']).get('phaseCodeODSS') # define código de OpenDSS
-                numfase = phaseOperations.renamePhase(trafo1['PHASEDESIG']).get(
-                    'phaseNumberTraf') # define código de OpenDSS
+                numfase = phaseOperations.renamePhase(trafo1['PHASEDESIG']).get('phaseNumberTraf') # define código de OpenDSS
                 MVCode = trafo1['PRIMVOLT']
                 LVCode = trafo1['SECVOLT']
                 tap = str(format(float(trafo1['TAPSETTING']), '.4f'))
@@ -612,6 +611,7 @@ class QGIS2OpenDSS(object):
                     group_mv = trafo1['MV_GROUP']
                 except KeyError:
                     group_mv = 'N/A'
+                
                 try:
                     sum_kva = float(trafo1['KVAPHASEA']) +  float(trafo1['KVAPHASEB']) + float(trafo1['KVAPHASEC'])
                     assert ((sum_kva< 1.02*float(trafo1['RATEDKVA'])) and (sum_kva> 0.98*float(trafo1['RATEDKVA'])))
@@ -643,6 +643,7 @@ class QGIS2OpenDSS(object):
                         mv_mv = False
                 except Exception:
                     mv_mv = False
+                
                 if fase == '.1.2.3':  # Divide los transformadores trifasicos en transformadores simples y de multiples unidades monofasicas
                     # Revisa si es un banco de tres transformadores con placa diferente o una sola unidad
                     if (trafo1['SECCONN'] == '4D'):
@@ -682,9 +683,9 @@ class QGIS2OpenDSS(object):
                             
                     if (trafo1['SECCONN'] == 'Y') and (trafo1['PRIMCONN'] == 'Y' or trafo1['PRIMCONN'] == 'D'):
     
-                        if ( ((float(trafo1['KVAPHASEA']) < 1.01 * float(trafo1['RATEDKVA'])) or (float(trafo1['KVAPHASEA']) > 0.99 * float(trafo1['RATEDKVA']))) and
-                            ((float(trafo1['KVAPHASEB']) < 1.01 * float(trafo1['RATEDKVA'])) or (float(trafo1['KVAPHASEB']) > 0.99 * float(trafo1['RATEDKVA']))) and
-                            ((float(trafo1['KVAPHASEC']) < 1.01 * float(trafo1['RATEDKVA'])) or (float(trafo1['KVAPHASEC']) > 0.99 * float(trafo1['RATEDKVA']))) ):
+                        if ( ((float(trafo1['KVAPHASEA']) < 1.02 * float(trafo1['RATEDKVA'])) or (float(trafo1['KVAPHASEA']) > 0.98 * float(trafo1['RATEDKVA']))) and
+                            ((float(trafo1['KVAPHASEB']) < 1.02 * float(trafo1['RATEDKVA'])) or (float(trafo1['KVAPHASEB']) > 0.98 * float(trafo1['RATEDKVA']))) and
+                            ((float(trafo1['KVAPHASEC']) < 1.02 * float(trafo1['RATEDKVA'])) or (float(trafo1['KVAPHASEC']) > 0.98 * float(trafo1['RATEDKVA']))) ):
                         
                             datosSingleY = {'KVA_FA': trafo1['KVAPHASEA'], 'KVA_FB': trafo1['KVAPHASEB'],
                                             'KVA_FC': trafo1['KVAPHASEC'], "NPHAS": numfase, "MVCODE": MVCode, "LVCODE": LVCode,
@@ -806,6 +807,7 @@ class QGIS2OpenDSS(object):
                         
                         grafoBTTotal.add_node(nodo)
                         grafoBTTotal.nodes[nodo].update(datosTotalGraph)
+                
                 elif fase == '.3' or fase == '.2' or fase == '.1':
                     datos1F = {'KVA_FA': trafo1['KVAPHASEA'], 'KVA_FB': trafo1['KVAPHASEB'], 'KVA_FC': trafo1['KVAPHASEC'],
                                "NPHAS": numfase, "MVCODE": MVCode, "LVCODE": LVCode, "TAPS": tap, "INDEXDSS": indexDSS,
@@ -817,6 +819,7 @@ class QGIS2OpenDSS(object):
                                'INDEX_LV_GROUP': indexLvGroup}
                     datosTotalGraph = {"NPHAS": numfase, "type": "TRAF", 'LOADVOLT': loadvolt, 'LOADVOLTLN': loadvoltLN}
                     datosT1F.append(datos1F)
+                    
                     if (nodo in Graph_T1F.nodes()) and (Graph_T1F.nodes[nodo]['PHASE'] == datos1F['PHASE']):
                         Graph_T1F.nodes[nodo]['KVA'] = float(datos1F['KVA'])+ float(Graph_T1F.nodes[nodo]['KVA'])
                         aviso = 'Se aumentó la capacidad de un transformador monofásico debido '
@@ -827,9 +830,9 @@ class QGIS2OpenDSS(object):
                     else:
                         Graph_T1F.add_node(nodo)
                         Graph_T1F.nodes[nodo].update(datos1F) # Agrega el trafo al grafo con todos los datos
-                        
                         grafoBTTotal.add_node(nodo)
                         grafoBTTotal.nodes[nodo].update(datosTotalGraph)
+                        
             if list_sec_ne:
                 msg = 'No se encontraron los siguientes códigos '
                 msg += 'de tensión en el secundario. Su modelo de '
@@ -848,6 +851,7 @@ class QGIS2OpenDSS(object):
                 QMessageBox.warning(None, QCoreApplication.translate('dialog', 'Alerta Transformadores'), aviso)
                 
             return datosT3F_Multi, datosT3F_Single, datosT2F, datosT1F, Graph_T3F_multi, Graph_T3F_single, Graph_T2F, Graph_T1F, grafoBTTotal
+        
         except KeyError as e:
             cause = e.args[0]
             self.print_error()
@@ -1489,8 +1493,8 @@ class QGIS2OpenDSS(object):
                             subs = 'bus1=' + vector[i] + '_tx.'
                             if line.find(pattern) != -1:
                                 line = line.replace(pattern, subs)
-                                del vector[i]
-                                break
+                                # del vector[i]
+                                # break
                         new_file.write(line)
     
             # Copy the file permissions from old file to the new file
@@ -7454,6 +7458,7 @@ class QGIS2OpenDSS(object):
                         self.progress.close()
                         return 0
                     layerT2.startEditing()
+                
                 if len(selectedLayerTR3)!= 0:
                     layerT3 = QgsProject.instance().mapLayersByName(selectedLayerTR3)[0]
                     indexDSS = auxiliary_functions.getAttributeIndex(self, layerT3, "DSSNAME")
@@ -7466,8 +7471,8 @@ class QGIS2OpenDSS(object):
                         self.progress.close()
                         return 0
                     layerT3.startEditing()
-                if (len(datosT1F)== 0 and len(datosT2F)== 0 and len(datosT3F_Multi)== 0 and len(
-                        datosT3F_Single)== 0):
+                
+                if (len(datosT1F)== 0 and len(datosT2F)== 0 and len(datosT3F_Multi)== 0 and len(datosT3F_Single)== 0):
                     LTRactive = False
                 else:  ##### Asignación de bus a transformadores
                     LTRactive = True
