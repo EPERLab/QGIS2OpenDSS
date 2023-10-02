@@ -919,7 +919,7 @@ class QGIS2OpenDSS(object):
                                   'PHAMAT': linea['PHASEMAT'], 'PHASIZ': linea['PHASESIZ'], 'X1': line[0][0],
                                   'Y1': line[0][1], 'X2': line[n - 1][0], 'Y2': line[n - 1][1], 'SHLEN': LineLength,
                                   'AIR_UGND': air_ugnd, 'NPHAS': cantFases, 'CONNS': conns, 'CONF': config, 'GRUPO': group,
-                                  'TIPO': linea['TYPE'], 'idx_bus1': idx_bus1, 'idx_bus2': idx_bus2}  # , 'VOLTOPRLL':opervoltLL,'VOLTOPRLN':opervoltLN}
+                                  'TIPO': linea['TYPE'], 'SERVICE':linea['SERVICE'], 'idx_bus1': idx_bus1, 'idx_bus2': idx_bus2}  # , 'VOLTOPRLL':opervoltLL,'VOLTOPRLN':opervoltLN}
                     datosTotalGraph = {"type": "LBT", 'X1': line[0][0], 'Y1': line[0][1], 'X2': line[n - 1][0],
                                        'Y2': line[n - 1][1]}  # , 'VOLTOPRLL':opervoltLL,'VOLTOPRLN':opervoltLN}
                 datosLBT.append(datosLinea) ### Código viejo
@@ -1008,7 +1008,7 @@ class QGIS2OpenDSS(object):
                 datos = {"LVCODE": LVCode, "INDEXDSS": indexDSS, "LAYER": layer, "ID": lineaACO.id(), "nodo1": nodo1,
                          "nodo2": nodo2, 'PHAMAT': lineaACO['PHASEMAT'], 'PHASIZ': lineaACO['PHASESIZ'], 'X1': line[0][0],
                          'Y1': line[0][1], 'X2': line[n - 1][0], 'Y2': line[n - 1][1], 'SHLEN': LineLength,
-                         'NPHAS': cantFases, 'CONNS': conns, 'CONF': config, 'GRUPO': group, 
+                         'NPHAS': cantFases, 'CONNS': conns, 'SERVICE':lineaACO["SERVICE"], 'CONF': config, 'GRUPO': group, 
                          'TIPO': lineaACO["TYPE"], 'idx_bus1': idx_bus1, 'idx_bus2': idx_bus2}  # 'VOLTOPRLL':opervoltLL,'VOLTOPRLN':opervoltLN,
                 datosTotalGraph = {"type": "ACO", 'X1': line[0][0], 'Y1': line[0][1], 'X2': line[n - 1][0],
                                    'Y2': line[n - 1][1]}  # 'VOLTOPRLL':opervoltLL,'VOLTOPRLN':opervoltLN,
@@ -1591,8 +1591,8 @@ class QGIS2OpenDSS(object):
             
         #Verifica que el tipo de cable y la conexión tengan sentido
         error_carga = 0
-        if ((cable_type == "DPX" and conns != ".1") 
-            or (cable_type == "DPX" and conns != ".2")):
+        if (cable_type == "DPX" and conns not in [".1", ".2"]):
+            print(conns)
             error_carga = 1
         elif cable_type == "TPX" and conns != ".1.2":
             error_carga = 1
@@ -5955,7 +5955,10 @@ class QGIS2OpenDSS(object):
             # Aereo
             if subterranea is False:
                 if cantFases == '1':
-                    if linea['TIPO'] == 'TPX':
+                    if linea['TIPO'] == 'DPX':
+                        GeometryCode = 'DPX'+ str(linea['PHASIZ'])
+                        GeometryCode += str(linea['PHAMAT'])
+                    elif linea['TIPO'] == 'TPX':
                         GeometryCode = 'TRPX'+ str(linea['PHASIZ'])
                         GeometryCode += str(linea['PHAMAT'])
                     else:
@@ -9406,17 +9409,27 @@ class QGIS2OpenDSS(object):
                         # Aereo
                         if dataLine['AIR_UGND'] == 'air':
                             if cantFases == '1':
-                                if dataLine['TIPO'] == 'TPX':
+                                if dataLine['TIPO'] == 'DPX':
+                                    equipment = 'Linecode=DPX'
+                                    equipment += str(dataLine['PHASIZ'])
+                                    equipment += str(dataLine['PHAMAT'])
+                                    if dataLine['SERVICE'] == "1":
+                                        conns = ".1.0"
+                                    elif dataLine['SERVICE'] == "2":
+                                        conns = ".2.0"
+                                        
+                                elif dataLine['TIPO'] == 'TPX':
                                     equipment = 'Linecode=TRPX'
                                     equipment += str(dataLine['PHASIZ'])
                                     equipment += str(dataLine['PHAMAT'])
+                                    conns = ".1.2"
                                 else:
                                     equipment = 'Geometry=1FLV'
                                     equipment += str(dataLine['PHASIZ'])
                                     equipment += str(dataLine['PHAMAT'])
                                     equipment += str(dataLine['NEUSIZ'])
                                     equipment += str(dataLine['NEUMAT'])
-                                conns = ".1.2"
+                                    conns = ".1.2"
                             elif cantFases == '3' or cantFases == '2':
                                 if dataLine['TIPO'] == 'QPX':
                                     equipment = 'Linecode=QDPX'
@@ -9580,15 +9593,24 @@ class QGIS2OpenDSS(object):
                         if dataLine[
                             'TRAFNPHAS'] == "NULL":
                             cantFases = dataLine['NPHAS']
+                            service = dataLine['SERVICE']
                             desc = " Disconnected"
                             busBT_List[line[0]]['VOLTAGELN'] = "0.12"
                             busBT_List[line[1]]['VOLTAGELN'] = "0.12"
                         else:
                             cantFases = dataLine['TRAFNPHAS']
+                            service = dataLine['SERVICE']
                             desc = ""
                         if (cantFases == '1'):
-                            equipment = 'TRPX' + str(dataLine['PHASIZ'])+ str(dataLine['PHAMAT'])
-                            conns = ".1.2"
+                            if service == "12":
+                                equipment = 'TRPX' + str(dataLine['PHASIZ'])+ str(dataLine['PHAMAT'])
+                                conns = ".1.2"
+                            elif service == "1":
+                                equipment = 'DPX' + str(dataLine['PHASIZ'])+ str(dataLine['PHAMAT'])
+                                conns = ".1.0"
+                            elif service == "2":
+                                equipment = 'DPX' + str(dataLine['PHASIZ'])+ str(dataLine['PHAMAT'])
+                                conns = ".2.0"
                         elif (cantFases == '3' or cantFases == '2'):
                             equipment = 'QDPX' + str(dataLine['PHASIZ'])+ str(dataLine['PHAMAT'])
                             conns = ".1.2.3"
@@ -9880,11 +9902,11 @@ class QGIS2OpenDSS(object):
                         if cantFases == "3" and conns != ".1.2.3":
                             self.mensaje_log_gral += "Revise la carga " + loadName + " debido a que hay"
                             self.mensaje_log_gral += " inconsistencias entre las fases y el número de nodos a los que está"
-                            self.mensaje_log_gral += " conectada. Número de fases: " + cantFases + ", nodos: " + conns + " \n"
+                            self.mensaje_log_gral += " conectada. Número de fases: " + cantFases + ", nodos: " + conns + ", grupo:"+str(Grupo)+ " \n"
                         elif cantFases == "1" and conns == ".1.2.3":
                             self.mensaje_log_gral += "Revise la carga " + loadName + " debido a que hay"
                             self.mensaje_log_gral += " inconsistencias entre las fases y el número de nodos a los que está"
-                            self.mensaje_log_gral += " conectada. Número de fases: " + cantFases + ", nodos: " + conns + " \n"
+                            self.mensaje_log_gral += " conectada. Número de fases: " + cantFases + ", nodos: " + conns + ", grupo:"+str(Grupo)+ " \n"
                         
                     output_cadss.close()
                     namefile_ = foldername + "/LoadsLVList.csv"
