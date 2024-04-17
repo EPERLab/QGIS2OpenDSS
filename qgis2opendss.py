@@ -657,7 +657,7 @@ class QGIS2OpenDSS(object):
                                       'LV_GROUP': group_lv, "VOLTMTLL": voltoprLL, "VOLTMTLN": voltoprLN,
                                       'MV_MV': mv_mv, "INDEXBUS1": indexBus1,
                                       'INDEX_LV_GROUP': indexLvGroup}
-                        datosTotalGraph = {"NPHAS": numfase, "type": "TRAF", 'LOADVOLT': loadvolt, 'LOADVOLTLN': loadvoltLN}
+                        datosTotalGraph = {"NPHAS": numfase, "type": "TRAF", 'LOADVOLT': loadvolt, 'LOADVOLTLN': loadvoltLN, "CONBA": trafo1['SECCONN']}
     
                         datosT3F_Multi.append(datosMulti)
                         if (nodo in Graph_T3F_multi.nodes())and (
@@ -698,7 +698,7 @@ class QGIS2OpenDSS(object):
                                             "VOLTMTLN": voltoprLN, 'MV_MV': mv_mv, "INDEXBUS1": indexBus1,
                                             'INDEX_LV_GROUP': indexLvGroup}
                             datosTotalGraph = {"NPHAS": numfase, "type": "TRAF", 'LOADVOLT': loadvolt,
-                                               'LOADVOLTLN': loadvoltLN}
+                                               'LOADVOLTLN': loadvoltLN, "CONBA": trafo1['SECCONN']}
                             datosT3F_Single.append(datosSingleY)
     
                             if (nodo in Graph_T3F_single.nodes()) and (
@@ -730,7 +730,7 @@ class QGIS2OpenDSS(object):
                                       'INDEX_LV_GROUP': indexLvGroup}
     
                             datosTotalGraph = {"NPHAS": numfase, "type": "TRAF", 'LOADVOLT': loadvolt,
-                                               'LOADVOLTLN': loadvoltLN}
+                                               'LOADVOLTLN': loadvoltLN, "CONBA": trafo1['SECCONN']}
                             datosT3F_Multi.append(datosMulti)
     
                             if (nodo in Graph_T3F_multi.nodes()) and (
@@ -766,7 +766,7 @@ class QGIS2OpenDSS(object):
                                         "VOLTMTLN": voltoprLN, 'MV_MV': mv_mv, "INDEXBUS1": indexBus1,
                                         'INDEX_LV_GROUP': indexLvGroup}
                         datosT3F_Single.append(datosSingleD)
-                        datosTotalGraph = {"NPHAS": numfase, "type": "TRAF", 'LOADVOLT': loadvolt, 'LOADVOLTLN': loadvoltLN}
+                        datosTotalGraph = {"NPHAS": numfase, "type": "TRAF", 'LOADVOLT': loadvolt, 'LOADVOLTLN': loadvoltLN, "CONBA": trafo1['SECCONN']}
                         if (nodo in Graph_T3F_single.nodes()) and (
                                 Graph_T3F_single.nodes[nodo]['PHASE'] == datosSingleD['PHASE']):
                             Graph_T3F_single.nodes[nodo]['KVA'] = float(datosSingleD['KVA'])+ float(
@@ -792,7 +792,7 @@ class QGIS2OpenDSS(object):
                                'MV_GROUP': group_mv, 'LV_GROUP': group_lv, "VOLTMTLL": voltoprLL, "VOLTMTLN": voltoprLN, 
                                'MV_MV': mv_mv, "INDEXBUS1": indexBus1,
                                'INDEX_LV_GROUP': indexLvGroup}
-                    datosTotalGraph = {"NPHAS": numfase, "type": "TRAF", 'LOADVOLT': loadvolt, 'LOADVOLTLN': loadvoltLN}
+                    datosTotalGraph = {"NPHAS": numfase, "type": "TRAF", 'LOADVOLT': loadvolt, 'LOADVOLTLN': loadvoltLN, "CONBA": trafo1['SECCONN']}
                     datosT2F.append(datos2F)
                     if (nodo in Graph_T2F.nodes()) and (Graph_T2F.nodes[nodo]['PHASE'] == datos2F['PHASE']):
                         Graph_T2F.nodes[nodo]['KVA'] = float(datos2F['KVA'])+ float(Graph_T2F.nodes[nodo]['KVA'])
@@ -812,12 +812,12 @@ class QGIS2OpenDSS(object):
                     datos1F = {'KVA_FA': trafo1['KVAPHASEA'], 'KVA_FB': trafo1['KVAPHASEB'], 'KVA_FC': trafo1['KVAPHASEC'],
                                "NPHAS": numfase, "MVCODE": MVCode, "LVCODE": LVCode, "TAPS": tap, "INDEXDSS": indexDSS,
                                'ID': trafo1.id(), "LAYER": layer, "nodo": nodo, 'X1': point[0], 'Y1': point[1],
-                               'PHASE': fase, 'KVA': trafo1['RATEDKVA'], 'KVM': trafo1['PRIMVOLT'],
+                               'PHASE': fase, 'KVA': trafo1['RATEDKVA'], 'CONBA': trafo1['SECCONN'], 'KVM': trafo1['PRIMVOLT'],
                                'KVL': trafo1['SECVOLT'], 'LOADCONF': 'delta', 'LOADCONNS': '.1.2', 'LOADVOLT': loadvolt,
                                'LOADVOLTLN': loadvoltLN, 'MV_GROUP': group_mv, 'LV_GROUP': group_lv, "VOLTMTLL": voltoprLL,
                                "VOLTMTLN": voltoprLN, 'MV_MV': mv_mv, "INDEXBUS1": indexBus1,
                                'INDEX_LV_GROUP': indexLvGroup}
-                    datosTotalGraph = {"NPHAS": numfase, "type": "TRAF", 'LOADVOLT': loadvolt, 'LOADVOLTLN': loadvoltLN}
+                    datosTotalGraph = {"NPHAS": numfase, "type": "TRAF", 'LOADVOLT': loadvolt, 'LOADVOLTLN': loadvoltLN, "CONBA": trafo1['SECCONN']}
                     datosT1F.append(datos1F)
                     
                     if (nodo in Graph_T1F.nodes()) and (Graph_T1F.nodes[nodo]['PHASE'] == datos1F['PHASE']):
@@ -5345,6 +5345,7 @@ class QGIS2OpenDSS(object):
                     TRAFVOLTLL = node[1]["LOADVOLT"]
                     TRAFVOLTLN = node[1]["LOADVOLTLN"]
                     TRAFNPHASES = node[1]["NPHAS"]
+                    TRAFCONN = node[1]["CONBA"]
                     break
                     
             for edge in list(graph.edges(data=True)):     
@@ -5359,11 +5360,14 @@ class QGIS2OpenDSS(object):
                     grafoBT[nodo1][nodo2]["TRAFVOLTLL"] = TRAFVOLTLL
                     grafoBT[nodo1][nodo2]["TRAFVOLTLN"] = TRAFVOLTLN
                     grafoBT[nodo1][nodo2]["TRAFNPHAS"] = TRAFNPHASES
+                    grafoBT[nodo1][nodo2]["TRAFCONN_2"] = TRAFCONN
+                    
                 elif datos["type"] == "ACO":
                     grafoACO[nodo1][nodo2]["TRAFNODE"] = TrafoNode
                     grafoACO[nodo1][nodo2]["TRAFVOLTLL"] = TRAFVOLTLL
                     grafoACO[nodo1][nodo2]["TRAFVOLTLN"] = TRAFVOLTLN
                     grafoACO[nodo1][nodo2]["TRAFNPHAS"] = TRAFNPHASES
+                    grafoACO[nodo1][nodo2]["TRAFCONN_2"] = TRAFCONN
 
             for vertice in list(graph.nodes(data=True)):  # Identifica el nodo del transformador
                 if len(vertice[1])!= 0 and vertice[1]['type'] == 'LOAD':
@@ -5372,6 +5376,8 @@ class QGIS2OpenDSS(object):
                     grafoCAR.nodes[nodo]["TRAFVOLTLN"] = TRAFVOLTLN
                     grafoCAR.nodes[nodo]["TRAFVOLTLL"] = TRAFVOLTLL
                     grafoCAR.nodes[nodo]["TRAFNPHAS"] = TRAFNPHASES
+                    grafoCAR.nodes[nodo]["TRAFCONN_2"] = TRAFCONN
+                    
         return grafoBT, grafoACO, grafoCAR
         
     #####################################################
@@ -9778,14 +9784,14 @@ class QGIS2OpenDSS(object):
                         layer.changeAttributeValue(id_, idx_bus1, bus)
                         
                         n += 1
-                        if cantFases == "3" and conns != ".1.2.3":
-                            self.mensaje_log_gral += "Revise la carga " + loadName + " debido a que hay"
-                            self.mensaje_log_gral += " inconsistencias entre las fases y el número de nodos a los que está"
-                            self.mensaje_log_gral += " conectada. Número de fases: " + cantFases + ", nodos: " + conns + " \n"
+                        if cantFases == "3" and (conns != ".1.2.3"):
+                            self.mensaje_log_gral += "Advertencia: Favor revisar la conexión de la carga " + loadName + " debido a que hay"
+                            self.mensaje_log_gral += " inconsistencias entre las fases del nodo y el número de fases a los que está"
+                            self.mensaje_log_gral += " conectada (Puede ser una carga monofásica o bifásica). Número de fases: " + cantFases + ", nodos: " + conns + " \n"
                         elif cantFases == "1" and conns == ".1.2.3":
-                            self.mensaje_log_gral += "Revise la carga " + loadName + " debido a que hay"
-                            self.mensaje_log_gral += " inconsistencias entre las fases y el número de nodos a los que está"
-                            self.mensaje_log_gral += " conectada. Número de fases: " + cantFases + ", nodos: " + conns + " \n"
+                            self.mensaje_log_gral += "Error: Favor revisar la conexión de la carga " + loadName + " debido a que hay"
+                            self.mensaje_log_gral += " inconsistencias entre las fases del nodo (1)y el número de fases a los que está"
+                            self.mensaje_log_gral += " conectada (3). Número de fases: " + cantFases + ", nodos: " + conns + " \n"
                     
                     output_cadss_mv.close()
                     if len(selectedLayerCA_MT1)!= 0:
@@ -9899,14 +9905,23 @@ class QGIS2OpenDSS(object):
 
                         n += 1
                         
-                        if cantFases == "3" and conns != ".1.2.3":
-                            self.mensaje_log_gral += "Revise la carga " + loadName + " debido a que hay"
-                            self.mensaje_log_gral += " inconsistencias entre las fases y el número de nodos a los que está"
-                            self.mensaje_log_gral += " conectada. Número de fases: " + cantFases + ", nodos: " + conns + ", grupo:"+str(Grupo)+ " \n"
-                        elif cantFases == "1" and conns == ".1.2.3":
-                            self.mensaje_log_gral += "Revise la carga " + loadName + " debido a que hay"
-                            self.mensaje_log_gral += " inconsistencias entre las fases y el número de nodos a los que está"
-                            self.mensaje_log_gral += " conectada. Número de fases: " + cantFases + ", nodos: " + conns + ", grupo:"+str(Grupo)+ " \n"
+                        if cantFases == "3":
+                            if conns!= ".1.2.3" and dataList["TRAFCONN_2"] != "4D":
+                                self.mensaje_log_gral += "Advertencia: Favor revisar la conexión de la carga " + loadName + " debido a que hay"
+                                self.mensaje_log_gral += " inconsistencias entre las fases del transformador correspondiente y el número de fases a los que está"
+                                self.mensaje_log_gral += " conectada (Puede ser monofásica o bifásica). Número de fases: " + cantFases + ", nodos: " + conns + ", grupo:"+str(Grupo)+ " \n"
+                        
+                        if cantFases == "2":
+                            if conns!= ".1.2" or conns!=".2.3" or conns!=".1.3":
+                                self.mensaje_log_gral += "Advertencia: Favor revisar la conexión de la carga " + loadName + " debido a que hay"
+                                self.mensaje_log_gral += " inconsistencias entre las fases del transformador correspondiente y el número de fases a los que está"
+                                self.mensaje_log_gral += " conectada (Puede ser monofásica proveniente de un TPX). Número de fases: " + cantFases + ", nodos: " + conns + ", grupo:"+str(Grupo)+ " \n"
+                            
+                        elif cantFases == "1":
+                            if conns == ".1.2.3":
+                                self.mensaje_log_gral += "Error: Favor revisar la conexión de la carga " + loadName + " debido a que hay"
+                                self.mensaje_log_gral += " inconsistencias entre las fases y el número de nodos a los que está"
+                                self.mensaje_log_gral += " conectada. Número de fases: " + cantFases + ", nodos: " + conns + ", grupo:"+str(Grupo)+ " \n"
                         
                     output_cadss.close()
                     namefile_ = foldername + "/LoadsLVList.csv"
